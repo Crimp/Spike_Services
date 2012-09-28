@@ -1,0 +1,49 @@
+﻿@model MainDemoWebClient.ODataDemoService.Module_BusinessObjects_Contact
+@{
+    ViewBag.Title = this.Model.FirstName + " " + this.Model.LastName;
+    ViewBag.Message = ViewBag.Title;
+}
+<h2>@ViewBag.Message</h2>
+<p>
+    
+</p>
+<table>
+<tr>
+             <td class="left-aligned">
+                <input id="Save_@( this.Model.oid)" type="button" value="Save" onclick="Save()"/>
+            </td>
+</tr>
+    <tr>
+        <th class="left-aligned">
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            Department
+        </th>
+        <th>
+            Position
+        </th>
+    </tr>
+        <tr class="d@(1)">
+            <td class="left-aligned">
+                <input type="text" value="@( this.Model.FirstName)"/>
+            </td>
+            <td class="left-aligned">
+                @( this.Model.LastName)
+            </td>
+            <td class="left-aligned">
+                @( this.Model.Department != null ? this.Model.Department.Title : "")
+            </td>
+            <td class="left-aligned">
+                @( this.Model.Position != null ? this.Model.Position.Title : "" )
+            </td>
+@*            <td>
+            @{ var sqlChecked = false ? "checked=\"checked\"" : string.Empty; }
+                <input id="Sql_@( this.Model.FirstName)" onclick="EnableContent('@( this.Model.FirstName)', actionUrl)"
+                    type="checkbox" @this.Html.Raw(sqlChecked) />
+            </td>*@
+        </tr>
+</table>

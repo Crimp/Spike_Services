@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cc3f7f7b-bdde-4eda-8533-20a9e5cbb930" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://minakov-w8.corp.devexpress.com/TestAuthenticationService/AuthenticationService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AuthenticationService.wsdl" MetadataType="Wsdl" ID="a6ebe461-49d1-4f93-b820-7cd2689432c8" SourceId="1" SourceUrl="http://minakov-w8.corp.devexpress.com/TestAuthenticationService/AuthenticationService.svc?wsdl" />
+    <MetadataFile FileName="AuthenticationService.disco" MetadataType="Disco" ID="33ec8c3d-304f-4e2a-a1aa-66dd6ed92fb7" SourceId="1" SourceUrl="http://minakov-w8.corp.devexpress.com/TestAuthenticationService/AuthenticationService.svc?disco" />
+    <MetadataFile FileName="AuthenticationService.xsd" MetadataType="Schema" ID="b9727535-4db3-405f-8c32-83e4307320e5" SourceId="1" SourceUrl="http://minakov-w8.corp.devexpress.com/TestAuthenticationService/AuthenticationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuthenticationService1.xsd" MetadataType="Schema" ID="16fc4fff-83c9-4ddb-9d21-d13171f7507f" SourceId="1" SourceUrl="http://minakov-w8.corp.devexpress.com/TestAuthenticationService/AuthenticationService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

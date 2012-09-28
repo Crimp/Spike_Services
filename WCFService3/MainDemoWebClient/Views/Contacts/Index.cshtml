@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MainDemoWebClient.ODataDemoService.Module_BusinessObjects_Contact>
+@{
+    ViewBag.Title = "Contacts";
+}
+<h2>
+    Contacts</h2>
+<p>
+    
+</p>
+<table>
+    <tr>
+        <th class="left-aligned">
+            FirstName
+        </th>
+        <th>
+            LastName
+        </th>
+        <th>
+            Department
+        </th>
+        <th>
+            Position
+        </th>
+    </tr>
+    @{ var i = 0; }
+    @foreach (var item in this.Model)
+    {
+        i++;
+        <tr class="d@( (i % 2))">
+            <td class="left-aligned">
+                
+                @Html.ActionLink(item.FirstName, "Detail/" + item.oid, "Contacts")
+            </td>
+            <td class="left-aligned">
+                @( item.LastName)
+            </td>
+            <td class="left-aligned">
+                @( item.Department != null ? item.Department.Title : "")
+            </td>
+            <td class="left-aligned">
+                @( item.Position != null ? item.Position.Title : "")
+            </td>
+@*            <td>
+            @{ var sqlChecked = false ? "checked=\"checked\"" : string.Empty; }
+                <input id="Sql_@( item.FirstName)" onclick="EnableContent('@( item.FirstName)', actionUrl)"
+                    type="checkbox" @this.Html.Raw(sqlChecked) />
+            </td>*@
+        </tr>
+    }
+</table>
+@*<script type="text/javascript">
+//<![CDATA[
+    var actionUrl = '@this.Html.Raw(this.Url.Action("SetUserPermissions", new { userId = "_user_", useTables = "_useTables_", useBlobs = "_useBlobs_", useQueues = "_useQueues_", useSql = "_useSql_" }))';
+//]]>
+</script>*@

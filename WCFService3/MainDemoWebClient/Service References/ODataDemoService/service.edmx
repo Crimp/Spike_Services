@@ -1,0 +1,532 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices m:DataServiceVersion="3.0" m:MaxDataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="MainDemo" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="TargetType" Type="Edm.String" />
+        <Property Name="AllowRead" Type="Edm.Boolean" />
+        <Property Name="AllowWrite" Type="Edm.Boolean" />
+        <Property Name="AllowCreate" Type="Edm.Boolean" />
+        <Property Name="AllowDelete" Type="Edm.Boolean" />
+        <Property Name="AllowNavigate" Type="Edm.Boolean" />
+        <NavigationProperty Name="MemberPermissions" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase_MemberPermissions" ToRole="MemberPermissions" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+        <NavigationProperty Name="ObjectPermissions" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase_ObjectPermissions" ToRole="ObjectPermissions" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+      </EntityType>
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" BaseType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase">
+        <NavigationProperty Name="Owner" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject_Owner" ToRole="Owner" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_FileData">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="size" Type="Edm.Int32" />
+        <Property Name="FileName" Type="Edm.String" />
+        <Property Name="Content" Type="Edm.Stream" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Module_BusinessObjects_PortfolioFileData">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="DocumentType" Type="Edm.Int32" />
+        <NavigationProperty Name="Resume" Relationship="MainDemo.Module_BusinessObjects_PortfolioFileData_Resume" ToRole="Resume" FromRole="Module_BusinessObjects_PortfolioFileData" />
+      </EntityType>
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="StoredPassword" Type="Edm.String" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="ChangePasswordOnFirstLogon" Type="Edm.Boolean" />
+        <Property Name="UserName" Type="Edm.String" />
+        <Property Name="IsActive" Type="Edm.Boolean" />
+      </EntityType>
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" BaseType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase">
+        <NavigationProperty Name="Roles" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser_Roles" ToRole="Roles" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" />
+      </EntityType>
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <NavigationProperty Name="TypePermissions" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner_TypePermissions" ToRole="TypePermissions" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+      </EntityType>
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase" BaseType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner">
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="IsAdministrative" Type="Edm.Boolean" />
+        <Property Name="CanEditModel" Type="Edm.Boolean" />
+      </EntityType>
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" BaseType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase">
+        <NavigationProperty Name="Users" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_Users" ToRole="Users" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" />
+        <NavigationProperty Name="ChildRoles" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ChildRoles" ToRole="ChildRoles" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" />
+        <NavigationProperty Name="ParentRoles" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ParentRoles" ToRole="ParentRoles" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="UserName" Type="Edm.String" />
+        <Property Name="ModifiedOn" Type="Edm.DateTime" />
+        <Property Name="OperationType" Type="Edm.String" />
+        <Property Name="Description" Type="Edm.String" />
+        <Property Name="OldValue" Type="Edm.String" />
+        <Property Name="NewValue" Type="Edm.String" />
+        <Property Name="PropertyName" Type="Edm.String" />
+        <NavigationProperty Name="OldObject" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent_OldObject" ToRole="OldObject" FromRole="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" />
+        <NavigationProperty Name="NewObject" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent_NewObject" ToRole="NewObject" FromRole="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" />
+      </EntityType>
+      <EntityType Name="Module_BusinessObjects_Position">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Title" Type="Edm.String" />
+        <NavigationProperty Name="Departments" Relationship="MainDemo.Module_BusinessObjects_Position_Departments" ToRole="Departments" FromRole="Module_BusinessObjects_Position" />
+      </EntityType>
+      <EntityType Name="Module_BusinessObjects_Department">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Title" Type="Edm.String" />
+        <Property Name="Office" Type="Edm.String" />
+        <NavigationProperty Name="Contacts" Relationship="MainDemo.Module_BusinessObjects_Department_Contacts" ToRole="Contacts" FromRole="Module_BusinessObjects_Department" />
+        <NavigationProperty Name="Positions" Relationship="MainDemo.Module_BusinessObjects_Department_Positions" ToRole="Positions" FromRole="Module_BusinessObjects_Department" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_ReportData">
+        <Key>
+          <PropertyRef Name="Oid" />
+        </Key>
+        <Property Name="Oid" Type="Edm.Int32" Nullable="false" />
+        <Property Name="dataTypeName" Type="Edm.String" />
+        <Property Name="Content" Type="Edm.Stream" Nullable="false" />
+        <Property Name="ReportName" Type="Edm.String" />
+        <Property Name="DataTypeName" Type="Edm.String" />
+        <Property Name="IsInplaceReport" Type="Edm.Boolean" />
+      </EntityType>
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Criteria" Type="Edm.String" />
+        <Property Name="AllowRead" Type="Edm.Boolean" />
+        <Property Name="AllowWrite" Type="Edm.Boolean" />
+        <Property Name="AllowDelete" Type="Edm.Boolean" />
+        <Property Name="AllowNavigate" Type="Edm.Boolean" />
+        <NavigationProperty Name="Owner" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject_Owner" ToRole="Owner" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" />
+      </EntityType>
+      <EntityType Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Members" Type="Edm.String" />
+        <Property Name="AllowRead" Type="Edm.Boolean" />
+        <Property Name="AllowWrite" Type="Edm.Boolean" />
+        <NavigationProperty Name="Owner" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject_Owner" ToRole="Owner" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_Party">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Photo" Type="Edm.Stream" Nullable="false" />
+        <NavigationProperty Name="Address1" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_Party_Address1" ToRole="Address1" FromRole="DevExpress_Persistent_BaseImpl_Party" />
+        <NavigationProperty Name="Address2" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_Party_Address2" ToRole="Address2" FromRole="DevExpress_Persistent_BaseImpl_Party" />
+        <NavigationProperty Name="PhoneNumbers" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_Party_PhoneNumbers" ToRole="PhoneNumbers" FromRole="DevExpress_Persistent_BaseImpl_Party" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_Person" BaseType="MainDemo.DevExpress_Persistent_BaseImpl_Party">
+        <Property Name="FirstName" Type="Edm.String" />
+        <Property Name="LastName" Type="Edm.String" />
+        <Property Name="MiddleName" Type="Edm.String" />
+        <Property Name="Birthday" Type="Edm.DateTime" />
+        <Property Name="Email" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="Module_BusinessObjects_Contact" BaseType="MainDemo.DevExpress_Persistent_BaseImpl_Person">
+        <Property Name="WebPageAddress" Type="Edm.String" />
+        <Property Name="NickName" Type="Edm.String" />
+        <Property Name="SpouseName" Type="Edm.String" />
+        <Property Name="TitleOfCourtesy" Type="Edm.Int32" />
+        <Property Name="Anniversary" Type="Edm.DateTime" />
+        <Property Name="Notes" Type="Edm.String" />
+        <NavigationProperty Name="Manager" Relationship="MainDemo.Module_BusinessObjects_Contact_Manager" ToRole="Manager" FromRole="Module_BusinessObjects_Contact" />
+        <NavigationProperty Name="Department" Relationship="MainDemo.Module_BusinessObjects_Contact_Department" ToRole="Department" FromRole="Module_BusinessObjects_Contact" />
+        <NavigationProperty Name="Position" Relationship="MainDemo.Module_BusinessObjects_Contact_Position" ToRole="Position" FromRole="Module_BusinessObjects_Contact" />
+        <NavigationProperty Name="Tasks" Relationship="MainDemo.Module_BusinessObjects_Contact_Tasks" ToRole="Tasks" FromRole="Module_BusinessObjects_Contact" />
+      </EntityType>
+      <EntityType Name="Module_BusinessObjects_Resume">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <NavigationProperty Name="File" Relationship="MainDemo.Module_BusinessObjects_Resume_File" ToRole="File" FromRole="Module_BusinessObjects_Resume" />
+        <NavigationProperty Name="Contact" Relationship="MainDemo.Module_BusinessObjects_Resume_Contact" ToRole="Contact" FromRole="Module_BusinessObjects_Resume" />
+        <NavigationProperty Name="Portfolio" Relationship="MainDemo.Module_BusinessObjects_Resume_Portfolio" ToRole="Portfolio" FromRole="Module_BusinessObjects_Resume" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_PhoneNumber">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Number" Type="Edm.String" />
+        <Property Name="PhoneType" Type="Edm.String" />
+        <NavigationProperty Name="Party" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber_Party" ToRole="Party" FromRole="DevExpress_Persistent_BaseImpl_PhoneNumber" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_Task">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="dateCompleted" Type="Edm.DateTime" />
+        <Property Name="Subject" Type="Edm.String" />
+        <Property Name="Description" Type="Edm.String" />
+        <Property Name="DueDate" Type="Edm.DateTime" />
+        <Property Name="StartDate" Type="Edm.DateTime" />
+        <Property Name="Status" Type="Edm.Int32" />
+        <Property Name="PercentCompleted" Type="Edm.Int32" />
+        <NavigationProperty Name="AssignedTo" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_Task_AssignedTo" ToRole="AssignedTo" FromRole="DevExpress_Persistent_BaseImpl_Task" />
+      </EntityType>
+      <EntityType Name="Module_BusinessObjects_DemoTask" BaseType="MainDemo.DevExpress_Persistent_BaseImpl_Task">
+        <Property Name="Priority" Type="Edm.Int32" />
+        <Property Name="EstimatedWork" Type="Edm.Int32" />
+        <Property Name="ActualWork" Type="Edm.Int32" />
+        <NavigationProperty Name="Contacts" Relationship="MainDemo.Module_BusinessObjects_DemoTask_Contacts" ToRole="Contacts" FromRole="Module_BusinessObjects_DemoTask" />
+      </EntityType>
+      <EntityType Name="DevExpress_Xpo_XPWeakReference">
+        <Key>
+          <PropertyRef Name="Oid" />
+        </Key>
+        <Property Name="Oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="TargetKey_" Type="Edm.String" />
+        <Property Name="TargetKey" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_Country">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="PhoneCode" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="Module_BusinessObjects_Payment">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Amount" Type="Edm.Double" />
+        <Property Name="Rate" Type="Edm.Double" />
+        <Property Name="Hours" Type="Edm.Double" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_Address">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="Street" Type="Edm.String" />
+        <Property Name="City" Type="Edm.String" />
+        <Property Name="StateProvince" Type="Edm.String" />
+        <Property Name="ZipPostal" Type="Edm.String" />
+        <NavigationProperty Name="Country" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_Address_Country" ToRole="Country" FromRole="DevExpress_Persistent_BaseImpl_Address" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_Analysis">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Oid" Type="Edm.Guid" />
+        <Property Name="dimensionPropertiesString" Type="Edm.String" />
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="Criteria" Type="Edm.String" />
+        <Property Name="ObjectTypeName" Type="Edm.String" />
+        <Property Name="ChartSettingsContent" Type="Edm.Stream" Nullable="false" />
+        <Property Name="PivotGridSettingsContent" Type="Edm.Stream" Nullable="false" />
+        <Property Name="DimensionPropertiesString" Type="Edm.String" />
+      </EntityType>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase_MemberPermissions">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" Role="MemberPermissions" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase_ObjectPermissions">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" Role="ObjectPermissions" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject_Owner">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" Role="Owner" Multiplicity="0..1" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_PortfolioFileData_Resume">
+        <End Type="MainDemo.Module_BusinessObjects_Resume" Role="Resume" Multiplicity="0..1" />
+        <End Type="MainDemo.Module_BusinessObjects_PortfolioFileData" Role="Module_BusinessObjects_PortfolioFileData" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser_Roles">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Role="Roles" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner_TypePermissions">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" Role="TypePermissions" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_Users">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" Role="Users" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ChildRoles">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Role="ChildRoles" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ParentRoles">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Role="ParentRoles" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent_OldObject">
+        <End Type="MainDemo.DevExpress_Xpo_XPWeakReference" Role="OldObject" Multiplicity="0..1" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" Role="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent_NewObject">
+        <End Type="MainDemo.DevExpress_Xpo_XPWeakReference" Role="NewObject" Multiplicity="0..1" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" Role="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Position_Departments">
+        <End Type="MainDemo.Module_BusinessObjects_Position" Role="Module_BusinessObjects_Position" Multiplicity="*" />
+        <End Type="MainDemo.Module_BusinessObjects_Department" Role="Departments" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Department_Contacts">
+        <End Type="MainDemo.Module_BusinessObjects_Department" Role="Module_BusinessObjects_Department" Multiplicity="*" />
+        <End Type="MainDemo.Module_BusinessObjects_Contact" Role="Contacts" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Department_Positions">
+        <End Type="MainDemo.Module_BusinessObjects_Position" Role="Positions" Multiplicity="*" />
+        <End Type="MainDemo.Module_BusinessObjects_Department" Role="Module_BusinessObjects_Department" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject_Owner">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" Role="Owner" Multiplicity="0..1" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject_Owner">
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" Role="Owner" Multiplicity="0..1" />
+        <End Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_Party_Address1">
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Party" Role="DevExpress_Persistent_BaseImpl_Party" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Address" Role="Address1" Multiplicity="0..1" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_Party_Address2">
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Party" Role="DevExpress_Persistent_BaseImpl_Party" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Address" Role="Address2" Multiplicity="0..1" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_Party_PhoneNumbers">
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber" Role="PhoneNumbers" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Party" Role="DevExpress_Persistent_BaseImpl_Party" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Contact_Manager">
+        <End Type="MainDemo.Module_BusinessObjects_Contact" Role="Manager" Multiplicity="0..1" />
+        <End Type="MainDemo.Module_BusinessObjects_Contact" Role="Module_BusinessObjects_Contact" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Contact_Department">
+        <End Type="MainDemo.Module_BusinessObjects_Department" Role="Department" Multiplicity="0..1" />
+        <End Type="MainDemo.Module_BusinessObjects_Contact" Role="Module_BusinessObjects_Contact" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Contact_Position">
+        <End Type="MainDemo.Module_BusinessObjects_Position" Role="Position" Multiplicity="0..1" />
+        <End Type="MainDemo.Module_BusinessObjects_Contact" Role="Module_BusinessObjects_Contact" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Contact_Tasks">
+        <End Type="MainDemo.Module_BusinessObjects_DemoTask" Role="Tasks" Multiplicity="*" />
+        <End Type="MainDemo.Module_BusinessObjects_Contact" Role="Module_BusinessObjects_Contact" Multiplicity="*" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Resume_File">
+        <End Type="MainDemo.Module_BusinessObjects_Resume" Role="Module_BusinessObjects_Resume" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_FileData" Role="File" Multiplicity="0..1" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Resume_Contact">
+        <End Type="MainDemo.Module_BusinessObjects_Resume" Role="Module_BusinessObjects_Resume" Multiplicity="*" />
+        <End Type="MainDemo.Module_BusinessObjects_Contact" Role="Contact" Multiplicity="0..1" />
+      </Association>
+      <Association Name="Module_BusinessObjects_Resume_Portfolio">
+        <End Type="MainDemo.Module_BusinessObjects_Resume" Role="Module_BusinessObjects_Resume" Multiplicity="*" />
+        <End Type="MainDemo.Module_BusinessObjects_PortfolioFileData" Role="Portfolio" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_PhoneNumber_Party">
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber" Role="DevExpress_Persistent_BaseImpl_PhoneNumber" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Party" Role="Party" Multiplicity="0..1" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_Task_AssignedTo">
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Task" Role="DevExpress_Persistent_BaseImpl_Task" Multiplicity="*" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Party" Role="AssignedTo" Multiplicity="0..1" />
+      </Association>
+      <Association Name="Module_BusinessObjects_DemoTask_Contacts">
+        <End Type="MainDemo.Module_BusinessObjects_DemoTask" Role="Module_BusinessObjects_DemoTask" Multiplicity="*" />
+        <End Type="MainDemo.Module_BusinessObjects_Contact" Role="Contacts" Multiplicity="*" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_Address_Country">
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Country" Role="Country" Multiplicity="0..1" />
+        <End Type="MainDemo.DevExpress_Persistent_BaseImpl_Address" Role="DevExpress_Persistent_BaseImpl_Address" Multiplicity="*" />
+      </Association>
+      <EntityContainer Name="XpoContext" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_FileData" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_FileData" />
+        <EntitySet Name="Module_BusinessObjects_PortfolioFileData" EntityType="MainDemo.Module_BusinessObjects_PortfolioFileData" />
+        <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase" />
+        <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" />
+        <EntitySet Name="Module_BusinessObjects_Position" EntityType="MainDemo.Module_BusinessObjects_Position" />
+        <EntitySet Name="Module_BusinessObjects_Department" EntityType="MainDemo.Module_BusinessObjects_Department" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_ReportData" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_ReportData" />
+        <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" />
+        <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_Party" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Party" />
+        <EntitySet Name="Module_BusinessObjects_Resume" EntityType="MainDemo.Module_BusinessObjects_Resume" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_PhoneNumber" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_Task" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Task" />
+        <EntitySet Name="DevExpress_Xpo_XPWeakReference" EntityType="MainDemo.DevExpress_Xpo_XPWeakReference" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_Country" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Country" />
+        <EntitySet Name="Module_BusinessObjects_Payment" EntityType="MainDemo.Module_BusinessObjects_Payment" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_Address" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Address" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_Analysis" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Analysis" />
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject_Owner_DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject_Owner">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+          <End Role="Owner" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase_MemberPermissions_DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase_MemberPermissions">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+          <End Role="MemberPermissions" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase_ObjectPermissions_DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase_ObjectPermissions">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+          <End Role="ObjectPermissions" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_PortfolioFileData_Resume_Module_BusinessObjects_Resume" Association="MainDemo.Module_BusinessObjects_PortfolioFileData_Resume">
+          <End Role="Module_BusinessObjects_PortfolioFileData" EntitySet="Module_BusinessObjects_PortfolioFileData" />
+          <End Role="Resume" EntitySet="Module_BusinessObjects_Resume" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser_Roles_DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser_Roles">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase" />
+          <End Role="Roles" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_Users_DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_Users">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+          <End Role="Users" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ChildRoles_DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ChildRoles">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+          <End Role="ChildRoles" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ParentRoles_DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ParentRoles">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+          <End Role="ParentRoles" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner_TypePermissions_DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner_TypePermissions">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
+          <End Role="TypePermissions" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent_OldObject_DevExpress_Xpo_XPWeakReference" Association="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent_OldObject">
+          <End Role="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" EntitySet="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" />
+          <End Role="OldObject" EntitySet="DevExpress_Xpo_XPWeakReference" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent_NewObject_DevExpress_Xpo_XPWeakReference" Association="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent_NewObject">
+          <End Role="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" EntitySet="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" />
+          <End Role="NewObject" EntitySet="DevExpress_Xpo_XPWeakReference" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Position_Departments_Module_BusinessObjects_Department" Association="MainDemo.Module_BusinessObjects_Position_Departments">
+          <End Role="Module_BusinessObjects_Position" EntitySet="Module_BusinessObjects_Position" />
+          <End Role="Departments" EntitySet="Module_BusinessObjects_Department" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Department_Contacts_Module_BusinessObjects_Contact" Association="MainDemo.Module_BusinessObjects_Department_Contacts">
+          <End Role="Module_BusinessObjects_Department" EntitySet="Module_BusinessObjects_Department" />
+          <End Role="Contacts" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Department_Positions_Module_BusinessObjects_Position" Association="MainDemo.Module_BusinessObjects_Department_Positions">
+          <End Role="Module_BusinessObjects_Department" EntitySet="Module_BusinessObjects_Department" />
+          <End Role="Positions" EntitySet="Module_BusinessObjects_Position" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject_Owner_DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject_Owner">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" />
+          <End Role="Owner" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject_Owner_DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject_Owner">
+          <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject" />
+          <End Role="Owner" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Contact_Manager_Module_BusinessObjects_Contact" Association="MainDemo.Module_BusinessObjects_Contact_Manager">
+          <End Role="Module_BusinessObjects_Contact" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+          <End Role="Manager" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Contact_Department_Module_BusinessObjects_Department" Association="MainDemo.Module_BusinessObjects_Contact_Department">
+          <End Role="Module_BusinessObjects_Contact" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+          <End Role="Department" EntitySet="Module_BusinessObjects_Department" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Contact_Position_Module_BusinessObjects_Position" Association="MainDemo.Module_BusinessObjects_Contact_Position">
+          <End Role="Module_BusinessObjects_Contact" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+          <End Role="Position" EntitySet="Module_BusinessObjects_Position" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Contact_Tasks_Module_BusinessObjects_DemoTask" Association="MainDemo.Module_BusinessObjects_Contact_Tasks">
+          <End Role="Module_BusinessObjects_Contact" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+          <End Role="Tasks" EntitySet="DevExpress_Persistent_BaseImpl_Task" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_Party_Address1_DevExpress_Persistent_BaseImpl_Address" Association="MainDemo.DevExpress_Persistent_BaseImpl_Party_Address1">
+          <End Role="DevExpress_Persistent_BaseImpl_Party" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+          <End Role="Address1" EntitySet="DevExpress_Persistent_BaseImpl_Address" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_Party_Address2_DevExpress_Persistent_BaseImpl_Address" Association="MainDemo.DevExpress_Persistent_BaseImpl_Party_Address2">
+          <End Role="DevExpress_Persistent_BaseImpl_Party" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+          <End Role="Address2" EntitySet="DevExpress_Persistent_BaseImpl_Address" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_Party_PhoneNumbers_DevExpress_Persistent_BaseImpl_PhoneNumber" Association="MainDemo.DevExpress_Persistent_BaseImpl_Party_PhoneNumbers">
+          <End Role="DevExpress_Persistent_BaseImpl_Party" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+          <End Role="PhoneNumbers" EntitySet="DevExpress_Persistent_BaseImpl_PhoneNumber" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Resume_File_DevExpress_Persistent_BaseImpl_FileData" Association="MainDemo.Module_BusinessObjects_Resume_File">
+          <End Role="Module_BusinessObjects_Resume" EntitySet="Module_BusinessObjects_Resume" />
+          <End Role="File" EntitySet="DevExpress_Persistent_BaseImpl_FileData" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Resume_Contact_Module_BusinessObjects_Contact" Association="MainDemo.Module_BusinessObjects_Resume_Contact">
+          <End Role="Module_BusinessObjects_Resume" EntitySet="Module_BusinessObjects_Resume" />
+          <End Role="Contact" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_Resume_Portfolio_Module_BusinessObjects_PortfolioFileData" Association="MainDemo.Module_BusinessObjects_Resume_Portfolio">
+          <End Role="Module_BusinessObjects_Resume" EntitySet="Module_BusinessObjects_Resume" />
+          <End Role="Portfolio" EntitySet="Module_BusinessObjects_PortfolioFileData" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_PhoneNumber_Party_DevExpress_Persistent_BaseImpl_Party" Association="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber_Party">
+          <End Role="DevExpress_Persistent_BaseImpl_PhoneNumber" EntitySet="DevExpress_Persistent_BaseImpl_PhoneNumber" />
+          <End Role="Party" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+        </AssociationSet>
+        <AssociationSet Name="Module_BusinessObjects_DemoTask_Contacts_Module_BusinessObjects_Contact" Association="MainDemo.Module_BusinessObjects_DemoTask_Contacts">
+          <End Role="Module_BusinessObjects_DemoTask" EntitySet="DevExpress_Persistent_BaseImpl_Task" />
+          <End Role="Contacts" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_Task_AssignedTo_DevExpress_Persistent_BaseImpl_Party" Association="MainDemo.DevExpress_Persistent_BaseImpl_Task_AssignedTo">
+          <End Role="DevExpress_Persistent_BaseImpl_Task" EntitySet="DevExpress_Persistent_BaseImpl_Task" />
+          <End Role="AssignedTo" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_Address_Country_DevExpress_Persistent_BaseImpl_Country" Association="MainDemo.DevExpress_Persistent_BaseImpl_Address_Country">
+          <End Role="DevExpress_Persistent_BaseImpl_Address" EntitySet="DevExpress_Persistent_BaseImpl_Address" />
+          <End Role="Country" EntitySet="DevExpress_Persistent_BaseImpl_Country" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
