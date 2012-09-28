@@ -22,7 +22,7 @@ public class ODataDemoServiceBase : XpoDataService {
         : this(new HttpContextWrapper(HttpContext.Current)) {
     }
     public ODataDemoServiceBase(HttpContextBase httpContext) :
-        base(new MyContext("XpoContext", NamespaceName, CreateDataLayer())) {
+        base(new MyContext("XpoContext", ODataDemoServiceOptions.NamespaceName, CreateDataLayer())) {
         if((httpContext == null) && (HttpContext.Current == null)) {
             throw new ArgumentNullException("context", "The context cannot be null if not running on a Web context.");
         }
@@ -36,14 +36,14 @@ public class ODataDemoServiceBase : XpoDataService {
         get {
             if(_xPDictionary == null) {
                 _xPDictionary = new ReflectionDictionary();
-                _xPDictionary.GetDataStoreSchema(Assembly);
+                _xPDictionary.GetDataStoreSchema(ODataDemoServiceOptions.Assembly);
             }
             return _xPDictionary;
         }
     }
 
     public static UnitOfWork CreateSession() {
-        IDataStore store = XpoDefault.GetConnectionProvider(ConnectionString, DevExpress.Xpo.DB.AutoCreateOption.SchemaAlreadyExists);
+        IDataStore store = XpoDefault.GetConnectionProvider(ODataDemoServiceOptions.ConnectionString, DevExpress.Xpo.DB.AutoCreateOption.SchemaAlreadyExists);
 
         IDataLayer directDataLayer = new ThreadSafeDataLayer(XPDictionary, store);
         UnitOfWork directSession = new UnitOfWork(directDataLayer);
@@ -53,35 +53,11 @@ public class ODataDemoServiceBase : XpoDataService {
     private static ISelectDataSecurity CreateSelectDataSecurity() {
         UnitOfWork session = CreateSession();
         IOperationPermissionProvider user = session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", HttpContext.Current.User.Identity.Name)) as IOperationPermissionProvider;
-        IEnumerable<IOperationPermission> userPermissions = null;
-        if(user != null) {
-            userPermissions = OperationPermissionProviderHelper.CollectPermissionsRecursive((IOperationPermissionProvider)user);
-        }
-        else {
-            userPermissions = new List<IOperationPermission>();
-        }
-        IPermissionDictionary permissionsDictionary = new PermissionDictionary(userPermissions);
-        IDictionary<Type, IPermissionRequestProcessor> processors = new Dictionary<Type, IPermissionRequestProcessor>();
-        processors.Add(typeof(ServerPermissionRequest), new ServerPermissionRequestProcessor(permissionsDictionary));
-        return new SelectDataSecurity(processors, permissionsDictionary);
+        return new SelectDataSecurity(user);
     }
     public static void InitializeService(DataServiceConfiguration config) {
         config.SetEntitySetAccessRule("*", EntitySetRights.All);
         config.DataServiceBehavior.MaxProtocolVersion = DataServiceProtocolVersion.V2;
         config.DataServiceBehavior.AcceptProjectionRequests = true;
-    }
-
-
-    protected static Assembly Assembly {
-        get;
-        set;
-    }
-    protected static string ConnectionString {
-        get;
-        set;
-    }
-    protected static string NamespaceName {
-        get;
-        set;
     }
 }

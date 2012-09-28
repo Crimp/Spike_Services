@@ -70,6 +70,7 @@
     <Compile Include="Authentication\IAuthenticationService.cs" />
     <Compile Include="DataProvider\MyContext.cs" />
     <Compile Include="DataProvider\ODataDemoServiceBase.cs" />
+    <Compile Include="DataProvider\ODataDemoServiceOptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
