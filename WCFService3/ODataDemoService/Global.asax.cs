@@ -15,6 +15,7 @@ namespace ODataDemoService {
             ODataDemoServiceOptions.ConnectionString = ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString;// "User ID=Test4;Password=1tr.erweerT;Pooling=false;Data Source=minakov-w8;Initial Catalog=MainDemo_v12.1";
             ODataDemoServiceOptions.NamespaceName = "MainDemo";
             ODataDemoServiceOptions.Assembly = typeof(Contact).Assembly;
+            
 
         }
 

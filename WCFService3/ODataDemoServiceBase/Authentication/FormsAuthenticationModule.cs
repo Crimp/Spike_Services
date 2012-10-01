@@ -29,8 +29,8 @@ using System.Web.Security;
 
             // Remember claims based security should be only be 
             // used over HTTPS  
-            //if(!context.Request.IsSecureConnection)
-                //return false;
+            if(!context.Request.IsSecureConnection)
+                return false;
 
             string authHeader = context.Request.Headers["Authorization"];
             if(string.IsNullOrEmpty(authHeader)) {
