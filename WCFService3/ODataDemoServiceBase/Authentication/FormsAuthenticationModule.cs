@@ -5,7 +5,7 @@ using System.Web;
 using System.Security.Principal;
 using System.Web.Security;
 
-    public class CustomAuthenticationModule : IHttpModule {
+    public class FormsAuthenticationModule : IHttpModule {
         public void Init(HttpApplication context) {
             context.AuthenticateRequest +=
                new EventHandler(context_AuthenticateRequest);

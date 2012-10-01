@@ -43,32 +43,42 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v12.1">
-      <HintPath>C:\Source\2012.1\XAF\_Out\DevExpress.Data.v12.1.dll</HintPath>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.Data.v12.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v12.1">
-      <HintPath>C:\Source\2012.1\XAF\_Out\DevExpress.ExpressApp.Security.v12.1.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.Security.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.ExpressApp.Security.v12.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v12.1">
-      <HintPath>C:\Source\2012.1\XAF\_Out\DevExpress.ExpressApp.v12.1.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.ExpressApp.v12.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v12.1">
-      <HintPath>C:\Source\2012.1\XAF\_Out\DevExpress.Persistent.Base.v12.1.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.Base.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.Persistent.Base.v12.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v12.1">
-      <HintPath>C:\Source\2012.1\XAF\_Out\DevExpress.Persistent.BaseImpl.v12.1.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.Persistent.BaseImpl.v12.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.1">
-      <HintPath>C:\Source\2012.1\XAF\_Out\DevExpress.Xpo.v12.1.dll</HintPath>
+    <Reference Include="DevExpress.Xpo.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.Xpo.v12.1.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.1.Extensions">
-      <HintPath>C:\Source\2012.1\XAF\_Out\DevExpress.Xpo.v12.1.Extensions.dll</HintPath>
+    <Reference Include="DevExpress.Xpo.v12.1.Extensions, Version=12.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\DevExpress.Xpo.v12.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="MainDemo.Module, Version=1.0.4651.7566, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Source\2012.1\XAF\Demos\CS\MainDemo\MainDemo.Module\bin\Debug\MainDemo.Module.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\Dll\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -138,7 +148,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63725</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://minakov-w8.corp.devexpress.com/ODataDemoService</IISUrl>
+          <IISUrl>https://minakov-w8.corp.devexpress.com/ODataDemoService</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
