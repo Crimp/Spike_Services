@@ -5,9 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataDemoService", "ODataDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataDemoServiceBase", "ODataDemoServiceBase\ODataDemoServiceBase.csproj", "{77CB535A-F77A-4F9E-8562-99B976684DB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsAuthenticationConsoleClient", "FormsAuthenticationConsoleClient\FormsAuthenticationConsoleClient.csproj", "{DFCD693E-8233-4A21-9292-EDFAB1C320FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFormsAuthenticationClient", "FormsAuthenticationConsoleClient\ConsoleFormsAuthenticationClient.csproj", "{DFCD693E-8233-4A21-9292-EDFAB1C320FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainDemoWebClient", "MainDemoWebClient\MainDemoWebClient.csproj", "{BEA8EF2A-BD23-4C80-A099-D04345012B1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWindowsAuthenticationClient", "WindowsAuthenticationConsoleClient\ConsoleWindowsAuthenticationClient.csproj", "{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,20 @@ Global
 		{BEA8EF2A-BD23-4C80-A099-D04345012B1B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{BEA8EF2A-BD23-4C80-A099-D04345012B1B}.Release|x64.ActiveCfg = Release|Any CPU
 		{BEA8EF2A-BD23-4C80-A099-D04345012B1B}.Release|x86.ActiveCfg = Release|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Release|ARM.ActiveCfg = Release|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Release|x64.ActiveCfg = Release|Any CPU
+		{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

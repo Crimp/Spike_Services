@@ -22,21 +22,21 @@ namespace FormsAuthenticationConsoleClient {
 
             string authenticationTicket = GetAuthenticationTicket(userName, password);
             if(!string.IsNullOrEmpty(authenticationTicket)) {
-                ShowData(authenticationTicket);
+                DataServiceContext dataContext = new DataServiceContext(new Uri(rootDataUrl));
+                dataContext.Credentials = System.Net.CredentialCache.DefaultCredentials;
+                dataContext.SendingRequest += new EventHandler<SendingRequestEventArgs>(delegate(object sender, SendingRequestEventArgs e) {
+                    e.RequestHeaders.Add("Authorization", authenticationTicket);
+                });
+                ShowData(authenticationTicket, dataContext);
             }
             else {
                 Console.WriteLine("The user name or password provided is incorrect.");
                 Console.ReadLine();
             }
         }
-        private static void ShowData(string authenticationTicket) {
-            DataServiceContext context = new DataServiceContext(new Uri(rootDataUrl));
-            context.Credentials = System.Net.CredentialCache.DefaultCredentials;
-            ICredentials test = context.Credentials;
-            context.SendingRequest += new EventHandler<SendingRequestEventArgs>(delegate(object sender, SendingRequestEventArgs e) {
-                e.RequestHeaders.Add("Authorization", authenticationTicket);
-            });
-            var contactQuery = (from p in context.CreateQuery<Module_BusinessObjects_Contact>("Module_BusinessObjects_Contact") select p);
+        private static void ShowData(string authenticationTicket, DataServiceContext dataContext) {
+            ICredentials test = dataContext.Credentials;
+            var contactQuery = (from p in dataContext.CreateQuery<Module_BusinessObjects_Contact>("Module_BusinessObjects_Contact") select p);
             foreach(Module_BusinessObjects_Contact contact in contactQuery) {
                 Console.WriteLine("FirstName:" + contact.FirstName);
             }
