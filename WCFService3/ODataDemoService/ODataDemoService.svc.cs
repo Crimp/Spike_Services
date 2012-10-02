@@ -13,10 +13,10 @@ using MainDemo.Module.BusinessObjects;
 using DevExpress.ExpressApp.Security;
 
 [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
-public class MainDemoODataDemoService : ODataDemoServiceBase {
-    public MainDemoODataDemoService(){
+public class DemoODataDemoService : ODataDemoServiceBase {
+    public DemoODataDemoService(){
     }
-    public MainDemoODataDemoService(HttpContextBase httpContext)
+    public DemoODataDemoService(HttpContextBase httpContext)
         : base(httpContext) {
     }
 }
