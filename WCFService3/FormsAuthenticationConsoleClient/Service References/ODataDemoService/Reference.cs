@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 10/1/2012 5:03:20 AM
+// Generation date: 10/2/2012 7:30:39 AM
 namespace FormsAuthenticationConsoleClient.ODataDemoService
 {
     
@@ -297,74 +297,6 @@ namespace FormsAuthenticationConsoleClient.ODataDemoService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Resume> _Module_BusinessObjects_Resume;
         /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Address in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Address> DevExpress_Persistent_BaseImpl_Address
-        {
-            get
-            {
-                if ((this._DevExpress_Persistent_BaseImpl_Address == null))
-                {
-                    this._DevExpress_Persistent_BaseImpl_Address = base.CreateQuery<DevExpress_Persistent_BaseImpl_Address>("DevExpress_Persistent_BaseImpl_Address");
-                }
-                return this._DevExpress_Persistent_BaseImpl_Address;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Address> _DevExpress_Persistent_BaseImpl_Address;
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_PhoneNumber> DevExpress_Persistent_BaseImpl_PhoneNumber
-        {
-            get
-            {
-                if ((this._DevExpress_Persistent_BaseImpl_PhoneNumber == null))
-                {
-                    this._DevExpress_Persistent_BaseImpl_PhoneNumber = base.CreateQuery<DevExpress_Persistent_BaseImpl_PhoneNumber>("DevExpress_Persistent_BaseImpl_PhoneNumber");
-                }
-                return this._DevExpress_Persistent_BaseImpl_PhoneNumber;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_PhoneNumber> _DevExpress_Persistent_BaseImpl_PhoneNumber;
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Country in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Country> DevExpress_Persistent_BaseImpl_Country
-        {
-            get
-            {
-                if ((this._DevExpress_Persistent_BaseImpl_Country == null))
-                {
-                    this._DevExpress_Persistent_BaseImpl_Country = base.CreateQuery<DevExpress_Persistent_BaseImpl_Country>("DevExpress_Persistent_BaseImpl_Country");
-                }
-                return this._DevExpress_Persistent_BaseImpl_Country;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Country> _DevExpress_Persistent_BaseImpl_Country;
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_FileData in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_FileData> DevExpress_Persistent_BaseImpl_FileData
-        {
-            get
-            {
-                if ((this._DevExpress_Persistent_BaseImpl_FileData == null))
-                {
-                    this._DevExpress_Persistent_BaseImpl_FileData = base.CreateQuery<DevExpress_Persistent_BaseImpl_FileData>("DevExpress_Persistent_BaseImpl_FileData");
-                }
-                return this._DevExpress_Persistent_BaseImpl_FileData;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_FileData> _DevExpress_Persistent_BaseImpl_FileData;
-        /// <summary>
         /// There are no comments for DevExpress_Xpo_XPWeakReference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -518,6 +450,74 @@ namespace FormsAuthenticationConsoleClient.ODataDemoService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole;
         /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Address in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Address> DevExpress_Persistent_BaseImpl_Address
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_Address == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_Address = base.CreateQuery<DevExpress_Persistent_BaseImpl_Address>("DevExpress_Persistent_BaseImpl_Address");
+                }
+                return this._DevExpress_Persistent_BaseImpl_Address;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Address> _DevExpress_Persistent_BaseImpl_Address;
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Country in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Country> DevExpress_Persistent_BaseImpl_Country
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_Country == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_Country = base.CreateQuery<DevExpress_Persistent_BaseImpl_Country>("DevExpress_Persistent_BaseImpl_Country");
+                }
+                return this._DevExpress_Persistent_BaseImpl_Country;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Country> _DevExpress_Persistent_BaseImpl_Country;
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_PhoneNumber> DevExpress_Persistent_BaseImpl_PhoneNumber
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_PhoneNumber == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_PhoneNumber = base.CreateQuery<DevExpress_Persistent_BaseImpl_PhoneNumber>("DevExpress_Persistent_BaseImpl_PhoneNumber");
+                }
+                return this._DevExpress_Persistent_BaseImpl_PhoneNumber;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_PhoneNumber> _DevExpress_Persistent_BaseImpl_PhoneNumber;
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_FileData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_FileData> DevExpress_Persistent_BaseImpl_FileData
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_FileData == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_FileData = base.CreateQuery<DevExpress_Persistent_BaseImpl_FileData>("DevExpress_Persistent_BaseImpl_FileData");
+                }
+                return this._DevExpress_Persistent_BaseImpl_FileData;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_FileData> _DevExpress_Persistent_BaseImpl_FileData;
+        /// <summary>
         /// There are no comments for DevExpress_Persistent_BaseImpl_Party in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -630,38 +630,6 @@ namespace FormsAuthenticationConsoleClient.ODataDemoService
             base.AddObject("Module_BusinessObjects_Resume", module_BusinessObjects_Resume);
         }
         /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Address in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_Address(DevExpress_Persistent_BaseImpl_Address devExpress_Persistent_BaseImpl_Address)
-        {
-            base.AddObject("DevExpress_Persistent_BaseImpl_Address", devExpress_Persistent_BaseImpl_Address);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_PhoneNumber(DevExpress_Persistent_BaseImpl_PhoneNumber devExpress_Persistent_BaseImpl_PhoneNumber)
-        {
-            base.AddObject("DevExpress_Persistent_BaseImpl_PhoneNumber", devExpress_Persistent_BaseImpl_PhoneNumber);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Country in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_Country(DevExpress_Persistent_BaseImpl_Country devExpress_Persistent_BaseImpl_Country)
-        {
-            base.AddObject("DevExpress_Persistent_BaseImpl_Country", devExpress_Persistent_BaseImpl_Country);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_FileData in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_FileData(DevExpress_Persistent_BaseImpl_FileData devExpress_Persistent_BaseImpl_FileData)
-        {
-            base.AddObject("DevExpress_Persistent_BaseImpl_FileData", devExpress_Persistent_BaseImpl_FileData);
-        }
-        /// <summary>
         /// There are no comments for DevExpress_Xpo_XPWeakReference in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -732,6 +700,38 @@ namespace FormsAuthenticationConsoleClient.ODataDemoService
         public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemRole(DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole devExpress_ExpressApp_Security_Strategy_SecuritySystemRole)
         {
             base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole", devExpress_ExpressApp_Security_Strategy_SecuritySystemRole);
+        }
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Address in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToDevExpress_Persistent_BaseImpl_Address(DevExpress_Persistent_BaseImpl_Address devExpress_Persistent_BaseImpl_Address)
+        {
+            base.AddObject("DevExpress_Persistent_BaseImpl_Address", devExpress_Persistent_BaseImpl_Address);
+        }
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Country in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToDevExpress_Persistent_BaseImpl_Country(DevExpress_Persistent_BaseImpl_Country devExpress_Persistent_BaseImpl_Country)
+        {
+            base.AddObject("DevExpress_Persistent_BaseImpl_Country", devExpress_Persistent_BaseImpl_Country);
+        }
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToDevExpress_Persistent_BaseImpl_PhoneNumber(DevExpress_Persistent_BaseImpl_PhoneNumber devExpress_Persistent_BaseImpl_PhoneNumber)
+        {
+            base.AddObject("DevExpress_Persistent_BaseImpl_PhoneNumber", devExpress_Persistent_BaseImpl_PhoneNumber);
+        }
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_FileData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToDevExpress_Persistent_BaseImpl_FileData(DevExpress_Persistent_BaseImpl_FileData devExpress_Persistent_BaseImpl_FileData)
+        {
+            base.AddObject("DevExpress_Persistent_BaseImpl_FileData", devExpress_Persistent_BaseImpl_FileData);
         }
     }
     /// <summary>
@@ -2770,507 +2770,6 @@ namespace FormsAuthenticationConsoleClient.ODataDemoService
         }
     }
     /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Address in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("DevExpress_Persistent_BaseImpl_Address")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_Address : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_Address object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_Address CreateDevExpress_Persistent_BaseImpl_Address(global::System.Guid oid)
-        {
-            DevExpress_Persistent_BaseImpl_Address devExpress_Persistent_BaseImpl_Address = new DevExpress_Persistent_BaseImpl_Address();
-            devExpress_Persistent_BaseImpl_Address.oid = oid;
-            return devExpress_Persistent_BaseImpl_Address;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-                this.OnPropertyChanged("oid");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Street in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Street
-        {
-            get
-            {
-                return this._Street;
-            }
-            set
-            {
-                this.OnStreetChanging(value);
-                this._Street = value;
-                this.OnStreetChanged();
-                this.OnPropertyChanged("Street");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Street;
-        partial void OnStreetChanging(string value);
-        partial void OnStreetChanged();
-        /// <summary>
-        /// There are no comments for Property City in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string City
-        {
-            get
-            {
-                return this._City;
-            }
-            set
-            {
-                this.OnCityChanging(value);
-                this._City = value;
-                this.OnCityChanged();
-                this.OnPropertyChanged("City");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _City;
-        partial void OnCityChanging(string value);
-        partial void OnCityChanged();
-        /// <summary>
-        /// There are no comments for Property StateProvince in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string StateProvince
-        {
-            get
-            {
-                return this._StateProvince;
-            }
-            set
-            {
-                this.OnStateProvinceChanging(value);
-                this._StateProvince = value;
-                this.OnStateProvinceChanged();
-                this.OnPropertyChanged("StateProvince");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _StateProvince;
-        partial void OnStateProvinceChanging(string value);
-        partial void OnStateProvinceChanged();
-        /// <summary>
-        /// There are no comments for Property ZipPostal in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string ZipPostal
-        {
-            get
-            {
-                return this._ZipPostal;
-            }
-            set
-            {
-                this.OnZipPostalChanging(value);
-                this._ZipPostal = value;
-                this.OnZipPostalChanged();
-                this.OnPropertyChanged("ZipPostal");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _ZipPostal;
-        partial void OnZipPostalChanging(string value);
-        partial void OnZipPostalChanged();
-        /// <summary>
-        /// There are no comments for Country in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_Persistent_BaseImpl_Country Country
-        {
-            get
-            {
-                return this._Country;
-            }
-            set
-            {
-                this._Country = value;
-                this.OnPropertyChanged("Country");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_Persistent_BaseImpl_Country _Country;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("DevExpress_Persistent_BaseImpl_PhoneNumber")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_PhoneNumber : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_PhoneNumber object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_PhoneNumber CreateDevExpress_Persistent_BaseImpl_PhoneNumber(global::System.Guid oid)
-        {
-            DevExpress_Persistent_BaseImpl_PhoneNumber devExpress_Persistent_BaseImpl_PhoneNumber = new DevExpress_Persistent_BaseImpl_PhoneNumber();
-            devExpress_Persistent_BaseImpl_PhoneNumber.oid = oid;
-            return devExpress_Persistent_BaseImpl_PhoneNumber;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-                this.OnPropertyChanged("oid");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Number in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Number
-        {
-            get
-            {
-                return this._Number;
-            }
-            set
-            {
-                this.OnNumberChanging(value);
-                this._Number = value;
-                this.OnNumberChanged();
-                this.OnPropertyChanged("Number");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Number;
-        partial void OnNumberChanging(string value);
-        partial void OnNumberChanged();
-        /// <summary>
-        /// There are no comments for Property PhoneType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string PhoneType
-        {
-            get
-            {
-                return this._PhoneType;
-            }
-            set
-            {
-                this.OnPhoneTypeChanging(value);
-                this._PhoneType = value;
-                this.OnPhoneTypeChanged();
-                this.OnPropertyChanged("PhoneType");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _PhoneType;
-        partial void OnPhoneTypeChanging(string value);
-        partial void OnPhoneTypeChanged();
-        /// <summary>
-        /// There are no comments for Party in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_Persistent_BaseImpl_Party Party
-        {
-            get
-            {
-                return this._Party;
-            }
-            set
-            {
-                this._Party = value;
-                this.OnPropertyChanged("Party");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_Persistent_BaseImpl_Party _Party;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Country in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("DevExpress_Persistent_BaseImpl_Country")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_Country : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_Country object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_Country CreateDevExpress_Persistent_BaseImpl_Country(global::System.Guid oid)
-        {
-            DevExpress_Persistent_BaseImpl_Country devExpress_Persistent_BaseImpl_Country = new DevExpress_Persistent_BaseImpl_Country();
-            devExpress_Persistent_BaseImpl_Country.oid = oid;
-            return devExpress_Persistent_BaseImpl_Country;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-                this.OnPropertyChanged("oid");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Name in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Name
-        {
-            get
-            {
-                return this._Name;
-            }
-            set
-            {
-                this.OnNameChanging(value);
-                this._Name = value;
-                this.OnNameChanged();
-                this.OnPropertyChanged("Name");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Name;
-        partial void OnNameChanging(string value);
-        partial void OnNameChanged();
-        /// <summary>
-        /// There are no comments for Property PhoneCode in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string PhoneCode
-        {
-            get
-            {
-                return this._PhoneCode;
-            }
-            set
-            {
-                this.OnPhoneCodeChanging(value);
-                this._PhoneCode = value;
-                this.OnPhoneCodeChanged();
-                this.OnPropertyChanged("PhoneCode");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _PhoneCode;
-        partial void OnPhoneCodeChanging(string value);
-        partial void OnPhoneCodeChanged();
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_FileData in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.EntitySetAttribute("DevExpress_Persistent_BaseImpl_FileData")]
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_FileData : global::System.ComponentModel.INotifyPropertyChanged
-    {
-        /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_FileData object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_FileData CreateDevExpress_Persistent_BaseImpl_FileData(global::System.Guid oid)
-        {
-            DevExpress_Persistent_BaseImpl_FileData devExpress_Persistent_BaseImpl_FileData = new DevExpress_Persistent_BaseImpl_FileData();
-            devExpress_Persistent_BaseImpl_FileData.oid = oid;
-            return devExpress_Persistent_BaseImpl_FileData;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-                this.OnPropertyChanged("oid");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property size in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<int> size
-        {
-            get
-            {
-                return this._size;
-            }
-            set
-            {
-                this.OnsizeChanging(value);
-                this._size = value;
-                this.OnsizeChanged();
-                this.OnPropertyChanged("size");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<int> _size;
-        partial void OnsizeChanging(global::System.Nullable<int> value);
-        partial void OnsizeChanged();
-        /// <summary>
-        /// There are no comments for Property FileName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string FileName
-        {
-            get
-            {
-                return this._FileName;
-            }
-            set
-            {
-                this.OnFileNameChanging(value);
-                this._FileName = value;
-                this.OnFileNameChanged();
-                this.OnPropertyChanged("FileName");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _FileName;
-        partial void OnFileNameChanging(string value);
-        partial void OnFileNameChanged();
-        /// <summary>
-        /// There are no comments for Property Content in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public byte[] Content
-        {
-            get
-            {
-                if ((this._Content != null))
-                {
-                    return ((byte[])(this._Content.Clone()));
-                }
-                else
-                {
-                    return null;
-                }
-            }
-            set
-            {
-                this.OnContentChanging(value);
-                this._Content = value;
-                this.OnContentChanged();
-                this.OnPropertyChanged("Content");
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private byte[] _Content;
-        partial void OnContentChanging(byte[] value);
-        partial void OnContentChanged();
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        protected virtual void OnPropertyChanged(string property)
-        {
-            if ((this.PropertyChanged != null))
-            {
-                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
-            }
-        }
-    }
-    /// <summary>
     /// There are no comments for MainDemo.DevExpress_Xpo_XPWeakReference in the schema.
     /// </summary>
     /// <KeyProperties>
@@ -4277,6 +3776,507 @@ namespace FormsAuthenticationConsoleClient.ODataDemoService
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase _Owner;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Address in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("DevExpress_Persistent_BaseImpl_Address")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_Persistent_BaseImpl_Address : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new DevExpress_Persistent_BaseImpl_Address object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_Persistent_BaseImpl_Address CreateDevExpress_Persistent_BaseImpl_Address(global::System.Guid oid)
+        {
+            DevExpress_Persistent_BaseImpl_Address devExpress_Persistent_BaseImpl_Address = new DevExpress_Persistent_BaseImpl_Address();
+            devExpress_Persistent_BaseImpl_Address.oid = oid;
+            return devExpress_Persistent_BaseImpl_Address;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+                this.OnPropertyChanged("oid");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property Street in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Street
+        {
+            get
+            {
+                return this._Street;
+            }
+            set
+            {
+                this.OnStreetChanging(value);
+                this._Street = value;
+                this.OnStreetChanged();
+                this.OnPropertyChanged("Street");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Street;
+        partial void OnStreetChanging(string value);
+        partial void OnStreetChanged();
+        /// <summary>
+        /// There are no comments for Property City in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string City
+        {
+            get
+            {
+                return this._City;
+            }
+            set
+            {
+                this.OnCityChanging(value);
+                this._City = value;
+                this.OnCityChanged();
+                this.OnPropertyChanged("City");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _City;
+        partial void OnCityChanging(string value);
+        partial void OnCityChanged();
+        /// <summary>
+        /// There are no comments for Property StateProvince in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string StateProvince
+        {
+            get
+            {
+                return this._StateProvince;
+            }
+            set
+            {
+                this.OnStateProvinceChanging(value);
+                this._StateProvince = value;
+                this.OnStateProvinceChanged();
+                this.OnPropertyChanged("StateProvince");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _StateProvince;
+        partial void OnStateProvinceChanging(string value);
+        partial void OnStateProvinceChanged();
+        /// <summary>
+        /// There are no comments for Property ZipPostal in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string ZipPostal
+        {
+            get
+            {
+                return this._ZipPostal;
+            }
+            set
+            {
+                this.OnZipPostalChanging(value);
+                this._ZipPostal = value;
+                this.OnZipPostalChanged();
+                this.OnPropertyChanged("ZipPostal");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _ZipPostal;
+        partial void OnZipPostalChanging(string value);
+        partial void OnZipPostalChanged();
+        /// <summary>
+        /// There are no comments for Country in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_Persistent_BaseImpl_Country Country
+        {
+            get
+            {
+                return this._Country;
+            }
+            set
+            {
+                this._Country = value;
+                this.OnPropertyChanged("Country");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_Persistent_BaseImpl_Country _Country;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Country in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("DevExpress_Persistent_BaseImpl_Country")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_Persistent_BaseImpl_Country : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new DevExpress_Persistent_BaseImpl_Country object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_Persistent_BaseImpl_Country CreateDevExpress_Persistent_BaseImpl_Country(global::System.Guid oid)
+        {
+            DevExpress_Persistent_BaseImpl_Country devExpress_Persistent_BaseImpl_Country = new DevExpress_Persistent_BaseImpl_Country();
+            devExpress_Persistent_BaseImpl_Country.oid = oid;
+            return devExpress_Persistent_BaseImpl_Country;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+                this.OnPropertyChanged("oid");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+                this.OnPropertyChanged("Name");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property PhoneCode in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string PhoneCode
+        {
+            get
+            {
+                return this._PhoneCode;
+            }
+            set
+            {
+                this.OnPhoneCodeChanging(value);
+                this._PhoneCode = value;
+                this.OnPhoneCodeChanged();
+                this.OnPropertyChanged("PhoneCode");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _PhoneCode;
+        partial void OnPhoneCodeChanging(string value);
+        partial void OnPhoneCodeChanged();
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("DevExpress_Persistent_BaseImpl_PhoneNumber")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_Persistent_BaseImpl_PhoneNumber : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new DevExpress_Persistent_BaseImpl_PhoneNumber object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_Persistent_BaseImpl_PhoneNumber CreateDevExpress_Persistent_BaseImpl_PhoneNumber(global::System.Guid oid)
+        {
+            DevExpress_Persistent_BaseImpl_PhoneNumber devExpress_Persistent_BaseImpl_PhoneNumber = new DevExpress_Persistent_BaseImpl_PhoneNumber();
+            devExpress_Persistent_BaseImpl_PhoneNumber.oid = oid;
+            return devExpress_Persistent_BaseImpl_PhoneNumber;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+                this.OnPropertyChanged("oid");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property Number in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Number
+        {
+            get
+            {
+                return this._Number;
+            }
+            set
+            {
+                this.OnNumberChanging(value);
+                this._Number = value;
+                this.OnNumberChanged();
+                this.OnPropertyChanged("Number");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Number;
+        partial void OnNumberChanging(string value);
+        partial void OnNumberChanged();
+        /// <summary>
+        /// There are no comments for Property PhoneType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string PhoneType
+        {
+            get
+            {
+                return this._PhoneType;
+            }
+            set
+            {
+                this.OnPhoneTypeChanging(value);
+                this._PhoneType = value;
+                this.OnPhoneTypeChanged();
+                this.OnPropertyChanged("PhoneType");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _PhoneType;
+        partial void OnPhoneTypeChanging(string value);
+        partial void OnPhoneTypeChanged();
+        /// <summary>
+        /// There are no comments for Party in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_Persistent_BaseImpl_Party Party
+        {
+            get
+            {
+                return this._Party;
+            }
+            set
+            {
+                this._Party = value;
+                this.OnPropertyChanged("Party");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_Persistent_BaseImpl_Party _Party;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        protected virtual void OnPropertyChanged(string property)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new global::System.ComponentModel.PropertyChangedEventArgs(property));
+            }
+        }
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_FileData in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.EntitySetAttribute("DevExpress_Persistent_BaseImpl_FileData")]
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_Persistent_BaseImpl_FileData : global::System.ComponentModel.INotifyPropertyChanged
+    {
+        /// <summary>
+        /// Create a new DevExpress_Persistent_BaseImpl_FileData object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_Persistent_BaseImpl_FileData CreateDevExpress_Persistent_BaseImpl_FileData(global::System.Guid oid)
+        {
+            DevExpress_Persistent_BaseImpl_FileData devExpress_Persistent_BaseImpl_FileData = new DevExpress_Persistent_BaseImpl_FileData();
+            devExpress_Persistent_BaseImpl_FileData.oid = oid;
+            return devExpress_Persistent_BaseImpl_FileData;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+                this.OnPropertyChanged("oid");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property size in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<int> size
+        {
+            get
+            {
+                return this._size;
+            }
+            set
+            {
+                this.OnsizeChanging(value);
+                this._size = value;
+                this.OnsizeChanged();
+                this.OnPropertyChanged("size");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<int> _size;
+        partial void OnsizeChanging(global::System.Nullable<int> value);
+        partial void OnsizeChanged();
+        /// <summary>
+        /// There are no comments for Property FileName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string FileName
+        {
+            get
+            {
+                return this._FileName;
+            }
+            set
+            {
+                this.OnFileNameChanging(value);
+                this._FileName = value;
+                this.OnFileNameChanged();
+                this.OnPropertyChanged("FileName");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _FileName;
+        partial void OnFileNameChanging(string value);
+        partial void OnFileNameChanged();
+        /// <summary>
+        /// There are no comments for Property Content in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public byte[] Content
+        {
+            get
+            {
+                if ((this._Content != null))
+                {
+                    return ((byte[])(this._Content.Clone()));
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            set
+            {
+                this.OnContentChanging(value);
+                this._Content = value;
+                this.OnContentChanged();
+                this.OnPropertyChanged("Content");
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private byte[] _Content;
+        partial void OnContentChanging(byte[] value);
+        partial void OnContentChanged();
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public event global::System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]

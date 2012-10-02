@@ -12,7 +12,7 @@ using System.Web.Security;
         }
         private void context_AuthenticateRequest(object sender, EventArgs e) {
             HttpApplication app = (HttpApplication)sender;
-            if(app.Context.Request.CurrentExecutionFilePath == "/ODataDemoService/ODataDemoService.svc") {
+            if(app.Context.Request.CurrentExecutionFilePath == "/ODataDemoService/FormsAuthentication/ODataDemoService.svc") {
                 if(!CustomAuthenticationProvider.Authenticate(app.Context)) {
                     //    app.Context.Response.Status = "401 Unauthorized";
                     //    app.Context.Response.StatusCode = 401;

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace FormsAuthenticationConsoleClient {
     class Program {
-        public static string rootDataUrl = "https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc";
+        public static string rootDataUrl = "https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/ODataDemoService.svc";
         static void Main(string[] args) {
             Console.WriteLine("FormsAuthentication");
             Console.Write("UserName:");

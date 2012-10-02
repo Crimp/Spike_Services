@@ -52,7 +52,8 @@ public class ODataDemoServiceBase : XpoDataService, System.Data.Services.IReques
 
     private static ISelectDataSecurity CreateSelectDataSecurity() {
         UnitOfWork session = CreateSession();
-        IOperationPermissionProvider user = session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", HttpContext.Current.User.Identity.Name)) as IOperationPermissionProvider;
+        string userName = HttpContext.Current.User.Identity.Name;
+        IOperationPermissionProvider user = session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", userName)) as IOperationPermissionProvider;
         return new SelectDataSecurity(user);
     }
     public static void InitializeService(DataServiceConfiguration config) {

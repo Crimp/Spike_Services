@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3076f98f-31dc-454a-b2cc-6f117edff4f1" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6e1cc192-e719-4241-ada5-050763a41f67" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
   <MetadataSources>
-    <MetadataSource Address="https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://minakov-w8.corp.devexpress.com/ODataDemoService/WindowsAuthentication/ODataDemoService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="ae20509d-8a96-48eb-a6bd-d4786eff7f2a" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc" />
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="2831da90-fdf3-4f0e-b807-e69c979cb5fd" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/WindowsAuthentication/ODataDemoService.svc" />
   </Metadata>
   <Extensions />
   <Parameters>

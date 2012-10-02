@@ -144,17 +144,17 @@
     <Content Include="Scripts\modernizr-1.7.min.js" />
     <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
     <Content Include="Scripts\storage.permissions.js" />
-    <None Include="Service References\AuthenticationService\AuthenticationService.disco" />
-    <None Include="Service References\AuthenticationService\configuration91.svcinfo" />
-    <None Include="Service References\AuthenticationService\configuration.svcinfo" />
-    <None Include="Service References\AuthenticationService\Reference.svcmap">
+    <Content Include="Service References\AuthenticationService\AuthenticationService.disco" />
+    <Content Include="Service References\AuthenticationService\configuration91.svcinfo" />
+    <Content Include="Service References\AuthenticationService\configuration.svcinfo" />
+    <Content Include="Service References\AuthenticationService\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Service References\ODataDemoService\Reference.datasvcmap">
+    </Content>
+    <Content Include="Service References\ODataDemoService\Reference.datasvcmap">
       <Generator>DataServicesCoreClientGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
+    </Content>
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -185,13 +185,6 @@
     <Content Include="Views\Contacts\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
-    <None Include="Service References\AuthenticationService\AuthenticationService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\AuthenticationService\AuthenticationService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Service References\ODataDemoService\service.edmx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -203,7 +196,14 @@
     <WCFMetadataStorage Include="Service References\AuthenticationService\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Service References\AuthenticationService\AuthenticationService.wsdl" />
+    <Content Include="Service References\AuthenticationService\AuthenticationService.wsdl" />
+    <None Include="Service References\AuthenticationService\AuthenticationService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AuthenticationService\AuthenticationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Service References\ODataDemoService\service.edmx" />
   </ItemGroup>
   <ItemGroup>
     <ServiceReferenceMetadataStorage Include="Service References\ODataDemoService\">

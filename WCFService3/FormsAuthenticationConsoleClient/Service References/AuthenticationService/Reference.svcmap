@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7e82f7c0-edee-4b8e-8521-e210cee5eecf" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="47598d7e-6d08-40c0-a643-864e73cc375c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="https://minakov-w8.corp.devexpress.com/ODataDemoService/AuthenticationService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/AuthenticationService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="AuthenticationService.wsdl" MetadataType="Wsdl" ID="ef2a1c1b-13ef-4a9a-ba05-9fc7683126d9" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/AuthenticationService.svc?wsdl" />
-    <MetadataFile FileName="AuthenticationService.disco" MetadataType="Disco" ID="1dae312a-1426-4e57-af25-309b1de126b2" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/AuthenticationService.svc?disco" />
-    <MetadataFile FileName="AuthenticationService.xsd" MetadataType="Schema" ID="329ff25b-2556-494f-bdd5-47adaed144f3" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/AuthenticationService.svc?xsd=xsd0" />
-    <MetadataFile FileName="AuthenticationService1.xsd" MetadataType="Schema" ID="f66b4c68-b58b-4822-a9a9-9fd7e568b8c2" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/AuthenticationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuthenticationService.xsd" MetadataType="Schema" ID="1fcaea05-be54-4131-bbec-137dcff31042" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/AuthenticationService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AuthenticationService.wsdl" MetadataType="Wsdl" ID="2d1e550c-c2cc-4dfc-8590-8d6de5d557cc" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/AuthenticationService.svc?wsdl" />
+    <MetadataFile FileName="AuthenticationService1.xsd" MetadataType="Schema" ID="d090d6c6-33b7-4772-9146-f71381471bdc" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/AuthenticationService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuthenticationService.disco" MetadataType="Disco" ID="db9aa887-9381-4050-84ba-265049e793e9" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/AuthenticationService.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

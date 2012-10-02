@@ -140,6 +140,43 @@
         <NavigationProperty Name="Contact" Relationship="MainDemo.Module_BusinessObjects_Resume_Contact" FromRole="Module_BusinessObjects_Resume" ToRole="Contact" />
         <NavigationProperty Name="Portfolio" Relationship="MainDemo.Module_BusinessObjects_Resume_Portfolio" FromRole="Module_BusinessObjects_Resume" ToRole="Portfolio" />
       </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_Address">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Street" Type="Edm.String" Nullable="true" />
+        <Property Name="City" Type="Edm.String" Nullable="true" />
+        <Property Name="StateProvince" Type="Edm.String" Nullable="true" />
+        <Property Name="ZipPostal" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Country" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_Address_Country" FromRole="DevExpress_Persistent_BaseImpl_Address" ToRole="Country" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_PhoneNumber">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Number" Type="Edm.String" Nullable="true" />
+        <NavigationProperty Name="Party" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber_Party" FromRole="DevExpress_Persistent_BaseImpl_PhoneNumber" ToRole="Party" />
+        <Property Name="PhoneType" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_Country">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" />
+        <Property Name="PhoneCode" Type="Edm.String" Nullable="true" />
+      </EntityType>
+      <EntityType Name="DevExpress_Persistent_BaseImpl_FileData">
+        <Key>
+          <PropertyRef Name="oid" />
+        </Key>
+        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
+        <Property Name="size" Type="Edm.Int32" Nullable="true" />
+        <Property Name="FileName" Type="Edm.String" Nullable="true" />
+        <Property Name="Content" Type="Edm.Binary" Nullable="true" />
+      </EntityType>
       <EntityType Name="DevExpress_Xpo_XPWeakReference">
         <Key>
           <PropertyRef Name="Oid" />
@@ -207,43 +244,6 @@
         <Property Name="AllowDelete" Type="Edm.Boolean" Nullable="true" />
         <Property Name="AllowNavigate" Type="Edm.Boolean" Nullable="true" />
         <NavigationProperty Name="Owner" Relationship="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject_Owner" FromRole="DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject" ToRole="Owner" />
-      </EntityType>
-      <EntityType Name="DevExpress_Persistent_BaseImpl_Address">
-        <Key>
-          <PropertyRef Name="oid" />
-        </Key>
-        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
-        <Property Name="Street" Type="Edm.String" Nullable="true" />
-        <Property Name="City" Type="Edm.String" Nullable="true" />
-        <Property Name="StateProvince" Type="Edm.String" Nullable="true" />
-        <Property Name="ZipPostal" Type="Edm.String" Nullable="true" />
-        <NavigationProperty Name="Country" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_Address_Country" FromRole="DevExpress_Persistent_BaseImpl_Address" ToRole="Country" />
-      </EntityType>
-      <EntityType Name="DevExpress_Persistent_BaseImpl_Country">
-        <Key>
-          <PropertyRef Name="oid" />
-        </Key>
-        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
-        <Property Name="Name" Type="Edm.String" Nullable="true" />
-        <Property Name="PhoneCode" Type="Edm.String" Nullable="true" />
-      </EntityType>
-      <EntityType Name="DevExpress_Persistent_BaseImpl_PhoneNumber">
-        <Key>
-          <PropertyRef Name="oid" />
-        </Key>
-        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
-        <Property Name="Number" Type="Edm.String" Nullable="true" />
-        <NavigationProperty Name="Party" Relationship="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber_Party" FromRole="DevExpress_Persistent_BaseImpl_PhoneNumber" ToRole="Party" />
-        <Property Name="PhoneType" Type="Edm.String" Nullable="true" />
-      </EntityType>
-      <EntityType Name="DevExpress_Persistent_BaseImpl_FileData">
-        <Key>
-          <PropertyRef Name="oid" />
-        </Key>
-        <Property Name="oid" Type="Edm.Guid" Nullable="false" />
-        <Property Name="size" Type="Edm.Int32" Nullable="true" />
-        <Property Name="FileName" Type="Edm.String" Nullable="true" />
-        <Property Name="Content" Type="Edm.Binary" Nullable="true" />
       </EntityType>
       <Association Name="DevExpress_Persistent_BaseImpl_Party_Address1">
         <End Role="DevExpress_Persistent_BaseImpl_Party" Type="MainDemo.DevExpress_Persistent_BaseImpl_Party" Multiplicity="*" />
@@ -321,6 +321,14 @@
         <End Role="Module_BusinessObjects_Resume" Type="MainDemo.Module_BusinessObjects_Resume" Multiplicity="*" />
         <End Role="Portfolio" Type="MainDemo.Module_BusinessObjects_PortfolioFileData" Multiplicity="*" />
       </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_Address_Country">
+        <End Role="DevExpress_Persistent_BaseImpl_Address" Type="MainDemo.DevExpress_Persistent_BaseImpl_Address" Multiplicity="*" />
+        <End Role="Country" Type="MainDemo.DevExpress_Persistent_BaseImpl_Country" Multiplicity="0..1" />
+      </Association>
+      <Association Name="DevExpress_Persistent_BaseImpl_PhoneNumber_Party">
+        <End Role="DevExpress_Persistent_BaseImpl_PhoneNumber" Type="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber" Multiplicity="*" />
+        <End Role="Party" Type="MainDemo.DevExpress_Persistent_BaseImpl_Party" Multiplicity="0..1" />
+      </Association>
       <Association Name="DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference_AuditDataItems">
         <End Role="DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference" Type="MainDemo.DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference" Multiplicity="*" />
         <End Role="AuditDataItems" Type="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" Multiplicity="*" />
@@ -365,14 +373,6 @@
         <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Multiplicity="*" />
         <End Role="ParentRoles" Type="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Multiplicity="*" />
       </Association>
-      <Association Name="DevExpress_Persistent_BaseImpl_Address_Country">
-        <End Role="DevExpress_Persistent_BaseImpl_Address" Type="MainDemo.DevExpress_Persistent_BaseImpl_Address" Multiplicity="*" />
-        <End Role="Country" Type="MainDemo.DevExpress_Persistent_BaseImpl_Country" Multiplicity="0..1" />
-      </Association>
-      <Association Name="DevExpress_Persistent_BaseImpl_PhoneNumber_Party">
-        <End Role="DevExpress_Persistent_BaseImpl_PhoneNumber" Type="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber" Multiplicity="*" />
-        <End Role="Party" Type="MainDemo.DevExpress_Persistent_BaseImpl_Party" Multiplicity="0..1" />
-      </Association>
       <EntityContainer Name="XpoContext" m:IsDefaultEntityContainer="true">
         <EntitySet Name="DevExpress_Persistent_BaseImpl_Party" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Party" />
         <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner" />
@@ -388,6 +388,10 @@
         <EntitySet Name="Module_BusinessObjects_DemoTask" EntityType="MainDemo.Module_BusinessObjects_DemoTask" />
         <EntitySet Name="Module_BusinessObjects_Position" EntityType="MainDemo.Module_BusinessObjects_Position" />
         <EntitySet Name="Module_BusinessObjects_Resume" EntityType="MainDemo.Module_BusinessObjects_Resume" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_Address" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Address" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_PhoneNumber" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_Country" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Country" />
+        <EntitySet Name="DevExpress_Persistent_BaseImpl_FileData" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_FileData" />
         <EntitySet Name="DevExpress_Xpo_XPWeakReference" EntityType="MainDemo.DevExpress_Xpo_XPWeakReference" />
         <EntitySet Name="DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference" />
         <EntitySet Name="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" />
@@ -397,10 +401,6 @@
         <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject" />
         <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" />
         <EntitySet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" EntityType="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" />
-        <EntitySet Name="DevExpress_Persistent_BaseImpl_Address" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Address" />
-        <EntitySet Name="DevExpress_Persistent_BaseImpl_Country" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_Country" />
-        <EntitySet Name="DevExpress_Persistent_BaseImpl_PhoneNumber" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber" />
-        <EntitySet Name="DevExpress_Persistent_BaseImpl_FileData" EntityType="MainDemo.DevExpress_Persistent_BaseImpl_FileData" />
         <AssociationSet Name="DevExpress_Persistent_BaseImpl_Party_Address1_DevExpress_Persistent_BaseImpl_Address" Association="MainDemo.DevExpress_Persistent_BaseImpl_Party_Address1">
           <End Role="DevExpress_Persistent_BaseImpl_Party" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
           <End Role="Address1" EntitySet="DevExpress_Persistent_BaseImpl_Address" />
@@ -477,6 +477,14 @@
           <End Role="Module_BusinessObjects_Resume" EntitySet="Module_BusinessObjects_Resume" />
           <End Role="Portfolio" EntitySet="Module_BusinessObjects_PortfolioFileData" />
         </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_Address_Country_DevExpress_Persistent_BaseImpl_Country" Association="MainDemo.DevExpress_Persistent_BaseImpl_Address_Country">
+          <End Role="DevExpress_Persistent_BaseImpl_Address" EntitySet="DevExpress_Persistent_BaseImpl_Address" />
+          <End Role="Country" EntitySet="DevExpress_Persistent_BaseImpl_Country" />
+        </AssociationSet>
+        <AssociationSet Name="DevExpress_Persistent_BaseImpl_PhoneNumber_Party_DevExpress_Persistent_BaseImpl_Party" Association="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber_Party">
+          <End Role="DevExpress_Persistent_BaseImpl_PhoneNumber" EntitySet="DevExpress_Persistent_BaseImpl_PhoneNumber" />
+          <End Role="Party" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
+        </AssociationSet>
         <AssociationSet Name="DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference_AuditDataItems_DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" Association="MainDemo.DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference_AuditDataItems">
           <End Role="DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference" EntitySet="DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference" />
           <End Role="AuditDataItems" EntitySet="DevExpress_Persistent_BaseImpl_AuditDataItemPersistent" />
@@ -520,14 +528,6 @@
         <AssociationSet Name="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ParentRoles_DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Association="MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole_ParentRoles">
           <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" />
           <End Role="ParentRoles" EntitySet="DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" />
-        </AssociationSet>
-        <AssociationSet Name="DevExpress_Persistent_BaseImpl_Address_Country_DevExpress_Persistent_BaseImpl_Country" Association="MainDemo.DevExpress_Persistent_BaseImpl_Address_Country">
-          <End Role="DevExpress_Persistent_BaseImpl_Address" EntitySet="DevExpress_Persistent_BaseImpl_Address" />
-          <End Role="Country" EntitySet="DevExpress_Persistent_BaseImpl_Country" />
-        </AssociationSet>
-        <AssociationSet Name="DevExpress_Persistent_BaseImpl_PhoneNumber_Party_DevExpress_Persistent_BaseImpl_Party" Association="MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber_Party">
-          <End Role="DevExpress_Persistent_BaseImpl_PhoneNumber" EntitySet="DevExpress_Persistent_BaseImpl_PhoneNumber" />
-          <End Role="Party" EntitySet="DevExpress_Persistent_BaseImpl_Party" />
         </AssociationSet>
       </EntityContainer>
     </Schema>

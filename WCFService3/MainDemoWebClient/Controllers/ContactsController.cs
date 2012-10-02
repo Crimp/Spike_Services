@@ -22,7 +22,17 @@ namespace ODataDemoService {
     using System.ServiceModel;
 
     public class ContactsController : Controller {
-        public static string rootDataUrl = "https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc";
+        public static string RootDataUrl {
+            get {
+                if(Thread.CurrentPrincipal.Identity is FormsIdentity) {
+                    return "https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/ODataDemoService.svc";
+                }
+                if(Thread.CurrentPrincipal.Identity is WindowsIdentity) {
+                    return "https://minakov-w8.corp.devexpress.com/ODataDemoService/WindowsAuthentication/ODataDemoService.svc";
+                }
+                return null;
+            }
+        }
         public ContactsController() {
 
         }
@@ -38,12 +48,13 @@ namespace ODataDemoService {
             //host.AddServiceEndpoint(typeof(System.Data.Services.IRequestHandler), binding, String.Empty);
             //host.Open();
 
-            DataServiceContext context = new DataServiceContext(new Uri(rootDataUrl));
+            DataServiceContext context = new DataServiceContext(new Uri(RootDataUrl));
 
 
             context.SendingRequest += new EventHandler<SendingRequestEventArgs>(context_SendingRequest);
-            WindowsPrincipal winPrincipal = new WindowsPrincipal(((WindowsIdentity)Thread.CurrentPrincipal.Identity));
-            ((WindowsIdentity)Thread.CurrentPrincipal.Identity).Impersonate();
+            //WindowsPrincipal winPrincipal = new WindowsPrincipal(((WindowsIdentity)Thread.CurrentPrincipal.Identity));
+            //((WindowsIdentity)Thread.CurrentPrincipal.Identity).Impersonate();
+
             var contactQuery = (from p in context.CreateQuery<Module_BusinessObjects_Contact>("Module_BusinessObjects_Contact").Expand("Department").Expand("Position")
                                 select p);
             return this.View(contactQuery);
@@ -58,6 +69,7 @@ namespace ODataDemoService {
                     e.RequestHeaders.Add("Authorization", FormsAuthentication.Encrypt(ticket));
                 }
                 if(Thread.CurrentPrincipal.Identity is WindowsIdentity) {
+                    //WindowsImpersonationContext winIdentity = ((WindowsIdentity)Thread.CurrentPrincipal.Identity).Impersonate();
                     e.Request.Credentials = CredentialCache.DefaultCredentials;
                     //WindowsIdentity winId = WindowsIdentity.GetCurrent();
                     //WindowsPrincipal winPrincipal = new WindowsPrincipal(((WindowsIdentity)Thread.CurrentPrincipal.Identity));
@@ -75,7 +87,7 @@ namespace ODataDemoService {
         }
         public ActionResult Detail(Guid id) {
             //ServicePointManager.ServerCertificateValidationCallback = delegate(object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors) { return true; };
-            DataServiceContext context = new DataServiceContext(new Uri(rootDataUrl));
+            DataServiceContext context = new DataServiceContext(new Uri(RootDataUrl));
             context.SendingRequest += new EventHandler<SendingRequestEventArgs>(context_SendingRequest);
             DataServiceQuery<Module_BusinessObjects_Contact> personsQuery = context.CreateQuery<Module_BusinessObjects_Contact>("Module_BusinessObjects_Contact").Expand("Department").Expand("Position");
             var collection = personsQuery.Where<Module_BusinessObjects_Contact>(x => x.oid == id).ToList<Module_BusinessObjects_Contact>();
