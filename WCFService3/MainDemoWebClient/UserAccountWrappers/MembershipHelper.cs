@@ -1,44 +1,21 @@
-﻿namespace MainDemoWebClient.UserAccountWrappers {
-    using System.Web;
-    using System.Web.Security;
-    using DevExpress.Xpo;
-
+﻿using System.Web;
+using System.Web.Security;
+using System.Security.Principal;
+using System.Threading;
+namespace MainDemoWebClient.UserAccountWrappers {
     public static class MembershipHelper {
         public static string UserName {
             get {
-                string ticketValue = null;
-
-                var cookie = HttpContext.Current.Request.Cookies[FormsAuthentication.FormsCookieName];
-                if(cookie != null) {
-                    ticketValue = cookie.Value;
-                }
-
-                if(!string.IsNullOrEmpty(ticketValue)) {
-                    FormsAuthenticationTicket ticket;
-
-                    try {
-                        ticket = FormsAuthentication.Decrypt(ticketValue);
-                    }
-                    catch {
-                        return string.Empty;
-                    }
-
-                    if(ticket != null) {
-                        var identity = new FormsIdentity(ticket);
-
-                        return identity.Name;
-                    }
-                    else {
-                        return string.Empty;
-                    }
-                }
-                else {
-                    return string.Empty;
-                }
+                return System.Threading.Thread.CurrentPrincipal.Identity.Name;
             }
         }
         public static bool IsUserLoggedIn() {
-            return !string.IsNullOrWhiteSpace(UserName);
+            return System.Threading.Thread.CurrentPrincipal.Identity.IsAuthenticated;
+        }
+        public static bool IsWindowsAuthentication {
+            get {
+                return Thread.CurrentPrincipal.Identity is WindowsIdentity;
+            }
         }
     }
 }

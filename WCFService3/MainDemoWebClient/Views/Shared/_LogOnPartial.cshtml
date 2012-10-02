@@ -3,8 +3,11 @@
 @{ var userName = MembershipHelper.UserName; }
 @if (!string.IsNullOrEmpty(userName))
 {
-    <text>Welcome <span class="user-display">@userName</span>!
-/ @Html.ActionLink("Log Off", "LogOff", "Account") </text>
+    if(!MembershipHelper.IsWindowsAuthentication) {
+    <text>Welcome <span class="user-display">@userName</span>!/ @Html.ActionLink("Log Off", "LogOff", "Account") </text>
+    }else{
+        <text>Welcome <span class="user-display">@userName</span>!</text>
+    }
 }
 else
 {

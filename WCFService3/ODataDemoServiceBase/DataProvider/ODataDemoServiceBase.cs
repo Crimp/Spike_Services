@@ -15,7 +15,7 @@ using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.Security.Strategy;
 
 [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
-public class ODataDemoServiceBase : XpoDataService {
+public class ODataDemoServiceBase : XpoDataService, System.Data.Services.IRequestHandler {
     private static XPDictionary _xPDictionary = null;
 
     public ODataDemoServiceBase()

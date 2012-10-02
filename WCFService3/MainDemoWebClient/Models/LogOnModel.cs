@@ -25,7 +25,7 @@ namespace MainDemoWebClient.Models
         [DisplayName("User name")]
         public string UserName { get; set; }
 
-        [Required]
+        //[Required]
         [DataType(DataType.Password)]
         [DisplayName("Password")]
         public string Password { get; set; }

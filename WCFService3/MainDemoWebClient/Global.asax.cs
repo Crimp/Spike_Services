@@ -1,5 +1,7 @@
-﻿using System;
+﻿using ODataDemoService;
+using System;
 using System.Collections.Generic;
+using System.Data.Services.Client;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,6 +12,7 @@ namespace MainDemoWebClient {
     // visit http://go.microsoft.com/?LinkId=9394801
 
     public class MvcApplication : System.Web.HttpApplication {
+        //public static DataServiceContext context2 = new DataServiceContext(new Uri(ContactsController.rootDataUrl));
         public static void RegisterGlobalFilters(GlobalFilterCollection filters) {
             filters.Add(new HandleErrorAttribute());
         }

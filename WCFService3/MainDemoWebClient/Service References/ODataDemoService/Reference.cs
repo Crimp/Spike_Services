@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 9/25/2012 9:40:20 AM
+// Generation date: 10/2/2012 4:20:19 AM
 namespace MainDemoWebClient.ODataDemoService
 {
     
@@ -23,7 +23,7 @@ namespace MainDemoWebClient.ODataDemoService
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         public XpoContext(global::System.Uri serviceRoot) : 
-                base(serviceRoot, global::System.Data.Services.Common.DataServiceProtocolVersion.V3)
+                base(serviceRoot)
         {
             this.ResolveName = new global::System.Func<global::System.Type, string>(this.ResolveNameFromType);
             this.ResolveType = new global::System.Func<string, global::System.Type>(this.ResolveTypeFromName);
@@ -59,73 +59,22 @@ namespace MainDemoWebClient.ODataDemoService
             return clientType.FullName;
         }
         /// <summary>
-        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase in the schema.
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Party in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase> DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Party> DevExpress_Persistent_BaseImpl_Party
         {
             get
             {
-                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase == null))
+                if ((this._DevExpress_Persistent_BaseImpl_Party == null))
                 {
-                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase");
+                    this._DevExpress_Persistent_BaseImpl_Party = base.CreateQuery<DevExpress_Persistent_BaseImpl_Party>("DevExpress_Persistent_BaseImpl_Party");
                 }
-                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase;
+                return this._DevExpress_Persistent_BaseImpl_Party;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase;
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_FileData in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_FileData> DevExpress_Persistent_BaseImpl_FileData
-        {
-            get
-            {
-                if ((this._DevExpress_Persistent_BaseImpl_FileData == null))
-                {
-                    this._DevExpress_Persistent_BaseImpl_FileData = base.CreateQuery<DevExpress_Persistent_BaseImpl_FileData>("DevExpress_Persistent_BaseImpl_FileData");
-                }
-                return this._DevExpress_Persistent_BaseImpl_FileData;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_FileData> _DevExpress_Persistent_BaseImpl_FileData;
-        /// <summary>
-        /// There are no comments for Module_BusinessObjects_PortfolioFileData in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_PortfolioFileData> Module_BusinessObjects_PortfolioFileData
-        {
-            get
-            {
-                if ((this._Module_BusinessObjects_PortfolioFileData == null))
-                {
-                    this._Module_BusinessObjects_PortfolioFileData = base.CreateQuery<Module_BusinessObjects_PortfolioFileData>("Module_BusinessObjects_PortfolioFileData");
-                }
-                return this._Module_BusinessObjects_PortfolioFileData;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_PortfolioFileData> _Module_BusinessObjects_PortfolioFileData;
-        /// <summary>
-        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase> DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase
-        {
-            get
-            {
-                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase == null))
-                {
-                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase");
-                }
-                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase;
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Party> _DevExpress_Persistent_BaseImpl_Party;
         /// <summary>
         /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner in the schema.
         /// </summary>
@@ -144,158 +93,22 @@ namespace MainDemoWebClient.ODataDemoService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner;
         /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_AuditDataItemPersistent in the schema.
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Person in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent> DevExpress_Persistent_BaseImpl_AuditDataItemPersistent
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Person> DevExpress_Persistent_BaseImpl_Person
         {
             get
             {
-                if ((this._DevExpress_Persistent_BaseImpl_AuditDataItemPersistent == null))
+                if ((this._DevExpress_Persistent_BaseImpl_Person == null))
                 {
-                    this._DevExpress_Persistent_BaseImpl_AuditDataItemPersistent = base.CreateQuery<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent>("DevExpress_Persistent_BaseImpl_AuditDataItemPersistent");
+                    this._DevExpress_Persistent_BaseImpl_Person = base.CreateQuery<DevExpress_Persistent_BaseImpl_Person>("DevExpress_Persistent_BaseImpl_Person");
                 }
-                return this._DevExpress_Persistent_BaseImpl_AuditDataItemPersistent;
+                return this._DevExpress_Persistent_BaseImpl_Person;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent> _DevExpress_Persistent_BaseImpl_AuditDataItemPersistent;
-        /// <summary>
-        /// There are no comments for Module_BusinessObjects_Position in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Position> Module_BusinessObjects_Position
-        {
-            get
-            {
-                if ((this._Module_BusinessObjects_Position == null))
-                {
-                    this._Module_BusinessObjects_Position = base.CreateQuery<Module_BusinessObjects_Position>("Module_BusinessObjects_Position");
-                }
-                return this._Module_BusinessObjects_Position;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Position> _Module_BusinessObjects_Position;
-        /// <summary>
-        /// There are no comments for Module_BusinessObjects_Department in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Department> Module_BusinessObjects_Department
-        {
-            get
-            {
-                if ((this._Module_BusinessObjects_Department == null))
-                {
-                    this._Module_BusinessObjects_Department = base.CreateQuery<Module_BusinessObjects_Department>("Module_BusinessObjects_Department");
-                }
-                return this._Module_BusinessObjects_Department;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Department> _Module_BusinessObjects_Department;
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_ReportData in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_ReportData> DevExpress_Persistent_BaseImpl_ReportData
-        {
-            get
-            {
-                if ((this._DevExpress_Persistent_BaseImpl_ReportData == null))
-                {
-                    this._DevExpress_Persistent_BaseImpl_ReportData = base.CreateQuery<DevExpress_Persistent_BaseImpl_ReportData>("DevExpress_Persistent_BaseImpl_ReportData");
-                }
-                return this._DevExpress_Persistent_BaseImpl_ReportData;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_ReportData> _DevExpress_Persistent_BaseImpl_ReportData;
-        /// <summary>
-        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject> DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject
-        {
-            get
-            {
-                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject == null))
-                {
-                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject");
-                }
-                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject;
-        /// <summary>
-        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject> DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject
-        {
-            get
-            {
-                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject == null))
-                {
-                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject");
-                }
-                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject;
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Party in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Party> DevExpress_Persistent_BaseImpl_Party
-        {
-            get
-            {
-                if ((this._DevExpress_Persistent_BaseImpl_Party == null))
-                {
-                    this._DevExpress_Persistent_BaseImpl_Party = base.CreateQuery<DevExpress_Persistent_BaseImpl_Party>("DevExpress_Persistent_BaseImpl_Party");
-                }
-                return this._DevExpress_Persistent_BaseImpl_Party;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Party> _DevExpress_Persistent_BaseImpl_Party;
-        /// <summary>
-        /// There are no comments for Module_BusinessObjects_Resume in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Resume> Module_BusinessObjects_Resume
-        {
-            get
-            {
-                if ((this._Module_BusinessObjects_Resume == null))
-                {
-                    this._Module_BusinessObjects_Resume = base.CreateQuery<Module_BusinessObjects_Resume>("Module_BusinessObjects_Resume");
-                }
-                return this._Module_BusinessObjects_Resume;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Resume> _Module_BusinessObjects_Resume;
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_PhoneNumber> DevExpress_Persistent_BaseImpl_PhoneNumber
-        {
-            get
-            {
-                if ((this._DevExpress_Persistent_BaseImpl_PhoneNumber == null))
-                {
-                    this._DevExpress_Persistent_BaseImpl_PhoneNumber = base.CreateQuery<DevExpress_Persistent_BaseImpl_PhoneNumber>("DevExpress_Persistent_BaseImpl_PhoneNumber");
-                }
-                return this._DevExpress_Persistent_BaseImpl_PhoneNumber;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_PhoneNumber> _DevExpress_Persistent_BaseImpl_PhoneNumber;
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Person> _DevExpress_Persistent_BaseImpl_Person;
         /// <summary>
         /// There are no comments for DevExpress_Persistent_BaseImpl_Task in the schema.
         /// </summary>
@@ -314,39 +127,107 @@ namespace MainDemoWebClient.ODataDemoService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Task> _DevExpress_Persistent_BaseImpl_Task;
         /// <summary>
-        /// There are no comments for DevExpress_Xpo_XPWeakReference in the schema.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Xpo_XPWeakReference> DevExpress_Xpo_XPWeakReference
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase> DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase
         {
             get
             {
-                if ((this._DevExpress_Xpo_XPWeakReference == null))
+                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase == null))
                 {
-                    this._DevExpress_Xpo_XPWeakReference = base.CreateQuery<DevExpress_Xpo_XPWeakReference>("DevExpress_Xpo_XPWeakReference");
+                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase");
                 }
-                return this._DevExpress_Xpo_XPWeakReference;
+                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Xpo_XPWeakReference> _DevExpress_Xpo_XPWeakReference;
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase;
         /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Country in the schema.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Country> DevExpress_Persistent_BaseImpl_Country
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase> DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase
         {
             get
             {
-                if ((this._DevExpress_Persistent_BaseImpl_Country == null))
+                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase == null))
                 {
-                    this._DevExpress_Persistent_BaseImpl_Country = base.CreateQuery<DevExpress_Persistent_BaseImpl_Country>("DevExpress_Persistent_BaseImpl_Country");
+                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase");
                 }
-                return this._DevExpress_Persistent_BaseImpl_Country;
+                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Country> _DevExpress_Persistent_BaseImpl_Country;
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase;
+        /// <summary>
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase> DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase
+        {
+            get
+            {
+                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase == null))
+                {
+                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase");
+                }
+                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase;
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_Contact in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Contact> Module_BusinessObjects_Contact
+        {
+            get
+            {
+                if ((this._Module_BusinessObjects_Contact == null))
+                {
+                    this._Module_BusinessObjects_Contact = base.CreateQuery<Module_BusinessObjects_Contact>("Module_BusinessObjects_Contact");
+                }
+                return this._Module_BusinessObjects_Contact;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Contact> _Module_BusinessObjects_Contact;
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_PortfolioFileData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_PortfolioFileData> Module_BusinessObjects_PortfolioFileData
+        {
+            get
+            {
+                if ((this._Module_BusinessObjects_PortfolioFileData == null))
+                {
+                    this._Module_BusinessObjects_PortfolioFileData = base.CreateQuery<Module_BusinessObjects_PortfolioFileData>("Module_BusinessObjects_PortfolioFileData");
+                }
+                return this._Module_BusinessObjects_PortfolioFileData;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_PortfolioFileData> _Module_BusinessObjects_PortfolioFileData;
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_Department in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Department> Module_BusinessObjects_Department
+        {
+            get
+            {
+                if ((this._Module_BusinessObjects_Department == null))
+                {
+                    this._Module_BusinessObjects_Department = base.CreateQuery<Module_BusinessObjects_Department>("Module_BusinessObjects_Department");
+                }
+                return this._Module_BusinessObjects_Department;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Department> _Module_BusinessObjects_Department;
         /// <summary>
         /// There are no comments for Module_BusinessObjects_Payment in the schema.
         /// </summary>
@@ -365,22 +246,107 @@ namespace MainDemoWebClient.ODataDemoService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Payment> _Module_BusinessObjects_Payment;
         /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Address in the schema.
+        /// There are no comments for Module_BusinessObjects_DemoTask in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Address> DevExpress_Persistent_BaseImpl_Address
+        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_DemoTask> Module_BusinessObjects_DemoTask
         {
             get
             {
-                if ((this._DevExpress_Persistent_BaseImpl_Address == null))
+                if ((this._Module_BusinessObjects_DemoTask == null))
                 {
-                    this._DevExpress_Persistent_BaseImpl_Address = base.CreateQuery<DevExpress_Persistent_BaseImpl_Address>("DevExpress_Persistent_BaseImpl_Address");
+                    this._Module_BusinessObjects_DemoTask = base.CreateQuery<Module_BusinessObjects_DemoTask>("Module_BusinessObjects_DemoTask");
                 }
-                return this._DevExpress_Persistent_BaseImpl_Address;
+                return this._Module_BusinessObjects_DemoTask;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Address> _DevExpress_Persistent_BaseImpl_Address;
+        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_DemoTask> _Module_BusinessObjects_DemoTask;
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_Position in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Position> Module_BusinessObjects_Position
+        {
+            get
+            {
+                if ((this._Module_BusinessObjects_Position == null))
+                {
+                    this._Module_BusinessObjects_Position = base.CreateQuery<Module_BusinessObjects_Position>("Module_BusinessObjects_Position");
+                }
+                return this._Module_BusinessObjects_Position;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Position> _Module_BusinessObjects_Position;
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_Resume in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Resume> Module_BusinessObjects_Resume
+        {
+            get
+            {
+                if ((this._Module_BusinessObjects_Resume == null))
+                {
+                    this._Module_BusinessObjects_Resume = base.CreateQuery<Module_BusinessObjects_Resume>("Module_BusinessObjects_Resume");
+                }
+                return this._Module_BusinessObjects_Resume;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<Module_BusinessObjects_Resume> _Module_BusinessObjects_Resume;
+        /// <summary>
+        /// There are no comments for DevExpress_Xpo_XPWeakReference in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Xpo_XPWeakReference> DevExpress_Xpo_XPWeakReference
+        {
+            get
+            {
+                if ((this._DevExpress_Xpo_XPWeakReference == null))
+                {
+                    this._DevExpress_Xpo_XPWeakReference = base.CreateQuery<DevExpress_Xpo_XPWeakReference>("DevExpress_Xpo_XPWeakReference");
+                }
+                return this._DevExpress_Xpo_XPWeakReference;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Xpo_XPWeakReference> _DevExpress_Xpo_XPWeakReference;
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference> DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference = base.CreateQuery<DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference>("DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference");
+                }
+                return this._DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference> _DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference;
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_AuditDataItemPersistent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent> DevExpress_Persistent_BaseImpl_AuditDataItemPersistent
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_AuditDataItemPersistent == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_AuditDataItemPersistent = base.CreateQuery<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent>("DevExpress_Persistent_BaseImpl_AuditDataItemPersistent");
+                }
+                return this._DevExpress_Persistent_BaseImpl_AuditDataItemPersistent;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent> _DevExpress_Persistent_BaseImpl_AuditDataItemPersistent;
         /// <summary>
         /// There are no comments for DevExpress_Persistent_BaseImpl_Analysis in the schema.
         /// </summary>
@@ -399,36 +365,165 @@ namespace MainDemoWebClient.ODataDemoService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Analysis> _DevExpress_Persistent_BaseImpl_Analysis;
         /// <summary>
-        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase in the schema.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase(DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase)
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject> DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject
         {
-            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase", devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase);
+            get
+            {
+                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject == null))
+                {
+                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject");
+                }
+                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject;
+            }
         }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject;
+        /// <summary>
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject> DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject
+        {
+            get
+            {
+                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject == null))
+                {
+                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject");
+                }
+                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject;
+        /// <summary>
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject> DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject
+        {
+            get
+            {
+                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject == null))
+                {
+                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject");
+                }
+                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject;
+        /// <summary>
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser> DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser
+        {
+            get
+            {
+                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser == null))
+                {
+                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser");
+                }
+                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser;
+        /// <summary>
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole
+        {
+            get
+            {
+                if ((this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole == null))
+                {
+                    this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole = base.CreateQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole>("DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole");
+                }
+                return this._DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> _DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole;
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Address in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Address> DevExpress_Persistent_BaseImpl_Address
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_Address == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_Address = base.CreateQuery<DevExpress_Persistent_BaseImpl_Address>("DevExpress_Persistent_BaseImpl_Address");
+                }
+                return this._DevExpress_Persistent_BaseImpl_Address;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Address> _DevExpress_Persistent_BaseImpl_Address;
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Country in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Country> DevExpress_Persistent_BaseImpl_Country
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_Country == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_Country = base.CreateQuery<DevExpress_Persistent_BaseImpl_Country>("DevExpress_Persistent_BaseImpl_Country");
+                }
+                return this._DevExpress_Persistent_BaseImpl_Country;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_Country> _DevExpress_Persistent_BaseImpl_Country;
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_PhoneNumber> DevExpress_Persistent_BaseImpl_PhoneNumber
+        {
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_PhoneNumber == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_PhoneNumber = base.CreateQuery<DevExpress_Persistent_BaseImpl_PhoneNumber>("DevExpress_Persistent_BaseImpl_PhoneNumber");
+                }
+                return this._DevExpress_Persistent_BaseImpl_PhoneNumber;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_PhoneNumber> _DevExpress_Persistent_BaseImpl_PhoneNumber;
         /// <summary>
         /// There are no comments for DevExpress_Persistent_BaseImpl_FileData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_FileData(DevExpress_Persistent_BaseImpl_FileData devExpress_Persistent_BaseImpl_FileData)
+        public global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_FileData> DevExpress_Persistent_BaseImpl_FileData
         {
-            base.AddObject("DevExpress_Persistent_BaseImpl_FileData", devExpress_Persistent_BaseImpl_FileData);
+            get
+            {
+                if ((this._DevExpress_Persistent_BaseImpl_FileData == null))
+                {
+                    this._DevExpress_Persistent_BaseImpl_FileData = base.CreateQuery<DevExpress_Persistent_BaseImpl_FileData>("DevExpress_Persistent_BaseImpl_FileData");
+                }
+                return this._DevExpress_Persistent_BaseImpl_FileData;
+            }
         }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Data.Services.Client.DataServiceQuery<DevExpress_Persistent_BaseImpl_FileData> _DevExpress_Persistent_BaseImpl_FileData;
         /// <summary>
-        /// There are no comments for Module_BusinessObjects_PortfolioFileData in the schema.
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Party in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToModule_BusinessObjects_PortfolioFileData(Module_BusinessObjects_PortfolioFileData module_BusinessObjects_PortfolioFileData)
+        public void AddToDevExpress_Persistent_BaseImpl_Party(DevExpress_Persistent_BaseImpl_Party devExpress_Persistent_BaseImpl_Party)
         {
-            base.AddObject("Module_BusinessObjects_PortfolioFileData", module_BusinessObjects_PortfolioFileData);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase(DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase)
-        {
-            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase", devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase);
+            base.AddObject("DevExpress_Persistent_BaseImpl_Party", devExpress_Persistent_BaseImpl_Party);
         }
         /// <summary>
         /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner in the schema.
@@ -439,76 +534,12 @@ namespace MainDemoWebClient.ODataDemoService
             base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner", devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner);
         }
         /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_AuditDataItemPersistent in the schema.
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Person in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_AuditDataItemPersistent(DevExpress_Persistent_BaseImpl_AuditDataItemPersistent devExpress_Persistent_BaseImpl_AuditDataItemPersistent)
+        public void AddToDevExpress_Persistent_BaseImpl_Person(DevExpress_Persistent_BaseImpl_Person devExpress_Persistent_BaseImpl_Person)
         {
-            base.AddObject("DevExpress_Persistent_BaseImpl_AuditDataItemPersistent", devExpress_Persistent_BaseImpl_AuditDataItemPersistent);
-        }
-        /// <summary>
-        /// There are no comments for Module_BusinessObjects_Position in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToModule_BusinessObjects_Position(Module_BusinessObjects_Position module_BusinessObjects_Position)
-        {
-            base.AddObject("Module_BusinessObjects_Position", module_BusinessObjects_Position);
-        }
-        /// <summary>
-        /// There are no comments for Module_BusinessObjects_Department in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToModule_BusinessObjects_Department(Module_BusinessObjects_Department module_BusinessObjects_Department)
-        {
-            base.AddObject("Module_BusinessObjects_Department", module_BusinessObjects_Department);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_ReportData in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_ReportData(DevExpress_Persistent_BaseImpl_ReportData devExpress_Persistent_BaseImpl_ReportData)
-        {
-            base.AddObject("DevExpress_Persistent_BaseImpl_ReportData", devExpress_Persistent_BaseImpl_ReportData);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject(DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject)
-        {
-            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject", devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject(DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject)
-        {
-            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject", devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Party in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_Party(DevExpress_Persistent_BaseImpl_Party devExpress_Persistent_BaseImpl_Party)
-        {
-            base.AddObject("DevExpress_Persistent_BaseImpl_Party", devExpress_Persistent_BaseImpl_Party);
-        }
-        /// <summary>
-        /// There are no comments for Module_BusinessObjects_Resume in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToModule_BusinessObjects_Resume(Module_BusinessObjects_Resume module_BusinessObjects_Resume)
-        {
-            base.AddObject("Module_BusinessObjects_Resume", module_BusinessObjects_Resume);
-        }
-        /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_PhoneNumber(DevExpress_Persistent_BaseImpl_PhoneNumber devExpress_Persistent_BaseImpl_PhoneNumber)
-        {
-            base.AddObject("DevExpress_Persistent_BaseImpl_PhoneNumber", devExpress_Persistent_BaseImpl_PhoneNumber);
+            base.AddObject("DevExpress_Persistent_BaseImpl_Person", devExpress_Persistent_BaseImpl_Person);
         }
         /// <summary>
         /// There are no comments for DevExpress_Persistent_BaseImpl_Task in the schema.
@@ -519,20 +550,52 @@ namespace MainDemoWebClient.ODataDemoService
             base.AddObject("DevExpress_Persistent_BaseImpl_Task", devExpress_Persistent_BaseImpl_Task);
         }
         /// <summary>
-        /// There are no comments for DevExpress_Xpo_XPWeakReference in the schema.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Xpo_XPWeakReference(DevExpress_Xpo_XPWeakReference devExpress_Xpo_XPWeakReference)
+        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase(DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase)
         {
-            base.AddObject("DevExpress_Xpo_XPWeakReference", devExpress_Xpo_XPWeakReference);
+            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase", devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase);
         }
         /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Country in the schema.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_Country(DevExpress_Persistent_BaseImpl_Country devExpress_Persistent_BaseImpl_Country)
+        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase(DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase)
         {
-            base.AddObject("DevExpress_Persistent_BaseImpl_Country", devExpress_Persistent_BaseImpl_Country);
+            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase", devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase);
+        }
+        /// <summary>
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase(DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase devExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase)
+        {
+            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase", devExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase);
+        }
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_Contact in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToModule_BusinessObjects_Contact(Module_BusinessObjects_Contact module_BusinessObjects_Contact)
+        {
+            base.AddObject("Module_BusinessObjects_Contact", module_BusinessObjects_Contact);
+        }
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_PortfolioFileData in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToModule_BusinessObjects_PortfolioFileData(Module_BusinessObjects_PortfolioFileData module_BusinessObjects_PortfolioFileData)
+        {
+            base.AddObject("Module_BusinessObjects_PortfolioFileData", module_BusinessObjects_PortfolioFileData);
+        }
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_Department in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToModule_BusinessObjects_Department(Module_BusinessObjects_Department module_BusinessObjects_Department)
+        {
+            base.AddObject("Module_BusinessObjects_Department", module_BusinessObjects_Department);
         }
         /// <summary>
         /// There are no comments for Module_BusinessObjects_Payment in the schema.
@@ -543,12 +606,52 @@ namespace MainDemoWebClient.ODataDemoService
             base.AddObject("Module_BusinessObjects_Payment", module_BusinessObjects_Payment);
         }
         /// <summary>
-        /// There are no comments for DevExpress_Persistent_BaseImpl_Address in the schema.
+        /// There are no comments for Module_BusinessObjects_DemoTask in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public void AddToDevExpress_Persistent_BaseImpl_Address(DevExpress_Persistent_BaseImpl_Address devExpress_Persistent_BaseImpl_Address)
+        public void AddToModule_BusinessObjects_DemoTask(Module_BusinessObjects_DemoTask module_BusinessObjects_DemoTask)
         {
-            base.AddObject("DevExpress_Persistent_BaseImpl_Address", devExpress_Persistent_BaseImpl_Address);
+            base.AddObject("Module_BusinessObjects_DemoTask", module_BusinessObjects_DemoTask);
+        }
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_Position in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToModule_BusinessObjects_Position(Module_BusinessObjects_Position module_BusinessObjects_Position)
+        {
+            base.AddObject("Module_BusinessObjects_Position", module_BusinessObjects_Position);
+        }
+        /// <summary>
+        /// There are no comments for Module_BusinessObjects_Resume in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToModule_BusinessObjects_Resume(Module_BusinessObjects_Resume module_BusinessObjects_Resume)
+        {
+            base.AddObject("Module_BusinessObjects_Resume", module_BusinessObjects_Resume);
+        }
+        /// <summary>
+        /// There are no comments for DevExpress_Xpo_XPWeakReference in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToDevExpress_Xpo_XPWeakReference(DevExpress_Xpo_XPWeakReference devExpress_Xpo_XPWeakReference)
+        {
+            base.AddObject("DevExpress_Xpo_XPWeakReference", devExpress_Xpo_XPWeakReference);
+        }
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToDevExpress_Persistent_BaseImpl_AuditedObjectWeakReference(DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference devExpress_Persistent_BaseImpl_AuditedObjectWeakReference)
+        {
+            base.AddObject("DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference", devExpress_Persistent_BaseImpl_AuditedObjectWeakReference);
+        }
+        /// <summary>
+        /// There are no comments for DevExpress_Persistent_BaseImpl_AuditDataItemPersistent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public void AddToDevExpress_Persistent_BaseImpl_AuditDataItemPersistent(DevExpress_Persistent_BaseImpl_AuditDataItemPersistent devExpress_Persistent_BaseImpl_AuditDataItemPersistent)
+        {
+            base.AddObject("DevExpress_Persistent_BaseImpl_AuditDataItemPersistent", devExpress_Persistent_BaseImpl_AuditDataItemPersistent);
         }
         /// <summary>
         /// There are no comments for DevExpress_Persistent_BaseImpl_Analysis in the schema.
@@ -558,1908 +661,78 @@ namespace MainDemoWebClient.ODataDemoService
         {
             base.AddObject("DevExpress_Persistent_BaseImpl_Analysis", devExpress_Persistent_BaseImpl_Analysis);
         }
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase
-    {
         /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase object.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject in the schema.
         /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase(global::System.Guid oid)
+        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject(DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject)
         {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase;
+            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject", devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject);
         }
         /// <summary>
-        /// There are no comments for Property oid in the schema.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
+        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject(DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject)
         {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
+            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject", devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property TargetType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string TargetType
-        {
-            get
-            {
-                return this._TargetType;
-            }
-            set
-            {
-                this.OnTargetTypeChanging(value);
-                this._TargetType = value;
-                this.OnTargetTypeChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _TargetType;
-        partial void OnTargetTypeChanging(string value);
-        partial void OnTargetTypeChanged();
-        /// <summary>
-        /// There are no comments for Property AllowRead in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowRead
-        {
-            get
-            {
-                return this._AllowRead;
-            }
-            set
-            {
-                this.OnAllowReadChanging(value);
-                this._AllowRead = value;
-                this.OnAllowReadChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowRead;
-        partial void OnAllowReadChanging(global::System.Nullable<bool> value);
-        partial void OnAllowReadChanged();
-        /// <summary>
-        /// There are no comments for Property AllowWrite in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowWrite
-        {
-            get
-            {
-                return this._AllowWrite;
-            }
-            set
-            {
-                this.OnAllowWriteChanging(value);
-                this._AllowWrite = value;
-                this.OnAllowWriteChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowWrite;
-        partial void OnAllowWriteChanging(global::System.Nullable<bool> value);
-        partial void OnAllowWriteChanged();
-        /// <summary>
-        /// There are no comments for Property AllowCreate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowCreate
-        {
-            get
-            {
-                return this._AllowCreate;
-            }
-            set
-            {
-                this.OnAllowCreateChanging(value);
-                this._AllowCreate = value;
-                this.OnAllowCreateChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowCreate;
-        partial void OnAllowCreateChanging(global::System.Nullable<bool> value);
-        partial void OnAllowCreateChanged();
-        /// <summary>
-        /// There are no comments for Property AllowDelete in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowDelete
-        {
-            get
-            {
-                return this._AllowDelete;
-            }
-            set
-            {
-                this.OnAllowDeleteChanging(value);
-                this._AllowDelete = value;
-                this.OnAllowDeleteChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowDelete;
-        partial void OnAllowDeleteChanging(global::System.Nullable<bool> value);
-        partial void OnAllowDeleteChanged();
-        /// <summary>
-        /// There are no comments for Property AllowNavigate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowNavigate
-        {
-            get
-            {
-                return this._AllowNavigate;
-            }
-            set
-            {
-                this.OnAllowNavigateChanging(value);
-                this._AllowNavigate = value;
-                this.OnAllowNavigateChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowNavigate;
-        partial void OnAllowNavigateChanging(global::System.Nullable<bool> value);
-        partial void OnAllowNavigateChanged();
-        /// <summary>
-        /// There are no comments for MemberPermissions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject> MemberPermissions
-        {
-            get
-            {
-                return this._MemberPermissions;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._MemberPermissions = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject> _MemberPermissions = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject>();
-        /// <summary>
-        /// There are no comments for ObjectPermissions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject> ObjectPermissions
-        {
-            get
-            {
-                return this._ObjectPermissions;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._ObjectPermissions = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject> _ObjectPermissions = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject>();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject : DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase
-    {
-        /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject(global::System.Guid oid)
-        {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject;
-        }
-        /// <summary>
-        /// There are no comments for Owner in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner Owner
-        {
-            get
-            {
-                return this._Owner;
-            }
-            set
-            {
-                this._Owner = value;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner _Owner;
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_FileData in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_FileData
-    {
-        /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_FileData object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        /// <param name="content">Initial value of Content.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_FileData CreateDevExpress_Persistent_BaseImpl_FileData(global::System.Guid oid, global::System.Data.Services.Client.DataServiceStreamLink content)
-        {
-            DevExpress_Persistent_BaseImpl_FileData devExpress_Persistent_BaseImpl_FileData = new DevExpress_Persistent_BaseImpl_FileData();
-            devExpress_Persistent_BaseImpl_FileData.oid = oid;
-            devExpress_Persistent_BaseImpl_FileData.Content = content;
-            return devExpress_Persistent_BaseImpl_FileData;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property size in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<int> size
-        {
-            get
-            {
-                return this._size;
-            }
-            set
-            {
-                this.OnsizeChanging(value);
-                this._size = value;
-                this.OnsizeChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<int> _size;
-        partial void OnsizeChanging(global::System.Nullable<int> value);
-        partial void OnsizeChanged();
-        /// <summary>
-        /// There are no comments for Property FileName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string FileName
-        {
-            get
-            {
-                return this._FileName;
-            }
-            set
-            {
-                this.OnFileNameChanging(value);
-                this._FileName = value;
-                this.OnFileNameChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _FileName;
-        partial void OnFileNameChanging(string value);
-        partial void OnFileNameChanged();
-        /// <summary>
-        /// There are no comments for Property Content in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceStreamLink Content
-        {
-            get
-            {
-                return this._Content;
-            }
-            set
-            {
-                this.OnContentChanging(value);
-                this._Content = value;
-                this.OnContentChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceStreamLink _Content;
-        partial void OnContentChanging(global::System.Data.Services.Client.DataServiceStreamLink value);
-        partial void OnContentChanged();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.Module_BusinessObjects_PortfolioFileData in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class Module_BusinessObjects_PortfolioFileData
-    {
-        /// <summary>
-        /// Create a new Module_BusinessObjects_PortfolioFileData object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Module_BusinessObjects_PortfolioFileData CreateModule_BusinessObjects_PortfolioFileData(global::System.Guid oid)
-        {
-            Module_BusinessObjects_PortfolioFileData module_BusinessObjects_PortfolioFileData = new Module_BusinessObjects_PortfolioFileData();
-            module_BusinessObjects_PortfolioFileData.oid = oid;
-            return module_BusinessObjects_PortfolioFileData;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property DocumentType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<int> DocumentType
-        {
-            get
-            {
-                return this._DocumentType;
-            }
-            set
-            {
-                this.OnDocumentTypeChanging(value);
-                this._DocumentType = value;
-                this.OnDocumentTypeChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<int> _DocumentType;
-        partial void OnDocumentTypeChanging(global::System.Nullable<int> value);
-        partial void OnDocumentTypeChanged();
-        /// <summary>
-        /// There are no comments for Resume in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public Module_BusinessObjects_Resume Resume
-        {
-            get
-            {
-                return this._Resume;
-            }
-            set
-            {
-                this._Resume = value;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private Module_BusinessObjects_Resume _Resume;
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase
-    {
-        /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase(global::System.Guid oid)
-        {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property StoredPassword in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string StoredPassword
-        {
-            get
-            {
-                return this._StoredPassword;
-            }
-            set
-            {
-                this.OnStoredPasswordChanging(value);
-                this._StoredPassword = value;
-                this.OnStoredPasswordChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _StoredPassword;
-        partial void OnStoredPasswordChanging(string value);
-        partial void OnStoredPasswordChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property ChangePasswordOnFirstLogon in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> ChangePasswordOnFirstLogon
-        {
-            get
-            {
-                return this._ChangePasswordOnFirstLogon;
-            }
-            set
-            {
-                this.OnChangePasswordOnFirstLogonChanging(value);
-                this._ChangePasswordOnFirstLogon = value;
-                this.OnChangePasswordOnFirstLogonChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _ChangePasswordOnFirstLogon;
-        partial void OnChangePasswordOnFirstLogonChanging(global::System.Nullable<bool> value);
-        partial void OnChangePasswordOnFirstLogonChanged();
-        /// <summary>
-        /// There are no comments for Property UserName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string UserName
-        {
-            get
-            {
-                return this._UserName;
-            }
-            set
-            {
-                this.OnUserNameChanging(value);
-                this._UserName = value;
-                this.OnUserNameChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _UserName;
-        partial void OnUserNameChanging(string value);
-        partial void OnUserNameChanged();
-        /// <summary>
-        /// There are no comments for Property IsActive in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> IsActive
-        {
-            get
-            {
-                return this._IsActive;
-            }
-            set
-            {
-                this.OnIsActiveChanging(value);
-                this._IsActive = value;
-                this.OnIsActiveChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _IsActive;
-        partial void OnIsActiveChanging(global::System.Nullable<bool> value);
-        partial void OnIsActiveChanged();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser : DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase
-    {
-        /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemUser(global::System.Guid oid)
-        {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser devExpress_ExpressApp_Security_Strategy_SecuritySystemUser = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemUser.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemUser;
-        }
-        /// <summary>
-        /// There are no comments for Roles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> Roles
-        {
-            get
-            {
-                return this._Roles;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._Roles = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> _Roles = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole>();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner
-    {
-        /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner(global::System.Guid oid)
-        {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for TypePermissions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject> TypePermissions
-        {
-            get
-            {
-                return this._TypePermissions;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._TypePermissions = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject> _TypePermissions = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject>();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase : DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner
-    {
-        /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase(global::System.Guid oid)
-        {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase devExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase;
-        }
-        /// <summary>
-        /// There are no comments for Property Name in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Name
-        {
-            get
-            {
-                return this._Name;
-            }
-            set
-            {
-                this.OnNameChanging(value);
-                this._Name = value;
-                this.OnNameChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Name;
-        partial void OnNameChanging(string value);
-        partial void OnNameChanged();
-        /// <summary>
-        /// There are no comments for Property IsAdministrative in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> IsAdministrative
-        {
-            get
-            {
-                return this._IsAdministrative;
-            }
-            set
-            {
-                this.OnIsAdministrativeChanging(value);
-                this._IsAdministrative = value;
-                this.OnIsAdministrativeChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _IsAdministrative;
-        partial void OnIsAdministrativeChanging(global::System.Nullable<bool> value);
-        partial void OnIsAdministrativeChanged();
-        /// <summary>
-        /// There are no comments for Property CanEditModel in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> CanEditModel
-        {
-            get
-            {
-                return this._CanEditModel;
-            }
-            set
-            {
-                this.OnCanEditModelChanging(value);
-                this._CanEditModel = value;
-                this.OnCanEditModelChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _CanEditModel;
-        partial void OnCanEditModelChanging(global::System.Nullable<bool> value);
-        partial void OnCanEditModelChanged();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole : DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase
-    {
-        /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemRole(global::System.Guid oid)
-        {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole devExpress_ExpressApp_Security_Strategy_SecuritySystemRole = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemRole.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemRole;
-        }
-        /// <summary>
-        /// There are no comments for Users in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser> Users
-        {
-            get
-            {
-                return this._Users;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._Users = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser> _Users = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser>();
-        /// <summary>
-        /// There are no comments for ChildRoles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> ChildRoles
-        {
-            get
-            {
-                return this._ChildRoles;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._ChildRoles = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> _ChildRoles = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole>();
-        /// <summary>
-        /// There are no comments for ParentRoles in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> ParentRoles
-        {
-            get
-            {
-                return this._ParentRoles;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._ParentRoles = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> _ParentRoles = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole>();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_AuditDataItemPersistent
-    {
-        /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_AuditDataItemPersistent object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_AuditDataItemPersistent CreateDevExpress_Persistent_BaseImpl_AuditDataItemPersistent(global::System.Guid oid)
-        {
-            DevExpress_Persistent_BaseImpl_AuditDataItemPersistent devExpress_Persistent_BaseImpl_AuditDataItemPersistent = new DevExpress_Persistent_BaseImpl_AuditDataItemPersistent();
-            devExpress_Persistent_BaseImpl_AuditDataItemPersistent.oid = oid;
-            return devExpress_Persistent_BaseImpl_AuditDataItemPersistent;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property UserName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string UserName
-        {
-            get
-            {
-                return this._UserName;
-            }
-            set
-            {
-                this.OnUserNameChanging(value);
-                this._UserName = value;
-                this.OnUserNameChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _UserName;
-        partial void OnUserNameChanging(string value);
-        partial void OnUserNameChanged();
-        /// <summary>
-        /// There are no comments for Property ModifiedOn in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.DateTime> ModifiedOn
-        {
-            get
-            {
-                return this._ModifiedOn;
-            }
-            set
-            {
-                this.OnModifiedOnChanging(value);
-                this._ModifiedOn = value;
-                this.OnModifiedOnChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.DateTime> _ModifiedOn;
-        partial void OnModifiedOnChanging(global::System.Nullable<global::System.DateTime> value);
-        partial void OnModifiedOnChanged();
-        /// <summary>
-        /// There are no comments for Property OperationType in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string OperationType
-        {
-            get
-            {
-                return this._OperationType;
-            }
-            set
-            {
-                this.OnOperationTypeChanging(value);
-                this._OperationType = value;
-                this.OnOperationTypeChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _OperationType;
-        partial void OnOperationTypeChanging(string value);
-        partial void OnOperationTypeChanged();
-        /// <summary>
-        /// There are no comments for Property Description in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Description
-        {
-            get
-            {
-                return this._Description;
-            }
-            set
-            {
-                this.OnDescriptionChanging(value);
-                this._Description = value;
-                this.OnDescriptionChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Description;
-        partial void OnDescriptionChanging(string value);
-        partial void OnDescriptionChanged();
-        /// <summary>
-        /// There are no comments for Property OldValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string OldValue
-        {
-            get
-            {
-                return this._OldValue;
-            }
-            set
-            {
-                this.OnOldValueChanging(value);
-                this._OldValue = value;
-                this.OnOldValueChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _OldValue;
-        partial void OnOldValueChanging(string value);
-        partial void OnOldValueChanged();
-        /// <summary>
-        /// There are no comments for Property NewValue in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string NewValue
-        {
-            get
-            {
-                return this._NewValue;
-            }
-            set
-            {
-                this.OnNewValueChanging(value);
-                this._NewValue = value;
-                this.OnNewValueChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _NewValue;
-        partial void OnNewValueChanging(string value);
-        partial void OnNewValueChanged();
-        /// <summary>
-        /// There are no comments for Property PropertyName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string PropertyName
-        {
-            get
-            {
-                return this._PropertyName;
-            }
-            set
-            {
-                this.OnPropertyNameChanging(value);
-                this._PropertyName = value;
-                this.OnPropertyNameChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _PropertyName;
-        partial void OnPropertyNameChanging(string value);
-        partial void OnPropertyNameChanged();
-        /// <summary>
-        /// There are no comments for OldObject in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_Xpo_XPWeakReference OldObject
-        {
-            get
-            {
-                return this._OldObject;
-            }
-            set
-            {
-                this._OldObject = value;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_Xpo_XPWeakReference _OldObject;
-        /// <summary>
-        /// There are no comments for NewObject in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_Xpo_XPWeakReference NewObject
-        {
-            get
-            {
-                return this._NewObject;
-            }
-            set
-            {
-                this._NewObject = value;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_Xpo_XPWeakReference _NewObject;
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.Module_BusinessObjects_Position in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class Module_BusinessObjects_Position
-    {
-        /// <summary>
-        /// Create a new Module_BusinessObjects_Position object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Module_BusinessObjects_Position CreateModule_BusinessObjects_Position(global::System.Guid oid)
-        {
-            Module_BusinessObjects_Position module_BusinessObjects_Position = new Module_BusinessObjects_Position();
-            module_BusinessObjects_Position.oid = oid;
-            return module_BusinessObjects_Position;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property Title in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Title
-        {
-            get
-            {
-                return this._Title;
-            }
-            set
-            {
-                this.OnTitleChanging(value);
-                this._Title = value;
-                this.OnTitleChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Title;
-        partial void OnTitleChanging(string value);
-        partial void OnTitleChanged();
-        /// <summary>
-        /// There are no comments for Departments in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Department> Departments
-        {
-            get
-            {
-                return this._Departments;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._Departments = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Department> _Departments = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Department>();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.Module_BusinessObjects_Department in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class Module_BusinessObjects_Department
-    {
-        /// <summary>
-        /// Create a new Module_BusinessObjects_Department object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Module_BusinessObjects_Department CreateModule_BusinessObjects_Department(global::System.Guid oid)
-        {
-            Module_BusinessObjects_Department module_BusinessObjects_Department = new Module_BusinessObjects_Department();
-            module_BusinessObjects_Department.oid = oid;
-            return module_BusinessObjects_Department;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property Title in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Title
-        {
-            get
-            {
-                return this._Title;
-            }
-            set
-            {
-                this.OnTitleChanging(value);
-                this._Title = value;
-                this.OnTitleChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Title;
-        partial void OnTitleChanging(string value);
-        partial void OnTitleChanged();
-        /// <summary>
-        /// There are no comments for Property Office in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Office
-        {
-            get
-            {
-                return this._Office;
-            }
-            set
-            {
-                this.OnOfficeChanging(value);
-                this._Office = value;
-                this.OnOfficeChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Office;
-        partial void OnOfficeChanging(string value);
-        partial void OnOfficeChanged();
-        /// <summary>
-        /// There are no comments for Contacts in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Contact> Contacts
-        {
-            get
-            {
-                return this._Contacts;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._Contacts = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Contact> _Contacts = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Contact>();
-        /// <summary>
-        /// There are no comments for Positions in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Position> Positions
-        {
-            get
-            {
-                return this._Positions;
-            }
-            set
-            {
-                if ((value != null))
-                {
-                    this._Positions = value;
-                }
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Position> _Positions = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Position>();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_ReportData in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// Oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("Oid")]
-    public partial class DevExpress_Persistent_BaseImpl_ReportData
-    {
-        /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_ReportData object.
-        /// </summary>
-        /// <param name="oid">Initial value of Oid.</param>
-        /// <param name="content">Initial value of Content.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_ReportData CreateDevExpress_Persistent_BaseImpl_ReportData(int oid, global::System.Data.Services.Client.DataServiceStreamLink content)
-        {
-            DevExpress_Persistent_BaseImpl_ReportData devExpress_Persistent_BaseImpl_ReportData = new DevExpress_Persistent_BaseImpl_ReportData();
-            devExpress_Persistent_BaseImpl_ReportData.Oid = oid;
-            devExpress_Persistent_BaseImpl_ReportData.Content = content;
-            return devExpress_Persistent_BaseImpl_ReportData;
-        }
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public int Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private int _Oid;
-        partial void OnOidChanging(int value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property dataTypeName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string dataTypeName
-        {
-            get
-            {
-                return this._dataTypeName;
-            }
-            set
-            {
-                this.OndataTypeNameChanging(value);
-                this._dataTypeName = value;
-                this.OndataTypeNameChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _dataTypeName;
-        partial void OndataTypeNameChanging(string value);
-        partial void OndataTypeNameChanged();
-        /// <summary>
-        /// There are no comments for Property Content in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceStreamLink Content
-        {
-            get
-            {
-                return this._Content;
-            }
-            set
-            {
-                this.OnContentChanging(value);
-                this._Content = value;
-                this.OnContentChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceStreamLink _Content;
-        partial void OnContentChanging(global::System.Data.Services.Client.DataServiceStreamLink value);
-        partial void OnContentChanged();
-        /// <summary>
-        /// There are no comments for Property ReportName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string ReportName
-        {
-            get
-            {
-                return this._ReportName;
-            }
-            set
-            {
-                this.OnReportNameChanging(value);
-                this._ReportName = value;
-                this.OnReportNameChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _ReportName;
-        partial void OnReportNameChanging(string value);
-        partial void OnReportNameChanged();
-        /// <summary>
-        /// There are no comments for Property DataTypeName in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string DataTypeName
-        {
-            get
-            {
-                return this._DataTypeName;
-            }
-            set
-            {
-                this.OnDataTypeNameChanging(value);
-                this._DataTypeName = value;
-                this.OnDataTypeNameChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _DataTypeName;
-        partial void OnDataTypeNameChanging(string value);
-        partial void OnDataTypeNameChanged();
-        /// <summary>
-        /// There are no comments for Property IsInplaceReport in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> IsInplaceReport
-        {
-            get
-            {
-                return this._IsInplaceReport;
-            }
-            set
-            {
-                this.OnIsInplaceReportChanging(value);
-                this._IsInplaceReport = value;
-                this.OnIsInplaceReportChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _IsInplaceReport;
-        partial void OnIsInplaceReportChanging(global::System.Nullable<bool> value);
-        partial void OnIsInplaceReportChanged();
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject
-    {
-        /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject object.
-        /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject(global::System.Guid oid)
-        {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject;
-        }
-        /// <summary>
-        /// There are no comments for Property oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
-        {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property Criteria in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Criteria
-        {
-            get
-            {
-                return this._Criteria;
-            }
-            set
-            {
-                this.OnCriteriaChanging(value);
-                this._Criteria = value;
-                this.OnCriteriaChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Criteria;
-        partial void OnCriteriaChanging(string value);
-        partial void OnCriteriaChanged();
-        /// <summary>
-        /// There are no comments for Property AllowRead in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowRead
-        {
-            get
-            {
-                return this._AllowRead;
-            }
-            set
-            {
-                this.OnAllowReadChanging(value);
-                this._AllowRead = value;
-                this.OnAllowReadChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowRead;
-        partial void OnAllowReadChanging(global::System.Nullable<bool> value);
-        partial void OnAllowReadChanged();
-        /// <summary>
-        /// There are no comments for Property AllowWrite in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowWrite
-        {
-            get
-            {
-                return this._AllowWrite;
-            }
-            set
-            {
-                this.OnAllowWriteChanging(value);
-                this._AllowWrite = value;
-                this.OnAllowWriteChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowWrite;
-        partial void OnAllowWriteChanging(global::System.Nullable<bool> value);
-        partial void OnAllowWriteChanged();
-        /// <summary>
-        /// There are no comments for Property AllowDelete in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowDelete
-        {
-            get
-            {
-                return this._AllowDelete;
-            }
-            set
-            {
-                this.OnAllowDeleteChanging(value);
-                this._AllowDelete = value;
-                this.OnAllowDeleteChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowDelete;
-        partial void OnAllowDeleteChanging(global::System.Nullable<bool> value);
-        partial void OnAllowDeleteChanged();
-        /// <summary>
-        /// There are no comments for Property AllowNavigate in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowNavigate
-        {
-            get
-            {
-                return this._AllowNavigate;
-            }
-            set
-            {
-                this.OnAllowNavigateChanging(value);
-                this._AllowNavigate = value;
-                this.OnAllowNavigateChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowNavigate;
-        partial void OnAllowNavigateChanging(global::System.Nullable<bool> value);
-        partial void OnAllowNavigateChanged();
-        /// <summary>
-        /// There are no comments for Owner in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase Owner
-        {
-            get
-            {
-                return this._Owner;
-            }
-            set
-            {
-                this._Owner = value;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase _Owner;
-    }
-    /// <summary>
-    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject in the schema.
-    /// </summary>
-    /// <KeyProperties>
-    /// oid
-    /// </KeyProperties>
-    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject
-    {
         /// <summary>
-        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject object.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject in the schema.
         /// </summary>
-        /// <param name="oid">Initial value of oid.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject(global::System.Guid oid)
+        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject(DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject)
         {
-            DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject();
-            devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject.oid = oid;
-            return devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject;
+            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject", devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject);
         }
         /// <summary>
-        /// There are no comments for Property oid in the schema.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
+        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemUser(DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser devExpress_ExpressApp_Security_Strategy_SecuritySystemUser)
         {
-            get
-            {
-                return this._oid;
-            }
-            set
-            {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
-            }
+            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser", devExpress_ExpressApp_Security_Strategy_SecuritySystemUser);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
         /// <summary>
-        /// There are no comments for Property Oid in the schema.
+        /// There are no comments for DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
+        public void AddToDevExpress_ExpressApp_Security_Strategy_SecuritySystemRole(DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole devExpress_ExpressApp_Security_Strategy_SecuritySystemRole)
         {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
+            base.AddObject("DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole", devExpress_ExpressApp_Security_Strategy_SecuritySystemRole);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
         /// <summary>
-        /// There are no comments for Property Members in the schema.
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Address in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Members
+        public void AddToDevExpress_Persistent_BaseImpl_Address(DevExpress_Persistent_BaseImpl_Address devExpress_Persistent_BaseImpl_Address)
         {
-            get
-            {
-                return this._Members;
-            }
-            set
-            {
-                this.OnMembersChanging(value);
-                this._Members = value;
-                this.OnMembersChanged();
-            }
+            base.AddObject("DevExpress_Persistent_BaseImpl_Address", devExpress_Persistent_BaseImpl_Address);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Members;
-        partial void OnMembersChanging(string value);
-        partial void OnMembersChanged();
         /// <summary>
-        /// There are no comments for Property AllowRead in the schema.
+        /// There are no comments for DevExpress_Persistent_BaseImpl_Country in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowRead
+        public void AddToDevExpress_Persistent_BaseImpl_Country(DevExpress_Persistent_BaseImpl_Country devExpress_Persistent_BaseImpl_Country)
         {
-            get
-            {
-                return this._AllowRead;
-            }
-            set
-            {
-                this.OnAllowReadChanging(value);
-                this._AllowRead = value;
-                this.OnAllowReadChanged();
-            }
+            base.AddObject("DevExpress_Persistent_BaseImpl_Country", devExpress_Persistent_BaseImpl_Country);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowRead;
-        partial void OnAllowReadChanging(global::System.Nullable<bool> value);
-        partial void OnAllowReadChanged();
         /// <summary>
-        /// There are no comments for Property AllowWrite in the schema.
+        /// There are no comments for DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<bool> AllowWrite
+        public void AddToDevExpress_Persistent_BaseImpl_PhoneNumber(DevExpress_Persistent_BaseImpl_PhoneNumber devExpress_Persistent_BaseImpl_PhoneNumber)
         {
-            get
-            {
-                return this._AllowWrite;
-            }
-            set
-            {
-                this.OnAllowWriteChanging(value);
-                this._AllowWrite = value;
-                this.OnAllowWriteChanged();
-            }
+            base.AddObject("DevExpress_Persistent_BaseImpl_PhoneNumber", devExpress_Persistent_BaseImpl_PhoneNumber);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<bool> _AllowWrite;
-        partial void OnAllowWriteChanging(global::System.Nullable<bool> value);
-        partial void OnAllowWriteChanged();
         /// <summary>
-        /// There are no comments for Owner in the schema.
+        /// There are no comments for DevExpress_Persistent_BaseImpl_FileData in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase Owner
+        public void AddToDevExpress_Persistent_BaseImpl_FileData(DevExpress_Persistent_BaseImpl_FileData devExpress_Persistent_BaseImpl_FileData)
         {
-            get
-            {
-                return this._Owner;
-            }
-            set
-            {
-                this._Owner = value;
-            }
+            base.AddObject("DevExpress_Persistent_BaseImpl_FileData", devExpress_Persistent_BaseImpl_FileData);
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase _Owner;
     }
     /// <summary>
     /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Party in the schema.
@@ -2474,13 +747,11 @@ namespace MainDemoWebClient.ODataDemoService
         /// Create a new DevExpress_Persistent_BaseImpl_Party object.
         /// </summary>
         /// <param name="oid">Initial value of oid.</param>
-        /// <param name="photo">Initial value of Photo.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_Party CreateDevExpress_Persistent_BaseImpl_Party(global::System.Guid oid, global::System.Data.Services.Client.DataServiceStreamLink photo)
+        public static DevExpress_Persistent_BaseImpl_Party CreateDevExpress_Persistent_BaseImpl_Party(global::System.Guid oid)
         {
             DevExpress_Persistent_BaseImpl_Party devExpress_Persistent_BaseImpl_Party = new DevExpress_Persistent_BaseImpl_Party();
             devExpress_Persistent_BaseImpl_Party.oid = oid;
-            devExpress_Persistent_BaseImpl_Party.Photo = photo;
             return devExpress_Persistent_BaseImpl_Party;
         }
         /// <summary>
@@ -2505,35 +776,21 @@ namespace MainDemoWebClient.ODataDemoService
         partial void OnoidChanging(global::System.Guid value);
         partial void OnoidChanged();
         /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
         /// There are no comments for Property Photo in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceStreamLink Photo
+        public byte[] Photo
         {
             get
             {
-                return this._Photo;
+                if ((this._Photo != null))
+                {
+                    return ((byte[])(this._Photo.Clone()));
+                }
+                else
+                {
+                    return null;
+                }
             }
             set
             {
@@ -2543,8 +800,8 @@ namespace MainDemoWebClient.ODataDemoService
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceStreamLink _Photo;
-        partial void OnPhotoChanging(global::System.Data.Services.Client.DataServiceStreamLink value);
+        private byte[] _Photo;
+        partial void OnPhotoChanging(byte[] value);
         partial void OnPhotoChanged();
         /// <summary>
         /// There are no comments for Address1 in the schema.
@@ -2614,13 +871,11 @@ namespace MainDemoWebClient.ODataDemoService
         /// Create a new DevExpress_Persistent_BaseImpl_Person object.
         /// </summary>
         /// <param name="oid">Initial value of oid.</param>
-        /// <param name="photo">Initial value of Photo.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_Person CreateDevExpress_Persistent_BaseImpl_Person(global::System.Guid oid, global::System.Data.Services.Client.DataServiceStreamLink photo)
+        public static DevExpress_Persistent_BaseImpl_Person CreateDevExpress_Persistent_BaseImpl_Person(global::System.Guid oid)
         {
             DevExpress_Persistent_BaseImpl_Person devExpress_Persistent_BaseImpl_Person = new DevExpress_Persistent_BaseImpl_Person();
             devExpress_Persistent_BaseImpl_Person.oid = oid;
-            devExpress_Persistent_BaseImpl_Person.Photo = photo;
             return devExpress_Persistent_BaseImpl_Person;
         }
         /// <summary>
@@ -2742,13 +997,11 @@ namespace MainDemoWebClient.ODataDemoService
         /// Create a new Module_BusinessObjects_Contact object.
         /// </summary>
         /// <param name="oid">Initial value of oid.</param>
-        /// <param name="photo">Initial value of Photo.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Module_BusinessObjects_Contact CreateModule_BusinessObjects_Contact(global::System.Guid oid, global::System.Data.Services.Client.DataServiceStreamLink photo)
+        public static Module_BusinessObjects_Contact CreateModule_BusinessObjects_Contact(global::System.Guid oid)
         {
             Module_BusinessObjects_Contact module_BusinessObjects_Contact = new Module_BusinessObjects_Contact();
             module_BusinessObjects_Contact.oid = oid;
-            module_BusinessObjects_Contact.Photo = photo;
             return module_BusinessObjects_Contact;
         }
         /// <summary>
@@ -2950,24 +1203,24 @@ namespace MainDemoWebClient.ODataDemoService
         private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_DemoTask> _Tasks = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_DemoTask>();
     }
     /// <summary>
-    /// There are no comments for MainDemo.Module_BusinessObjects_Resume in the schema.
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner in the schema.
     /// </summary>
     /// <KeyProperties>
     /// oid
     /// </KeyProperties>
     [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class Module_BusinessObjects_Resume
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner
     {
         /// <summary>
-        /// Create a new Module_BusinessObjects_Resume object.
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner object.
         /// </summary>
         /// <param name="oid">Initial value of oid.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Module_BusinessObjects_Resume CreateModule_BusinessObjects_Resume(global::System.Guid oid)
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner(global::System.Guid oid)
         {
-            Module_BusinessObjects_Resume module_BusinessObjects_Resume = new Module_BusinessObjects_Resume();
-            module_BusinessObjects_Resume.oid = oid;
-            return module_BusinessObjects_Resume;
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner;
         }
         /// <summary>
         /// There are no comments for Property oid in the schema.
@@ -2991,202 +1244,190 @@ namespace MainDemoWebClient.ODataDemoService
         partial void OnoidChanging(global::System.Guid value);
         partial void OnoidChanged();
         /// <summary>
-        /// There are no comments for Property Oid in the schema.
+        /// There are no comments for TypePermissions in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
+        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject> TypePermissions
         {
             get
             {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for File in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_Persistent_BaseImpl_FileData File
-        {
-            get
-            {
-                return this._File;
-            }
-            set
-            {
-                this._File = value;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_Persistent_BaseImpl_FileData _File;
-        /// <summary>
-        /// There are no comments for Contact in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public Module_BusinessObjects_Contact Contact
-        {
-            get
-            {
-                return this._Contact;
-            }
-            set
-            {
-                this._Contact = value;
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private Module_BusinessObjects_Contact _Contact;
-        /// <summary>
-        /// There are no comments for Portfolio in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_PortfolioFileData> Portfolio
-        {
-            get
-            {
-                return this._Portfolio;
+                return this._TypePermissions;
             }
             set
             {
                 if ((value != null))
                 {
-                    this._Portfolio = value;
+                    this._TypePermissions = value;
                 }
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_PortfolioFileData> _Portfolio = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_PortfolioFileData>();
+        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject> _TypePermissions = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject>();
     }
     /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase in the schema.
     /// </summary>
     /// <KeyProperties>
     /// oid
     /// </KeyProperties>
     [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_PhoneNumber
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase : DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner
     {
         /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_PhoneNumber object.
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase object.
         /// </summary>
         /// <param name="oid">Initial value of oid.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_PhoneNumber CreateDevExpress_Persistent_BaseImpl_PhoneNumber(global::System.Guid oid)
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase(global::System.Guid oid)
         {
-            DevExpress_Persistent_BaseImpl_PhoneNumber devExpress_Persistent_BaseImpl_PhoneNumber = new DevExpress_Persistent_BaseImpl_PhoneNumber();
-            devExpress_Persistent_BaseImpl_PhoneNumber.oid = oid;
-            return devExpress_Persistent_BaseImpl_PhoneNumber;
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase devExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase;
         }
         /// <summary>
-        /// There are no comments for Property oid in the schema.
+        /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Guid oid
+        public string Name
         {
             get
             {
-                return this._oid;
+                return this._Name;
             }
             set
             {
-                this.OnoidChanging(value);
-                this._oid = value;
-                this.OnoidChanged();
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Guid _oid;
-        partial void OnoidChanging(global::System.Guid value);
-        partial void OnoidChanged();
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
         /// <summary>
-        /// There are no comments for Property Oid in the schema.
+        /// There are no comments for Property IsAdministrative in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
+        public global::System.Nullable<bool> IsAdministrative
         {
             get
             {
-                return this._Oid;
+                return this._IsAdministrative;
             }
             set
             {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
+                this.OnIsAdministrativeChanging(value);
+                this._IsAdministrative = value;
+                this.OnIsAdministrativeChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
+        private global::System.Nullable<bool> _IsAdministrative;
+        partial void OnIsAdministrativeChanging(global::System.Nullable<bool> value);
+        partial void OnIsAdministrativeChanged();
         /// <summary>
-        /// There are no comments for Property Number in the schema.
+        /// There are no comments for Property CanEditModel in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Number
+        public global::System.Nullable<bool> CanEditModel
         {
             get
             {
-                return this._Number;
+                return this._CanEditModel;
             }
             set
             {
-                this.OnNumberChanging(value);
-                this._Number = value;
-                this.OnNumberChanged();
+                this.OnCanEditModelChanging(value);
+                this._CanEditModel = value;
+                this.OnCanEditModelChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Number;
-        partial void OnNumberChanging(string value);
-        partial void OnNumberChanged();
+        private global::System.Nullable<bool> _CanEditModel;
+        partial void OnCanEditModelChanging(global::System.Nullable<bool> value);
+        partial void OnCanEditModelChanged();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole : DevExpress_ExpressApp_Security_Strategy_SecuritySystemRoleBase
+    {
         /// <summary>
-        /// There are no comments for Property PhoneType in the schema.
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemRole(global::System.Guid oid)
+        {
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole devExpress_ExpressApp_Security_Strategy_SecuritySystemRole = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemRole.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemRole;
+        }
+        /// <summary>
+        /// There are no comments for Users in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string PhoneType
+        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser> Users
         {
             get
             {
-                return this._PhoneType;
+                return this._Users;
             }
             set
             {
-                this.OnPhoneTypeChanging(value);
-                this._PhoneType = value;
-                this.OnPhoneTypeChanged();
+                if ((value != null))
+                {
+                    this._Users = value;
+                }
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _PhoneType;
-        partial void OnPhoneTypeChanging(string value);
-        partial void OnPhoneTypeChanged();
+        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser> _Users = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser>();
         /// <summary>
-        /// There are no comments for Party in the schema.
+        /// There are no comments for ChildRoles in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public DevExpress_Persistent_BaseImpl_Party Party
+        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> ChildRoles
         {
             get
             {
-                return this._Party;
+                return this._ChildRoles;
             }
             set
             {
-                this._Party = value;
+                if ((value != null))
+                {
+                    this._ChildRoles = value;
+                }
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private DevExpress_Persistent_BaseImpl_Party _Party;
+        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> _ChildRoles = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole>();
+        /// <summary>
+        /// There are no comments for ParentRoles in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> ParentRoles
+        {
+            get
+            {
+                return this._ParentRoles;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._ParentRoles = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> _ParentRoles = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole>();
     }
     /// <summary>
     /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Task in the schema.
@@ -3229,27 +1470,6 @@ namespace MainDemoWebClient.ODataDemoService
         private global::System.Guid _oid;
         partial void OnoidChanging(global::System.Guid value);
         partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
         /// <summary>
         /// There are no comments for Property dateCompleted in the schema.
         /// </summary>
@@ -3520,6 +1740,886 @@ namespace MainDemoWebClient.ODataDemoService
         private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Contact> _Contacts = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Contact>();
     }
     /// <summary>
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase
+    {
+        /// <summary>
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase(global::System.Guid oid)
+        {
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property TargetType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string TargetType
+        {
+            get
+            {
+                return this._TargetType;
+            }
+            set
+            {
+                this.OnTargetTypeChanging(value);
+                this._TargetType = value;
+                this.OnTargetTypeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _TargetType;
+        partial void OnTargetTypeChanging(string value);
+        partial void OnTargetTypeChanged();
+        /// <summary>
+        /// There are no comments for Property AllowRead in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowRead
+        {
+            get
+            {
+                return this._AllowRead;
+            }
+            set
+            {
+                this.OnAllowReadChanging(value);
+                this._AllowRead = value;
+                this.OnAllowReadChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowRead;
+        partial void OnAllowReadChanging(global::System.Nullable<bool> value);
+        partial void OnAllowReadChanged();
+        /// <summary>
+        /// There are no comments for Property AllowWrite in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowWrite
+        {
+            get
+            {
+                return this._AllowWrite;
+            }
+            set
+            {
+                this.OnAllowWriteChanging(value);
+                this._AllowWrite = value;
+                this.OnAllowWriteChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowWrite;
+        partial void OnAllowWriteChanging(global::System.Nullable<bool> value);
+        partial void OnAllowWriteChanged();
+        /// <summary>
+        /// There are no comments for Property AllowCreate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowCreate
+        {
+            get
+            {
+                return this._AllowCreate;
+            }
+            set
+            {
+                this.OnAllowCreateChanging(value);
+                this._AllowCreate = value;
+                this.OnAllowCreateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowCreate;
+        partial void OnAllowCreateChanging(global::System.Nullable<bool> value);
+        partial void OnAllowCreateChanged();
+        /// <summary>
+        /// There are no comments for Property AllowDelete in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowDelete
+        {
+            get
+            {
+                return this._AllowDelete;
+            }
+            set
+            {
+                this.OnAllowDeleteChanging(value);
+                this._AllowDelete = value;
+                this.OnAllowDeleteChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowDelete;
+        partial void OnAllowDeleteChanging(global::System.Nullable<bool> value);
+        partial void OnAllowDeleteChanged();
+        /// <summary>
+        /// There are no comments for Property AllowNavigate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowNavigate
+        {
+            get
+            {
+                return this._AllowNavigate;
+            }
+            set
+            {
+                this.OnAllowNavigateChanging(value);
+                this._AllowNavigate = value;
+                this.OnAllowNavigateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowNavigate;
+        partial void OnAllowNavigateChanging(global::System.Nullable<bool> value);
+        partial void OnAllowNavigateChanged();
+        /// <summary>
+        /// There are no comments for MemberPermissions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject> MemberPermissions
+        {
+            get
+            {
+                return this._MemberPermissions;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._MemberPermissions = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject> _MemberPermissions = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject>();
+        /// <summary>
+        /// There are no comments for ObjectPermissions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject> ObjectPermissions
+        {
+            get
+            {
+                return this._ObjectPermissions;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._ObjectPermissions = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject> _ObjectPermissions = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject>();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject : DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase
+    {
+        /// <summary>
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject(global::System.Guid oid)
+        {
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionObject;
+        }
+        /// <summary>
+        /// There are no comments for Owner in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner Owner
+        {
+            get
+            {
+                return this._Owner;
+            }
+            set
+            {
+                this._Owner = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectOwner _Owner;
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase
+    {
+        /// <summary>
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase(global::System.Guid oid)
+        {
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property StoredPassword in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string StoredPassword
+        {
+            get
+            {
+                return this._StoredPassword;
+            }
+            set
+            {
+                this.OnStoredPasswordChanging(value);
+                this._StoredPassword = value;
+                this.OnStoredPasswordChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _StoredPassword;
+        partial void OnStoredPasswordChanging(string value);
+        partial void OnStoredPasswordChanged();
+        /// <summary>
+        /// There are no comments for Property ChangePasswordOnFirstLogon in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> ChangePasswordOnFirstLogon
+        {
+            get
+            {
+                return this._ChangePasswordOnFirstLogon;
+            }
+            set
+            {
+                this.OnChangePasswordOnFirstLogonChanging(value);
+                this._ChangePasswordOnFirstLogon = value;
+                this.OnChangePasswordOnFirstLogonChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _ChangePasswordOnFirstLogon;
+        partial void OnChangePasswordOnFirstLogonChanging(global::System.Nullable<bool> value);
+        partial void OnChangePasswordOnFirstLogonChanged();
+        /// <summary>
+        /// There are no comments for Property UserName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string UserName
+        {
+            get
+            {
+                return this._UserName;
+            }
+            set
+            {
+                this.OnUserNameChanging(value);
+                this._UserName = value;
+                this.OnUserNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _UserName;
+        partial void OnUserNameChanging(string value);
+        partial void OnUserNameChanged();
+        /// <summary>
+        /// There are no comments for Property IsActive in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> IsActive
+        {
+            get
+            {
+                return this._IsActive;
+            }
+            set
+            {
+                this.OnIsActiveChanging(value);
+                this._IsActive = value;
+                this.OnIsActiveChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _IsActive;
+        partial void OnIsActiveChanging(global::System.Nullable<bool> value);
+        partial void OnIsActiveChanged();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser : DevExpress_ExpressApp_Security_Strategy_SecuritySystemUserBase
+    {
+        /// <summary>
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemUser(global::System.Guid oid)
+        {
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser devExpress_ExpressApp_Security_Strategy_SecuritySystemUser = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemUser.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemUser;
+        }
+        /// <summary>
+        /// There are no comments for Roles in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> Roles
+        {
+            get
+            {
+                return this._Roles;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._Roles = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole> _Roles = new global::System.Collections.ObjectModel.Collection<DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole>();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.Module_BusinessObjects_PortfolioFileData in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class Module_BusinessObjects_PortfolioFileData
+    {
+        /// <summary>
+        /// Create a new Module_BusinessObjects_PortfolioFileData object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static Module_BusinessObjects_PortfolioFileData CreateModule_BusinessObjects_PortfolioFileData(global::System.Guid oid)
+        {
+            Module_BusinessObjects_PortfolioFileData module_BusinessObjects_PortfolioFileData = new Module_BusinessObjects_PortfolioFileData();
+            module_BusinessObjects_PortfolioFileData.oid = oid;
+            return module_BusinessObjects_PortfolioFileData;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property DocumentType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<int> DocumentType
+        {
+            get
+            {
+                return this._DocumentType;
+            }
+            set
+            {
+                this.OnDocumentTypeChanging(value);
+                this._DocumentType = value;
+                this.OnDocumentTypeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<int> _DocumentType;
+        partial void OnDocumentTypeChanging(global::System.Nullable<int> value);
+        partial void OnDocumentTypeChanged();
+        /// <summary>
+        /// There are no comments for Resume in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public Module_BusinessObjects_Resume Resume
+        {
+            get
+            {
+                return this._Resume;
+            }
+            set
+            {
+                this._Resume = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private Module_BusinessObjects_Resume _Resume;
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.Module_BusinessObjects_Department in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class Module_BusinessObjects_Department
+    {
+        /// <summary>
+        /// Create a new Module_BusinessObjects_Department object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static Module_BusinessObjects_Department CreateModule_BusinessObjects_Department(global::System.Guid oid)
+        {
+            Module_BusinessObjects_Department module_BusinessObjects_Department = new Module_BusinessObjects_Department();
+            module_BusinessObjects_Department.oid = oid;
+            return module_BusinessObjects_Department;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property Title in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Title
+        {
+            get
+            {
+                return this._Title;
+            }
+            set
+            {
+                this.OnTitleChanging(value);
+                this._Title = value;
+                this.OnTitleChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Title;
+        partial void OnTitleChanging(string value);
+        partial void OnTitleChanged();
+        /// <summary>
+        /// There are no comments for Property Office in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Office
+        {
+            get
+            {
+                return this._Office;
+            }
+            set
+            {
+                this.OnOfficeChanging(value);
+                this._Office = value;
+                this.OnOfficeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Office;
+        partial void OnOfficeChanging(string value);
+        partial void OnOfficeChanged();
+        /// <summary>
+        /// There are no comments for Contacts in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Contact> Contacts
+        {
+            get
+            {
+                return this._Contacts;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._Contacts = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Contact> _Contacts = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Contact>();
+        /// <summary>
+        /// There are no comments for Positions in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Position> Positions
+        {
+            get
+            {
+                return this._Positions;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._Positions = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Position> _Positions = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Position>();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.Module_BusinessObjects_Payment in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class Module_BusinessObjects_Payment
+    {
+        /// <summary>
+        /// Create a new Module_BusinessObjects_Payment object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static Module_BusinessObjects_Payment CreateModule_BusinessObjects_Payment(global::System.Guid oid)
+        {
+            Module_BusinessObjects_Payment module_BusinessObjects_Payment = new Module_BusinessObjects_Payment();
+            module_BusinessObjects_Payment.oid = oid;
+            return module_BusinessObjects_Payment;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property Rate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<double> Rate
+        {
+            get
+            {
+                return this._Rate;
+            }
+            set
+            {
+                this.OnRateChanging(value);
+                this._Rate = value;
+                this.OnRateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<double> _Rate;
+        partial void OnRateChanging(global::System.Nullable<double> value);
+        partial void OnRateChanged();
+        /// <summary>
+        /// There are no comments for Property Hours in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<double> Hours
+        {
+            get
+            {
+                return this._Hours;
+            }
+            set
+            {
+                this.OnHoursChanging(value);
+                this._Hours = value;
+                this.OnHoursChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<double> _Hours;
+        partial void OnHoursChanging(global::System.Nullable<double> value);
+        partial void OnHoursChanged();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.Module_BusinessObjects_Position in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class Module_BusinessObjects_Position
+    {
+        /// <summary>
+        /// Create a new Module_BusinessObjects_Position object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static Module_BusinessObjects_Position CreateModule_BusinessObjects_Position(global::System.Guid oid)
+        {
+            Module_BusinessObjects_Position module_BusinessObjects_Position = new Module_BusinessObjects_Position();
+            module_BusinessObjects_Position.oid = oid;
+            return module_BusinessObjects_Position;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property Title in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Title
+        {
+            get
+            {
+                return this._Title;
+            }
+            set
+            {
+                this.OnTitleChanging(value);
+                this._Title = value;
+                this.OnTitleChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Title;
+        partial void OnTitleChanging(string value);
+        partial void OnTitleChanged();
+        /// <summary>
+        /// There are no comments for Departments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Department> Departments
+        {
+            get
+            {
+                return this._Departments;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._Departments = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Department> _Departments = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_Department>();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.Module_BusinessObjects_Resume in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class Module_BusinessObjects_Resume
+    {
+        /// <summary>
+        /// Create a new Module_BusinessObjects_Resume object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static Module_BusinessObjects_Resume CreateModule_BusinessObjects_Resume(global::System.Guid oid)
+        {
+            Module_BusinessObjects_Resume module_BusinessObjects_Resume = new Module_BusinessObjects_Resume();
+            module_BusinessObjects_Resume.oid = oid;
+            return module_BusinessObjects_Resume;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for File in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_Persistent_BaseImpl_FileData File
+        {
+            get
+            {
+                return this._File;
+            }
+            set
+            {
+                this._File = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_Persistent_BaseImpl_FileData _File;
+        /// <summary>
+        /// There are no comments for Contact in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public Module_BusinessObjects_Contact Contact
+        {
+            get
+            {
+                return this._Contact;
+            }
+            set
+            {
+                this._Contact = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private Module_BusinessObjects_Contact _Contact;
+        /// <summary>
+        /// There are no comments for Portfolio in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_PortfolioFileData> Portfolio
+        {
+            get
+            {
+                return this._Portfolio;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._Portfolio = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_PortfolioFileData> _Portfolio = new global::System.Collections.ObjectModel.Collection<Module_BusinessObjects_PortfolioFileData>();
+    }
+    /// <summary>
     /// There are no comments for MainDemo.DevExpress_Xpo_XPWeakReference in the schema.
     /// </summary>
     /// <KeyProperties>
@@ -3581,47 +2681,172 @@ namespace MainDemoWebClient.ODataDemoService
         private string _TargetKey_;
         partial void OnTargetKey_Changing(string value);
         partial void OnTargetKey_Changed();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("Oid")]
+    public partial class DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference
+    {
         /// <summary>
-        /// There are no comments for Property TargetKey in the schema.
+        /// Create a new DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference object.
+        /// </summary>
+        /// <param name="oid">Initial value of Oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference CreateDevExpress_Persistent_BaseImpl_AuditedObjectWeakReference(global::System.Guid oid)
+        {
+            DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference devExpress_Persistent_BaseImpl_AuditedObjectWeakReference = new DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference();
+            devExpress_Persistent_BaseImpl_AuditedObjectWeakReference.Oid = oid;
+            return devExpress_Persistent_BaseImpl_AuditedObjectWeakReference;
+        }
+        /// <summary>
+        /// There are no comments for Property Oid in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string TargetKey
+        public global::System.Guid Oid
         {
             get
             {
-                return this._TargetKey;
+                return this._Oid;
             }
             set
             {
-                this.OnTargetKeyChanging(value);
-                this._TargetKey = value;
-                this.OnTargetKeyChanged();
+                this.OnOidChanging(value);
+                this._Oid = value;
+                this.OnOidChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _TargetKey;
-        partial void OnTargetKeyChanging(string value);
-        partial void OnTargetKeyChanged();
+        private global::System.Guid _Oid;
+        partial void OnOidChanging(global::System.Guid value);
+        partial void OnOidChanged();
+        /// <summary>
+        /// There are no comments for Property TargetKey_ in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string TargetKey_
+        {
+            get
+            {
+                return this._TargetKey_;
+            }
+            set
+            {
+                this.OnTargetKey_Changing(value);
+                this._TargetKey_ = value;
+                this.OnTargetKey_Changed();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _TargetKey_;
+        partial void OnTargetKey_Changing(string value);
+        partial void OnTargetKey_Changed();
+        /// <summary>
+        /// There are no comments for Property guidId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.Guid> guidId
+        {
+            get
+            {
+                return this._guidId;
+            }
+            set
+            {
+                this.OnguidIdChanging(value);
+                this._guidId = value;
+                this.OnguidIdChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.Guid> _guidId;
+        partial void OnguidIdChanging(global::System.Nullable<global::System.Guid> value);
+        partial void OnguidIdChanged();
+        /// <summary>
+        /// There are no comments for Property intId in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<int> intId
+        {
+            get
+            {
+                return this._intId;
+            }
+            set
+            {
+                this.OnintIdChanging(value);
+                this._intId = value;
+                this.OnintIdChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<int> _intId;
+        partial void OnintIdChanging(global::System.Nullable<int> value);
+        partial void OnintIdChanged();
+        /// <summary>
+        /// There are no comments for Property DisplayName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string DisplayName
+        {
+            get
+            {
+                return this._DisplayName;
+            }
+            set
+            {
+                this.OnDisplayNameChanging(value);
+                this._DisplayName = value;
+                this.OnDisplayNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _DisplayName;
+        partial void OnDisplayNameChanging(string value);
+        partial void OnDisplayNameChanged();
+        /// <summary>
+        /// There are no comments for AuditDataItems in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Collections.ObjectModel.Collection<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent> AuditDataItems
+        {
+            get
+            {
+                return this._AuditDataItems;
+            }
+            set
+            {
+                if ((value != null))
+                {
+                    this._AuditDataItems = value;
+                }
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Collections.ObjectModel.Collection<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent> _AuditDataItems = new global::System.Collections.ObjectModel.Collection<DevExpress_Persistent_BaseImpl_AuditDataItemPersistent>();
     }
     /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Country in the schema.
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_AuditDataItemPersistent in the schema.
     /// </summary>
     /// <KeyProperties>
     /// oid
     /// </KeyProperties>
     [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_Country
+    public partial class DevExpress_Persistent_BaseImpl_AuditDataItemPersistent
     {
         /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_Country object.
+        /// Create a new DevExpress_Persistent_BaseImpl_AuditDataItemPersistent object.
         /// </summary>
         /// <param name="oid">Initial value of oid.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_Country CreateDevExpress_Persistent_BaseImpl_Country(global::System.Guid oid)
+        public static DevExpress_Persistent_BaseImpl_AuditDataItemPersistent CreateDevExpress_Persistent_BaseImpl_AuditDataItemPersistent(global::System.Guid oid)
         {
-            DevExpress_Persistent_BaseImpl_Country devExpress_Persistent_BaseImpl_Country = new DevExpress_Persistent_BaseImpl_Country();
-            devExpress_Persistent_BaseImpl_Country.oid = oid;
-            return devExpress_Persistent_BaseImpl_Country;
+            DevExpress_Persistent_BaseImpl_AuditDataItemPersistent devExpress_Persistent_BaseImpl_AuditDataItemPersistent = new DevExpress_Persistent_BaseImpl_AuditDataItemPersistent();
+            devExpress_Persistent_BaseImpl_AuditDataItemPersistent.oid = oid;
+            return devExpress_Persistent_BaseImpl_AuditDataItemPersistent;
         }
         /// <summary>
         /// There are no comments for Property oid in the schema.
@@ -3645,26 +2870,266 @@ namespace MainDemoWebClient.ODataDemoService
         partial void OnoidChanging(global::System.Guid value);
         partial void OnoidChanged();
         /// <summary>
-        /// There are no comments for Property Oid in the schema.
+        /// There are no comments for Property UserName in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
+        public string UserName
         {
             get
             {
-                return this._Oid;
+                return this._UserName;
             }
             set
             {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
+                this.OnUserNameChanging(value);
+                this._UserName = value;
+                this.OnUserNameChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
+        private string _UserName;
+        partial void OnUserNameChanging(string value);
+        partial void OnUserNameChanged();
+        /// <summary>
+        /// There are no comments for Property ModifiedOn in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<global::System.DateTime> ModifiedOn
+        {
+            get
+            {
+                return this._ModifiedOn;
+            }
+            set
+            {
+                this.OnModifiedOnChanging(value);
+                this._ModifiedOn = value;
+                this.OnModifiedOnChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<global::System.DateTime> _ModifiedOn;
+        partial void OnModifiedOnChanging(global::System.Nullable<global::System.DateTime> value);
+        partial void OnModifiedOnChanged();
+        /// <summary>
+        /// There are no comments for Property OperationType in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string OperationType
+        {
+            get
+            {
+                return this._OperationType;
+            }
+            set
+            {
+                this.OnOperationTypeChanging(value);
+                this._OperationType = value;
+                this.OnOperationTypeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _OperationType;
+        partial void OnOperationTypeChanging(string value);
+        partial void OnOperationTypeChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this._Description = value;
+                this.OnDescriptionChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property OldValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string OldValue
+        {
+            get
+            {
+                return this._OldValue;
+            }
+            set
+            {
+                this.OnOldValueChanging(value);
+                this._OldValue = value;
+                this.OnOldValueChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _OldValue;
+        partial void OnOldValueChanging(string value);
+        partial void OnOldValueChanged();
+        /// <summary>
+        /// There are no comments for Property NewValue in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string NewValue
+        {
+            get
+            {
+                return this._NewValue;
+            }
+            set
+            {
+                this.OnNewValueChanging(value);
+                this._NewValue = value;
+                this.OnNewValueChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _NewValue;
+        partial void OnNewValueChanging(string value);
+        partial void OnNewValueChanged();
+        /// <summary>
+        /// There are no comments for Property PropertyName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string PropertyName
+        {
+            get
+            {
+                return this._PropertyName;
+            }
+            set
+            {
+                this.OnPropertyNameChanging(value);
+                this._PropertyName = value;
+                this.OnPropertyNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _PropertyName;
+        partial void OnPropertyNameChanging(string value);
+        partial void OnPropertyNameChanged();
+        /// <summary>
+        /// There are no comments for AuditedObject in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference AuditedObject
+        {
+            get
+            {
+                return this._AuditedObject;
+            }
+            set
+            {
+                this._AuditedObject = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_Persistent_BaseImpl_AuditedObjectWeakReference _AuditedObject;
+        /// <summary>
+        /// There are no comments for OldObject in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_Xpo_XPWeakReference OldObject
+        {
+            get
+            {
+                return this._OldObject;
+            }
+            set
+            {
+                this._OldObject = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_Xpo_XPWeakReference _OldObject;
+        /// <summary>
+        /// There are no comments for NewObject in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_Xpo_XPWeakReference NewObject
+        {
+            get
+            {
+                return this._NewObject;
+            }
+            set
+            {
+                this._NewObject = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_Xpo_XPWeakReference _NewObject;
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Analysis in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_Persistent_BaseImpl_Analysis
+    {
+        /// <summary>
+        /// Create a new DevExpress_Persistent_BaseImpl_Analysis object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_Persistent_BaseImpl_Analysis CreateDevExpress_Persistent_BaseImpl_Analysis(global::System.Guid oid)
+        {
+            DevExpress_Persistent_BaseImpl_Analysis devExpress_Persistent_BaseImpl_Analysis = new DevExpress_Persistent_BaseImpl_Analysis();
+            devExpress_Persistent_BaseImpl_Analysis.oid = oid;
+            return devExpress_Persistent_BaseImpl_Analysis;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property dimensionPropertiesString in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string dimensionPropertiesString
+        {
+            get
+            {
+                return this._dimensionPropertiesString;
+            }
+            set
+            {
+                this.OndimensionPropertiesStringChanging(value);
+                this._dimensionPropertiesString = value;
+                this.OndimensionPropertiesStringChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _dimensionPropertiesString;
+        partial void OndimensionPropertiesStringChanging(string value);
+        partial void OndimensionPropertiesStringChanged();
         /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
@@ -3687,46 +3152,123 @@ namespace MainDemoWebClient.ODataDemoService
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
-        /// There are no comments for Property PhoneCode in the schema.
+        /// There are no comments for Property Criteria in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string PhoneCode
+        public string Criteria
         {
             get
             {
-                return this._PhoneCode;
+                return this._Criteria;
             }
             set
             {
-                this.OnPhoneCodeChanging(value);
-                this._PhoneCode = value;
-                this.OnPhoneCodeChanged();
+                this.OnCriteriaChanging(value);
+                this._Criteria = value;
+                this.OnCriteriaChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _PhoneCode;
-        partial void OnPhoneCodeChanging(string value);
-        partial void OnPhoneCodeChanged();
+        private string _Criteria;
+        partial void OnCriteriaChanging(string value);
+        partial void OnCriteriaChanged();
+        /// <summary>
+        /// There are no comments for Property ObjectTypeName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string ObjectTypeName
+        {
+            get
+            {
+                return this._ObjectTypeName;
+            }
+            set
+            {
+                this.OnObjectTypeNameChanging(value);
+                this._ObjectTypeName = value;
+                this.OnObjectTypeNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _ObjectTypeName;
+        partial void OnObjectTypeNameChanging(string value);
+        partial void OnObjectTypeNameChanged();
+        /// <summary>
+        /// There are no comments for Property ChartSettingsContent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public byte[] ChartSettingsContent
+        {
+            get
+            {
+                if ((this._ChartSettingsContent != null))
+                {
+                    return ((byte[])(this._ChartSettingsContent.Clone()));
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            set
+            {
+                this.OnChartSettingsContentChanging(value);
+                this._ChartSettingsContent = value;
+                this.OnChartSettingsContentChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private byte[] _ChartSettingsContent;
+        partial void OnChartSettingsContentChanging(byte[] value);
+        partial void OnChartSettingsContentChanged();
+        /// <summary>
+        /// There are no comments for Property PivotGridSettingsContent in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public byte[] PivotGridSettingsContent
+        {
+            get
+            {
+                if ((this._PivotGridSettingsContent != null))
+                {
+                    return ((byte[])(this._PivotGridSettingsContent.Clone()));
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            set
+            {
+                this.OnPivotGridSettingsContentChanging(value);
+                this._PivotGridSettingsContent = value;
+                this.OnPivotGridSettingsContentChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private byte[] _PivotGridSettingsContent;
+        partial void OnPivotGridSettingsContentChanging(byte[] value);
+        partial void OnPivotGridSettingsContentChanged();
     }
     /// <summary>
-    /// There are no comments for MainDemo.Module_BusinessObjects_Payment in the schema.
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject in the schema.
     /// </summary>
     /// <KeyProperties>
     /// oid
     /// </KeyProperties>
     [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class Module_BusinessObjects_Payment
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject
     {
         /// <summary>
-        /// Create a new Module_BusinessObjects_Payment object.
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject object.
         /// </summary>
         /// <param name="oid">Initial value of oid.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static Module_BusinessObjects_Payment CreateModule_BusinessObjects_Payment(global::System.Guid oid)
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject(global::System.Guid oid)
         {
-            Module_BusinessObjects_Payment module_BusinessObjects_Payment = new Module_BusinessObjects_Payment();
-            module_BusinessObjects_Payment.oid = oid;
-            return module_BusinessObjects_Payment;
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemMemberPermissionsObject;
         }
         /// <summary>
         /// There are no comments for Property oid in the schema.
@@ -3750,89 +3292,249 @@ namespace MainDemoWebClient.ODataDemoService
         partial void OnoidChanging(global::System.Guid value);
         partial void OnoidChanged();
         /// <summary>
-        /// There are no comments for Property Oid in the schema.
+        /// There are no comments for Property Members in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
+        public string Members
         {
             get
             {
-                return this._Oid;
+                return this._Members;
             }
             set
             {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
+                this.OnMembersChanging(value);
+                this._Members = value;
+                this.OnMembersChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
+        private string _Members;
+        partial void OnMembersChanging(string value);
+        partial void OnMembersChanged();
         /// <summary>
-        /// There are no comments for Property Amount in the schema.
+        /// There are no comments for Property AllowRead in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<double> Amount
+        public global::System.Nullable<bool> AllowRead
         {
             get
             {
-                return this._Amount;
+                return this._AllowRead;
             }
             set
             {
-                this.OnAmountChanging(value);
-                this._Amount = value;
-                this.OnAmountChanged();
+                this.OnAllowReadChanging(value);
+                this._AllowRead = value;
+                this.OnAllowReadChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<double> _Amount;
-        partial void OnAmountChanging(global::System.Nullable<double> value);
-        partial void OnAmountChanged();
+        private global::System.Nullable<bool> _AllowRead;
+        partial void OnAllowReadChanging(global::System.Nullable<bool> value);
+        partial void OnAllowReadChanged();
         /// <summary>
-        /// There are no comments for Property Rate in the schema.
+        /// There are no comments for Property AllowWrite in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<double> Rate
+        public global::System.Nullable<bool> AllowWrite
         {
             get
             {
-                return this._Rate;
+                return this._AllowWrite;
             }
             set
             {
-                this.OnRateChanging(value);
-                this._Rate = value;
-                this.OnRateChanged();
+                this.OnAllowWriteChanging(value);
+                this._AllowWrite = value;
+                this.OnAllowWriteChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<double> _Rate;
-        partial void OnRateChanging(global::System.Nullable<double> value);
-        partial void OnRateChanged();
+        private global::System.Nullable<bool> _AllowWrite;
+        partial void OnAllowWriteChanging(global::System.Nullable<bool> value);
+        partial void OnAllowWriteChanged();
         /// <summary>
-        /// There are no comments for Property Hours in the schema.
+        /// There are no comments for Owner in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<double> Hours
+        public DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase Owner
         {
             get
             {
-                return this._Hours;
+                return this._Owner;
             }
             set
             {
-                this.OnHoursChanging(value);
-                this._Hours = value;
-                this.OnHoursChanged();
+                this._Owner = value;
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<double> _Hours;
-        partial void OnHoursChanging(global::System.Nullable<double> value);
-        partial void OnHoursChanged();
+        private DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase _Owner;
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject
+    {
+        /// <summary>
+        /// Create a new DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject CreateDevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject(global::System.Guid oid)
+        {
+            DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject = new DevExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject();
+            devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject.oid = oid;
+            return devExpress_ExpressApp_Security_Strategy_SecuritySystemObjectPermissionsObject;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property Criteria in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string Criteria
+        {
+            get
+            {
+                return this._Criteria;
+            }
+            set
+            {
+                this.OnCriteriaChanging(value);
+                this._Criteria = value;
+                this.OnCriteriaChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _Criteria;
+        partial void OnCriteriaChanging(string value);
+        partial void OnCriteriaChanged();
+        /// <summary>
+        /// There are no comments for Property AllowRead in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowRead
+        {
+            get
+            {
+                return this._AllowRead;
+            }
+            set
+            {
+                this.OnAllowReadChanging(value);
+                this._AllowRead = value;
+                this.OnAllowReadChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowRead;
+        partial void OnAllowReadChanging(global::System.Nullable<bool> value);
+        partial void OnAllowReadChanged();
+        /// <summary>
+        /// There are no comments for Property AllowWrite in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowWrite
+        {
+            get
+            {
+                return this._AllowWrite;
+            }
+            set
+            {
+                this.OnAllowWriteChanging(value);
+                this._AllowWrite = value;
+                this.OnAllowWriteChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowWrite;
+        partial void OnAllowWriteChanging(global::System.Nullable<bool> value);
+        partial void OnAllowWriteChanged();
+        /// <summary>
+        /// There are no comments for Property AllowDelete in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowDelete
+        {
+            get
+            {
+                return this._AllowDelete;
+            }
+            set
+            {
+                this.OnAllowDeleteChanging(value);
+                this._AllowDelete = value;
+                this.OnAllowDeleteChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowDelete;
+        partial void OnAllowDeleteChanging(global::System.Nullable<bool> value);
+        partial void OnAllowDeleteChanged();
+        /// <summary>
+        /// There are no comments for Property AllowNavigate in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<bool> AllowNavigate
+        {
+            get
+            {
+                return this._AllowNavigate;
+            }
+            set
+            {
+                this.OnAllowNavigateChanging(value);
+                this._AllowNavigate = value;
+                this.OnAllowNavigateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<bool> _AllowNavigate;
+        partial void OnAllowNavigateChanging(global::System.Nullable<bool> value);
+        partial void OnAllowNavigateChanged();
+        /// <summary>
+        /// There are no comments for Owner in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase Owner
+        {
+            get
+            {
+                return this._Owner;
+            }
+            set
+            {
+                this._Owner = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_ExpressApp_Security_Strategy_SecuritySystemTypePermissionsObjectBase _Owner;
     }
     /// <summary>
     /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Address in the schema.
@@ -3875,27 +3577,6 @@ namespace MainDemoWebClient.ODataDemoService
         private global::System.Guid _oid;
         partial void OnoidChanging(global::System.Guid value);
         partial void OnoidChanged();
-        /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
         /// <summary>
         /// There are no comments for Property Street in the schema.
         /// </summary>
@@ -3999,28 +3680,24 @@ namespace MainDemoWebClient.ODataDemoService
         private DevExpress_Persistent_BaseImpl_Country _Country;
     }
     /// <summary>
-    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Analysis in the schema.
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_Country in the schema.
     /// </summary>
     /// <KeyProperties>
     /// oid
     /// </KeyProperties>
     [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
-    public partial class DevExpress_Persistent_BaseImpl_Analysis
+    public partial class DevExpress_Persistent_BaseImpl_Country
     {
         /// <summary>
-        /// Create a new DevExpress_Persistent_BaseImpl_Analysis object.
+        /// Create a new DevExpress_Persistent_BaseImpl_Country object.
         /// </summary>
         /// <param name="oid">Initial value of oid.</param>
-        /// <param name="chartSettingsContent">Initial value of ChartSettingsContent.</param>
-        /// <param name="pivotGridSettingsContent">Initial value of PivotGridSettingsContent.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public static DevExpress_Persistent_BaseImpl_Analysis CreateDevExpress_Persistent_BaseImpl_Analysis(global::System.Guid oid, global::System.Data.Services.Client.DataServiceStreamLink chartSettingsContent, global::System.Data.Services.Client.DataServiceStreamLink pivotGridSettingsContent)
+        public static DevExpress_Persistent_BaseImpl_Country CreateDevExpress_Persistent_BaseImpl_Country(global::System.Guid oid)
         {
-            DevExpress_Persistent_BaseImpl_Analysis devExpress_Persistent_BaseImpl_Analysis = new DevExpress_Persistent_BaseImpl_Analysis();
-            devExpress_Persistent_BaseImpl_Analysis.oid = oid;
-            devExpress_Persistent_BaseImpl_Analysis.ChartSettingsContent = chartSettingsContent;
-            devExpress_Persistent_BaseImpl_Analysis.PivotGridSettingsContent = pivotGridSettingsContent;
-            return devExpress_Persistent_BaseImpl_Analysis;
+            DevExpress_Persistent_BaseImpl_Country devExpress_Persistent_BaseImpl_Country = new DevExpress_Persistent_BaseImpl_Country();
+            devExpress_Persistent_BaseImpl_Country.oid = oid;
+            return devExpress_Persistent_BaseImpl_Country;
         }
         /// <summary>
         /// There are no comments for Property oid in the schema.
@@ -4044,48 +3721,6 @@ namespace MainDemoWebClient.ODataDemoService
         partial void OnoidChanging(global::System.Guid value);
         partial void OnoidChanged();
         /// <summary>
-        /// There are no comments for Property Oid in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Nullable<global::System.Guid> Oid
-        {
-            get
-            {
-                return this._Oid;
-            }
-            set
-            {
-                this.OnOidChanging(value);
-                this._Oid = value;
-                this.OnOidChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Nullable<global::System.Guid> _Oid;
-        partial void OnOidChanging(global::System.Nullable<global::System.Guid> value);
-        partial void OnOidChanged();
-        /// <summary>
-        /// There are no comments for Property dimensionPropertiesString in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string dimensionPropertiesString
-        {
-            get
-            {
-                return this._dimensionPropertiesString;
-            }
-            set
-            {
-                this.OndimensionPropertiesStringChanging(value);
-                this._dimensionPropertiesString = value;
-                this.OndimensionPropertiesStringChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _dimensionPropertiesString;
-        partial void OndimensionPropertiesStringChanging(string value);
-        partial void OndimensionPropertiesStringChanged();
-        /// <summary>
         /// There are no comments for Property Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
@@ -4107,109 +3742,238 @@ namespace MainDemoWebClient.ODataDemoService
         partial void OnNameChanging(string value);
         partial void OnNameChanged();
         /// <summary>
-        /// There are no comments for Property Criteria in the schema.
+        /// There are no comments for Property PhoneCode in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string Criteria
+        public string PhoneCode
         {
             get
             {
-                return this._Criteria;
+                return this._PhoneCode;
             }
             set
             {
-                this.OnCriteriaChanging(value);
-                this._Criteria = value;
-                this.OnCriteriaChanged();
+                this.OnPhoneCodeChanging(value);
+                this._PhoneCode = value;
+                this.OnPhoneCodeChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _Criteria;
-        partial void OnCriteriaChanging(string value);
-        partial void OnCriteriaChanged();
+        private string _PhoneCode;
+        partial void OnPhoneCodeChanging(string value);
+        partial void OnPhoneCodeChanged();
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_PhoneNumber in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_Persistent_BaseImpl_PhoneNumber
+    {
         /// <summary>
-        /// There are no comments for Property ObjectTypeName in the schema.
+        /// Create a new DevExpress_Persistent_BaseImpl_PhoneNumber object.
         /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string ObjectTypeName
+        public static DevExpress_Persistent_BaseImpl_PhoneNumber CreateDevExpress_Persistent_BaseImpl_PhoneNumber(global::System.Guid oid)
         {
-            get
-            {
-                return this._ObjectTypeName;
-            }
-            set
-            {
-                this.OnObjectTypeNameChanging(value);
-                this._ObjectTypeName = value;
-                this.OnObjectTypeNameChanged();
-            }
+            DevExpress_Persistent_BaseImpl_PhoneNumber devExpress_Persistent_BaseImpl_PhoneNumber = new DevExpress_Persistent_BaseImpl_PhoneNumber();
+            devExpress_Persistent_BaseImpl_PhoneNumber.oid = oid;
+            return devExpress_Persistent_BaseImpl_PhoneNumber;
         }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _ObjectTypeName;
-        partial void OnObjectTypeNameChanging(string value);
-        partial void OnObjectTypeNameChanged();
         /// <summary>
-        /// There are no comments for Property ChartSettingsContent in the schema.
+        /// There are no comments for Property oid in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceStreamLink ChartSettingsContent
+        public global::System.Guid oid
         {
             get
             {
-                return this._ChartSettingsContent;
+                return this._oid;
             }
             set
             {
-                this.OnChartSettingsContentChanging(value);
-                this._ChartSettingsContent = value;
-                this.OnChartSettingsContentChanged();
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceStreamLink _ChartSettingsContent;
-        partial void OnChartSettingsContentChanging(global::System.Data.Services.Client.DataServiceStreamLink value);
-        partial void OnChartSettingsContentChanged();
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
         /// <summary>
-        /// There are no comments for Property PivotGridSettingsContent in the schema.
+        /// There are no comments for Property Number in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public global::System.Data.Services.Client.DataServiceStreamLink PivotGridSettingsContent
+        public string Number
         {
             get
             {
-                return this._PivotGridSettingsContent;
+                return this._Number;
             }
             set
             {
-                this.OnPivotGridSettingsContentChanging(value);
-                this._PivotGridSettingsContent = value;
-                this.OnPivotGridSettingsContentChanged();
+                this.OnNumberChanging(value);
+                this._Number = value;
+                this.OnNumberChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private global::System.Data.Services.Client.DataServiceStreamLink _PivotGridSettingsContent;
-        partial void OnPivotGridSettingsContentChanging(global::System.Data.Services.Client.DataServiceStreamLink value);
-        partial void OnPivotGridSettingsContentChanged();
+        private string _Number;
+        partial void OnNumberChanging(string value);
+        partial void OnNumberChanged();
         /// <summary>
-        /// There are no comments for Property DimensionPropertiesString in the schema.
+        /// There are no comments for Property PhoneType in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public string DimensionPropertiesString
+        public string PhoneType
         {
             get
             {
-                return this._DimensionPropertiesString;
+                return this._PhoneType;
             }
             set
             {
-                this.OnDimensionPropertiesStringChanging(value);
-                this._DimensionPropertiesString = value;
-                this.OnDimensionPropertiesStringChanged();
+                this.OnPhoneTypeChanging(value);
+                this._PhoneType = value;
+                this.OnPhoneTypeChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        private string _DimensionPropertiesString;
-        partial void OnDimensionPropertiesStringChanging(string value);
-        partial void OnDimensionPropertiesStringChanged();
+        private string _PhoneType;
+        partial void OnPhoneTypeChanging(string value);
+        partial void OnPhoneTypeChanged();
+        /// <summary>
+        /// There are no comments for Party in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public DevExpress_Persistent_BaseImpl_Party Party
+        {
+            get
+            {
+                return this._Party;
+            }
+            set
+            {
+                this._Party = value;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private DevExpress_Persistent_BaseImpl_Party _Party;
+    }
+    /// <summary>
+    /// There are no comments for MainDemo.DevExpress_Persistent_BaseImpl_FileData in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// oid
+    /// </KeyProperties>
+    [global::System.Data.Services.Common.DataServiceKeyAttribute("oid")]
+    public partial class DevExpress_Persistent_BaseImpl_FileData
+    {
+        /// <summary>
+        /// Create a new DevExpress_Persistent_BaseImpl_FileData object.
+        /// </summary>
+        /// <param name="oid">Initial value of oid.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public static DevExpress_Persistent_BaseImpl_FileData CreateDevExpress_Persistent_BaseImpl_FileData(global::System.Guid oid)
+        {
+            DevExpress_Persistent_BaseImpl_FileData devExpress_Persistent_BaseImpl_FileData = new DevExpress_Persistent_BaseImpl_FileData();
+            devExpress_Persistent_BaseImpl_FileData.oid = oid;
+            return devExpress_Persistent_BaseImpl_FileData;
+        }
+        /// <summary>
+        /// There are no comments for Property oid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Guid oid
+        {
+            get
+            {
+                return this._oid;
+            }
+            set
+            {
+                this.OnoidChanging(value);
+                this._oid = value;
+                this.OnoidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Guid _oid;
+        partial void OnoidChanging(global::System.Guid value);
+        partial void OnoidChanged();
+        /// <summary>
+        /// There are no comments for Property size in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public global::System.Nullable<int> size
+        {
+            get
+            {
+                return this._size;
+            }
+            set
+            {
+                this.OnsizeChanging(value);
+                this._size = value;
+                this.OnsizeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private global::System.Nullable<int> _size;
+        partial void OnsizeChanging(global::System.Nullable<int> value);
+        partial void OnsizeChanged();
+        /// <summary>
+        /// There are no comments for Property FileName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public string FileName
+        {
+            get
+            {
+                return this._FileName;
+            }
+            set
+            {
+                this.OnFileNameChanging(value);
+                this._FileName = value;
+                this.OnFileNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private string _FileName;
+        partial void OnFileNameChanging(string value);
+        partial void OnFileNameChanged();
+        /// <summary>
+        /// There are no comments for Property Content in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        public byte[] Content
+        {
+            get
+            {
+                if ((this._Content != null))
+                {
+                    return ((byte[])(this._Content.Clone()));
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            set
+            {
+                this.OnContentChanging(value);
+                this._Content = value;
+                this.OnContentChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
+        private byte[] _Content;
+        partial void OnContentChanging(byte[] value);
+        partial void OnContentChanged();
     }
 }

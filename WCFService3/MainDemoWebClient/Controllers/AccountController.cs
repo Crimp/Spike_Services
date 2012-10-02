@@ -8,6 +8,7 @@
     using System.Web.ClientServices;
     using System.Web;
     using MainDemoWebClient.AuthenticationService;
+    using System.Security.Principal;
 
     [HandleError]
     public class AccountController : Controller {
@@ -30,8 +31,8 @@
                 //todo Minakov
                 AuthenticationServiceClient authenticationService = new AuthenticationServiceClient();
                 string result = authenticationService.ValidateUser(model.UserName, model.Password);
-                FormsAuthenticationTicket ticket = string.IsNullOrEmpty(result) ? null : FormsAuthentication.Decrypt(result);
-                if(ticket != null) {
+//                FormsAuthenticationTicket ticket = string.IsNullOrEmpty(result) ? null : FormsAuthentication.Decrypt(result);
+                if(!string.IsNullOrEmpty(result)) {
                     Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, result));
                     if(Url.IsLocalUrl(returnUrl) && returnUrl.Length > 1 && returnUrl.StartsWith("/")
                         && !returnUrl.StartsWith("//") && !returnUrl.StartsWith("/\\")) {
@@ -51,7 +52,6 @@
 
         public ActionResult LogOff() {
             FormsAuthentication.SignOut();
-
             return RedirectToAction("Index", "Home");
         }
     }

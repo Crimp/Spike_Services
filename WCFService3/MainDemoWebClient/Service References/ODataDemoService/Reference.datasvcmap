@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1e0752a7-d008-489d-ac2e-7a568e348be8" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3076f98f-31dc-454a-b2cc-6f117edff4f1" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
   <MetadataSources>
-    <MetadataSource Address="http://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="7a6a2b8c-2434-4f5b-ab2a-d64375c8fc70" SourceId="1" SourceUrl="http://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc" />
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="ae20509d-8a96-48eb-a6bd-d4786eff7f2a" SourceId="1" SourceUrl="https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc" />
   </Metadata>
   <Extensions />
   <Parameters>
