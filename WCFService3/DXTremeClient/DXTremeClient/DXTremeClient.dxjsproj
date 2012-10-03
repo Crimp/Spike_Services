@@ -45,6 +45,12 @@
     <Content Include="views\Index.css" />
     <Content Include="views\Index.js" />
     <Content Include="views\About.html" />
+    <Content Include="views\LogOn.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\LogOn.js">
+      <SubType>Content</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="css\" />

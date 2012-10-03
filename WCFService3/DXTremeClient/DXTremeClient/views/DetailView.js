@@ -1,12 +1,12 @@
 ﻿DXTremeClient.DetailView = function (params) {
     var model = {
-        pageTitle: ko.observable(),
-        events: ko.observable()
+        FirstName: ko.observable(),
+        LastName: ko.observable()
     };
 
     var createDetailContent = function (list) {
-        model.pageTitle(list[0].title);
-        model.events(list[0].events);
+        model.FirstName(list[0].FirstName);
+        model.LastName(list[0].LastName);
     };
 
     DXTremeClient.db.Module_BusinessObjects_Contact.load({

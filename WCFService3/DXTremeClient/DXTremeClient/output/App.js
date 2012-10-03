@@ -2,7 +2,7 @@
 $.support.cors = true;
 $(function () {
     jQuery.support.cors = true;
-    app = new DevExpress.framework.html.HtmlApplication({
+    app = DXTremeClient.app = new DevExpress.framework.html.HtmlApplication({
         ns: DXTremeClient,
         viewPortNode: document.getElementById("viewPort"),
         defaultLayout: "navbar",
@@ -21,6 +21,6 @@ $(function () {
             })
         ]
     });
+    app.router.register("DetailView/:oid", { view: "DetailView" });
     app.router.register(":view/:id", { view: "index", id: undefined });
-    app.router.register("DetailView/:contactOid", { view: "DetailView" });
 });

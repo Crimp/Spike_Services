@@ -1,16 +1,14 @@
 ﻿<div data-role="view" data-name="DetailView" data-title="Contact">
     <div data-target-placeholder="content">
-    <div data-bind="dxList: { items: events }">
-        <div data-dx-role="template" data-dx-name="item">
-            <div>
-                <!--<img class="icon" src="/Content/Documentation/images/marker.png"/>-->
-                <div>
-                    <span data-bind="text: FirstName"></span>
-                    <div class="small" data-bind="text: LastName"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+        <h1 data-bind="text: FirstName"></h1>
+  <div class="dx-field">
+    <div class="dx-field-key">FirstName</div>
+    <div class="dx-field-value" data-bind="text: FirstName"></div>
+  </div>
+          <div class="dx-field">
+    <div class="dx-field-key">LastName</div>
+    <div class="dx-field-value" data-bind="text: LastName"></div>
+  </div>
         </div>
     <div data-role="command" data-location="back" data-bind="uri: '_back'" data-title="Back"></div>
 </div>
