@@ -35,6 +35,12 @@
     <Content Include="js\jquery-1.7.2.intellisense.js" />
     <Content Include="js\jquery-1.7.2.min.js" />
     <Content Include="js\knockout-2.1.0.js" />
+    <Content Include="views\DetailView.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\DetailView.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\Index.html" />
     <Content Include="views\Index.css" />
     <Content Include="views\Index.js" />

@@ -1,6 +1,6 @@
-﻿<div data-role="view" data-name="index" data-title="Users">
+﻿<div data-role="view" data-name="index" data-title="Contacts">
     <div data-target-placeholder="content" >
-        <div data-bind="dxList: { dataSource: todoLists }">
+        <div data-bind="dxList: { dataSource: todoLists, itemClick: handleTripListItemClick }">
             <div data-dx-role="template" data-dx-name="item">
                 <div>
                     <div data-bind="text: FirstName"></div>

@@ -22,4 +22,5 @@ $(function () {
         ]
     });
     app.router.register(":view/:id", { view: "index", id: undefined });
+    app.router.register("DetailView/:contactOid", { view: "DetailView" });
 });
