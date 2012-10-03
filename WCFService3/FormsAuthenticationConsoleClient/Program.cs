@@ -27,20 +27,20 @@ namespace FormsAuthenticationConsoleClient {
                 dataContext.SendingRequest += new EventHandler<SendingRequestEventArgs>(delegate(object sender, SendingRequestEventArgs e) {
                     e.RequestHeaders.Add("Authorization", authenticationTicket);
                 });
-                ShowData(authenticationTicket, dataContext);
+                ShowData(dataContext);
             }
             else {
                 Console.WriteLine("The user name or password provided is incorrect.");
-                Console.ReadLine();
             }
+            Console.ReadLine();
         }
-        private static void ShowData(string authenticationTicket, DataServiceContext dataContext) {
-            ICredentials test = dataContext.Credentials;
+        private static void ShowData(DataServiceContext dataContext) {
             var contactQuery = (from p in dataContext.CreateQuery<Module_BusinessObjects_Contact>("Module_BusinessObjects_Contact") select p);
+            Console.WriteLine("Begin request");
             foreach(Module_BusinessObjects_Contact contact in contactQuery) {
                 Console.WriteLine("FirstName:" + contact.FirstName);
             }
-            Console.ReadLine();
+            Console.WriteLine("End request");
         }
         private static string GetAuthenticationTicket(string userName, string password) {
             AuthenticationServiceClient authenticationService = new AuthenticationServiceClient();
