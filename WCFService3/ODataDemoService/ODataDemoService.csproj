@@ -103,24 +103,21 @@
   <ItemGroup>
     <Content Include="FormsAuthentication\AuthenticationService.svc" />
     <Content Include="Global.asax" />
-    <Content Include="FormsAuthentication\ODataDemoService.svc" />
+    <Content Include="ODataDemoService.svc" />
     <Content Include="FormsAuthentication\Web.config" />
-    <Content Include="WindowsAuthentication\ODataDemoService.svc" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FormsAuthentication\AuthenticationService.svc.cs">
       <DependentUpon>AuthenticationService.svc</DependentUpon>
     </Compile>
+    <Compile Include="FormsAuthentication\FormsAuthenticationModule.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="FormsAuthentication\ODataDemoService.svc.cs">
+    <Compile Include="ODataDemoService.svc.cs">
       <DependentUpon>ODataDemoService.svc</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WindowsAuthentication\ODataDemoService.svc.cs">
-      <DependentUpon>ODataDemoService.svc</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -133,9 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.Config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="WindowsAuthentication\web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

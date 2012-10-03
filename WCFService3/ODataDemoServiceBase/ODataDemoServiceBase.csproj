@@ -73,7 +73,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authentication\AuthenticationServiceBase.cs" />
-    <Compile Include="Authentication\FormsAuthenticationModule.cs" />
     <Compile Include="Authentication\IAuthenticationService.cs" />
     <Compile Include="DataProvider\MyContext.cs" />
     <Compile Include="DataProvider\ODataDemoServiceBase.cs" />

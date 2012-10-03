@@ -14,7 +14,7 @@ using DevExpress.ExpressApp.Security;
 
 [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
 public class DemoODataDemoService : ODataDemoServiceBase {
-    public DemoODataDemoService(){
+    public DemoODataDemoService() {
     }
     public DemoODataDemoService(HttpContextBase httpContext)
         : base(httpContext) {

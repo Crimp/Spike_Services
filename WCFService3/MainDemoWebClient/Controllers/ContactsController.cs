@@ -24,13 +24,14 @@ namespace ODataDemoService {
     public class ContactsController : Controller {
         public static string RootDataUrl {
             get {
-                if(Thread.CurrentPrincipal.Identity is FormsIdentity) {
-                    return "https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/ODataDemoService.svc";
-                }
-                if(Thread.CurrentPrincipal.Identity is WindowsIdentity) {
-                    return "https://minakov-w8.corp.devexpress.com/ODataDemoService/WindowsAuthentication/ODataDemoService.svc";
-                }
-                return null;
+                return "https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc";
+                //if(Thread.CurrentPrincipal.Identity is FormsIdentity) {
+                //    return "https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/ODataDemoService.svc";
+                //}
+                //if(Thread.CurrentPrincipal.Identity is WindowsIdentity) {
+                //    return "https://minakov-w8.corp.devexpress.com/ODataDemoService/WindowsAuthentication/ODataDemoService.svc";
+                //}
+                //return null;
             }
         }
         public ContactsController() {

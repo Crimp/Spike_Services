@@ -12,7 +12,7 @@ using System.Web.Security;
         }
         private void context_AuthenticateRequest(object sender, EventArgs e) {
             HttpApplication app = (HttpApplication)sender;
-            if(app.Context.Request.CurrentExecutionFilePath == "/ODataDemoService/FormsAuthentication/ODataDemoService.svc") {
+            if(app.Context.Request.CurrentExecutionFilePath == "/ODataDemoService/ODataDemoService.svc") {
                 if(!CustomAuthenticationProvider.Authenticate(app.Context)) {
                     //    app.Context.Response.Status = "401 Unauthorized";
                     //    app.Context.Response.StatusCode = 401;
@@ -36,7 +36,7 @@ using System.Web.Security;
             if(string.IsNullOrEmpty(authHeader)) {
                 return false;
             }
-            FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(authHeader);
+            FormsAuthenticationTicket ticket = System.Web.Security.FormsAuthentication.Decrypt(authHeader);
 
             IPrincipal principal = new CustomPrincipal(ticket.UserData);
             context.User = principal;
