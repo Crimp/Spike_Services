@@ -14,9 +14,9 @@ using System.Web.Security;
             HttpApplication app = (HttpApplication)sender;
             if(app.Context.Request.CurrentExecutionFilePath == "/ODataDemoService/ODataDemoService.svc") {
                 if(!CustomAuthenticationProvider.Authenticate(app.Context)) {
-                    //    app.Context.Response.Status = "401 Unauthorized";
-                    //    app.Context.Response.StatusCode = 401;
-                    //    app.Context.Response.End();
+                        app.Context.Response.Status = "401 Unauthorized";
+                        app.Context.Response.StatusCode = 401;
+                        app.Context.Response.End();
                 }
             }
         }

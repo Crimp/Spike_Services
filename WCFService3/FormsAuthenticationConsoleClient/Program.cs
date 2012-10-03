@@ -20,8 +20,10 @@ namespace FormsAuthenticationConsoleClient {
             string password = Console.ReadLine();
             Console.WriteLine();
 
+            Console.WriteLine("Authorization");
             string authenticationTicket = GetAuthenticationTicket(userName, password);
             if(!string.IsNullOrEmpty(authenticationTicket)) {
+                Console.WriteLine("Success");
                 DataServiceContext dataContext = new DataServiceContext(new Uri(rootDataUrl));
                 dataContext.Credentials = System.Net.CredentialCache.DefaultCredentials;
                 dataContext.SendingRequest += new EventHandler<SendingRequestEventArgs>(delegate(object sender, SendingRequestEventArgs e) {
