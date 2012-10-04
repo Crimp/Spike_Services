@@ -8,7 +8,7 @@ using System.ServiceModel.Activation;
 
 namespace DXTremeDemoService {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
-    [JSONPSupportBehavior]
+    //[JSONPSupportBehavior]
     public class DemoODataDemoService : ODataDemoServiceBase {
         public DemoODataDemoService() {
         }

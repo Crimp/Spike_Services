@@ -9,7 +9,7 @@ using System.Text;
 
 namespace DXTremeDemoService {
     [ServiceContract(Namespace = "")]
-    [JSONPSupportBehavior]
+    //[JSONPSupportBehavior]
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class AuthenticationService {
         [OperationContract]
