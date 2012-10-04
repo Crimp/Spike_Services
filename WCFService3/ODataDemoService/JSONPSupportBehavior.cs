@@ -6,7 +6,7 @@ using System.ServiceModel.Dispatcher;
 using System.Text;
 using System.Xml;
 
-namespace ODataTest1 {
+namespace ODataDemoService {
     public class JSONPSupportInspector : IDispatchMessageInspector {
         // Assume utf-8, note that Data Services supports
         // charset negotation, so this needs to be more

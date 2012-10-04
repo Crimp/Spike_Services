@@ -1,0 +1,6 @@
+https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc
+https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/AuthenticationService.svc
+
+
+https://minakov-w8.corp.devexpress.com/DXTremeDemoService/ODataDemoService.svc
+https://minakov-w8.corp.devexpress.com/DXTremeDemoService/AuthenticationService

@@ -14,7 +14,7 @@
     <RootNamespace>DXTremeDemoService</RootNamespace>
     <AssemblyName>DXTremeDemoService</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -40,24 +40,23 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Persistent.Base.v12.1">
-      <HintPath>..\..\Dll\DevExpress.Persistent.Base.v12.1.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Persistent.Base.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Persistent.BaseImpl.v12.1">
-      <HintPath>..\..\..\..\Source\2012.1\XAF\_Out\DevExpress.Persistent.BaseImpl.v12.1.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Persistent.BaseImpl.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpo.v12.1">
-      <HintPath>..\..\..\..\Source\2012.1\XAF\_Out\DevExpress.Xpo.v12.1.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Xpo.v12.1.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="DevExpress.Xpo.v12.1.Extensions">
-      <HintPath>..\..\Dll\DevExpress.Xpo.v12.1.Extensions.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Xpo.v12.1.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="MainDemo.Module">
-      <HintPath>..\..\..\..\Source\2012.1\XAF\Demos\CS\MainDemo\MainDemo.Module\bin\Debug\MainDemo.Module.dll</HintPath>
+    <Reference Include="MainDemo.Module, Version=1.0.4660.16499, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Source\2012.1\XAF\Demos\CS\MainDemo\MainDemo.Module\bin\Debug\MainDemo.Module.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="ODataDemoServiceBase">
-      <HintPath>..\..\WCFService3\ODataDemoServiceBase\bin\Debug\ODataDemoServiceBase.dll</HintPath>
-    </Reference>
     <Reference Include="System.Data.Services" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
@@ -107,6 +106,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\WCFService3\ODataDemoServiceBase\ODataDemoServiceBase.csproj">
+      <Project>{77cb535a-f77a-4f9e-8562-99b976684db7}</Project>
+      <Name>ODataDemoServiceBase</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -118,11 +123,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>63366</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63366/</IISUrl>
+          <IISUrl>https://minakov-w8.corp.devexpress.com/DXTremeDemoService</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

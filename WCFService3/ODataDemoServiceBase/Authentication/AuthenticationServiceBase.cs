@@ -1,4 +1,5 @@
-﻿using DevExpress.Data.Filtering;
+﻿using DataProvider;
+using DevExpress.Data.Filtering;
 using DevExpress.ExpressApp.Security.Strategy;
 using DevExpress.Persistent.Base.Security;
 using DevExpress.Xpo;

@@ -5,6 +5,7 @@ using System.ServiceModel.Web;
 using System.Web;
 using System.ServiceModel;
 using System.ServiceModel.Activation;
+using DataProvider;
 
 namespace DXTremeDemoService {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]

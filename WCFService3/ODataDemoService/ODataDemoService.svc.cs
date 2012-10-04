@@ -11,7 +11,8 @@ using System.ServiceModel.Activation;
 using DevExpress.Xpo.DB;
 using MainDemo.Module.BusinessObjects;
 using DevExpress.ExpressApp.Security;
-using ODataTest1;
+using DataProvider;
+using ODataDemoService;
 
 [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
 [JSONPSupportBehavior]
