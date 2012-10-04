@@ -53,6 +53,7 @@ namespace DataProvider {
 
         private static ISelectDataSecurity CreateSelectDataSecurity() {
             UnitOfWork session = CreateSession();
+            //HttpContext.Current.Request.Headers["Authorization"]
             string userName = HttpContext.Current.User.Identity.Name;
             if(string.IsNullOrEmpty(userName)) {
                 userName = "Sam";

@@ -5,6 +5,11 @@
             url: URL,
             errorHandler: function (error) {
                 alert(error.message);
+            },
+            beforeSend: function (sender) {
+                //alert("before get data");
+                
+                sender.headers.Authorization = "sam";
             }
         },
         entities: {

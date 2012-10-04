@@ -8,7 +8,7 @@
             dataType: varDataType, //Expected data format from server
             processdata: varProcessData, //True or False
             success: function (msg) {//On Successfull service call
-                alert("success");
+                //alert(msg.d);
             },
             error: function (msg) {//On Successfull service call
                 alert("error");
@@ -27,7 +27,7 @@
      //   alert("Clicked!");
         varType = "POST";
         varUrl = "http://localhost:63366/AuthenticationService.svc/ValidateUser";
-        varData = '{"userName":"asdasdasd", "password":"Test"}';
+        varData = '{"userName":' + user + ', "password":"' + pass + '"}';
         varContentType = "application/json; charset=utf-8";
 
 
