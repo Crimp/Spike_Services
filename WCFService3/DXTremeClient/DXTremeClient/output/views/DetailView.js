@@ -10,7 +10,8 @@
     };
 
     DXTremeClient.db.Module_BusinessObjects_Contact.load({
-        filter: ["oid", params.oid]
+        //filter: ["oid", params.oid]
+        filter: ["FirstName", params.FirstName]
     }).done(createDetailContent);
 
     return model;

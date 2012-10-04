@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="DXTremeDemoService.AuthenticationService" CodeBehind="AuthenticationService.svc.cs" %>
