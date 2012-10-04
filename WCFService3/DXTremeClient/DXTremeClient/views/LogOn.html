@@ -1,11 +1,18 @@
-﻿<div data-role="view" data-name="DetailView" data-title="Contact">
+﻿<div data-role="view" data-name="LogOn" data-title="Log On" >
     <div data-target-placeholder="content">
-        <h1 data-bind="text: FirstName"></h1>
-        <div class="dx-field">
-            <div class="dx-field-key">FirstName</div>
-        </div>
-        <div class="dx-field">
-            <div class="dx-field-key">LastName</div>
+        <div class="dx-fieldset">
+            <div class="dx-field">
+                <div class="dx-field-key">UserName</div>
+                <div class="dx-field-value" id="UserName" data-bind="dxTextbox: { }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-key">Password</div>
+                <div class="dx-field-value" id="Password" data-bind="dxTextbox: { mode: 'password' }"></div>
+            </div>
+            <div class="dx-field">
+                <div class="dx-field-key"></div>
+                <div class="dx-field-value" id="logOnButton" data-bind="dxButton: { text: 'Log On', click: handleLogOnClick }"></div>
+            </div>
         </div>
     </div>
 </div>

@@ -22,5 +22,6 @@ $(function () {
         ]
     });
     app.router.register("DetailView/:FirstName", { view: "DetailView" });
+    app.router.register("LogOn/:id", { view: "LogOn", id: undefined });
     app.router.register(":view/:id", { view: "index", id: undefined });
 });

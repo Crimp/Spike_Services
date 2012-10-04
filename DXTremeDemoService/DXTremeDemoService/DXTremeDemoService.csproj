@@ -89,6 +89,7 @@
     <Compile Include="AuthenticationService.svc.cs">
       <DependentUpon>AuthenticationService.svc</DependentUpon>
     </Compile>
+    <Compile Include="FormsAuthenticationModule.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

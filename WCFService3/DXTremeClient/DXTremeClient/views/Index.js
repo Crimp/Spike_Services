@@ -1,5 +1,5 @@
 ﻿DXTremeClient.index = function (params) {
-var handleTripListItemClick = function (e) {
+    var handleTripListItemClick = function (e) {
         var uri = DXTremeClient.app.router.format({
             action: "DetailView",
             //oid: e.itemData.oid
