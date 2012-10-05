@@ -3,4 +3,7 @@ https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/Auth
 
 
 https://minakov-w8.corp.devexpress.com/DXTremeDemoService/ODataDemoService.svc
-https://minakov-w8.corp.devexpress.com/DXTremeDemoService/AuthenticationService
+https://minakov-w8.corp.devexpress.com/DXTremeDemoService/AuthenticationService.svc
+
+
+listenUri="https://minakov-w8.corp.devexpress.com/DXTremeDemoService/AuthenticationService.svc/ValidateUser"

@@ -22,40 +22,17 @@ namespace ODataDemoService {
     using System.ServiceModel;
 
     public class ContactsController : Controller {
+        public ContactsController() {
+        }
         public static string RootDataUrl {
             get {
-                return "https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc";
-                //if(Thread.CurrentPrincipal.Identity is FormsIdentity) {
-                //    return "https://minakov-w8.corp.devexpress.com/ODataDemoService/FormsAuthentication/ODataDemoService.svc";
-                //}
-                //if(Thread.CurrentPrincipal.Identity is WindowsIdentity) {
-                //    return "https://minakov-w8.corp.devexpress.com/ODataDemoService/WindowsAuthentication/ODataDemoService.svc";
-                //}
-                //return null;
+                //return "https://minakov-w8.corp.devexpress.com/ODataDemoService/ODataDemoService.svc";
+                return "http://localhost:63725/ODataDemoService/ODataDemoService.svc";
             }
         }
-        public ContactsController() {
-
-        }
         public ActionResult Index() {
-
-            //AuthenticationServiceClient authenticationService = new AuthenticationServiceClient();
-            //string result = authenticationService.ValidateUser("", "");
-
-            //WebServiceHost host = new WebServiceHost(typeof(DemoODataDemoService), new[] { new Uri(rootDataUrl) });
-            //WebHttpBinding binding = new WebHttpBinding();
-            //binding.Security.Mode = WebHttpSecurityMode.TransportCredentialOnly;
-            //binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Windows;
-            //host.AddServiceEndpoint(typeof(System.Data.Services.IRequestHandler), binding, String.Empty);
-            //host.Open();
-
             DataServiceContext context = new DataServiceContext(new Uri(RootDataUrl));
-
-
             context.SendingRequest += new EventHandler<SendingRequestEventArgs>(context_SendingRequest);
-            //WindowsPrincipal winPrincipal = new WindowsPrincipal(((WindowsIdentity)Thread.CurrentPrincipal.Identity));
-            //((WindowsIdentity)Thread.CurrentPrincipal.Identity).Impersonate();
-
             var contactQuery = (from p in context.CreateQuery<Module_BusinessObjects_Contact>("Module_BusinessObjects_Contact").Expand("Department").Expand("Position")
                                 select p);
             return this.View(contactQuery);
@@ -70,19 +47,7 @@ namespace ODataDemoService {
                     e.RequestHeaders.Add("Authorization", FormsAuthentication.Encrypt(ticket));
                 }
                 if(Thread.CurrentPrincipal.Identity is WindowsIdentity) {
-                    //WindowsImpersonationContext winIdentity = ((WindowsIdentity)Thread.CurrentPrincipal.Identity).Impersonate();
                     e.Request.Credentials = CredentialCache.DefaultCredentials;
-                    //WindowsIdentity winId = WindowsIdentity.GetCurrent();
-                    //WindowsPrincipal winPrincipal = new WindowsPrincipal(((WindowsIdentity)Thread.CurrentPrincipal.Identity));
-                    //IPrincipal user = HttpContext.User;
-                    ////e.Request.Credentials
-                    //System.ServiceModel.Description.ClientCredentials test = new System.ServiceModel.Description.ClientCredentials();
-                    //WindowsImpersonationContext winIdentity = ((WindowsIdentity)Thread.CurrentPrincipal.Identity).Impersonate();
-                    //test.Windows.AllowedImpersonationLevel = TokenImpersonationLevel.Impersonation;
-                    
-                    //e.Request.Credentials = test.Windows.ClientCredential;// new System.Net.NetworkCredential("minakov", "Bl1zzard", "corp");
-                    ////((DataServiceContext)sender).Credentials = Thread.CurrentPrincipal.Identity;
-                    ////((WindowsIdentity)Thread.CurrentPrincipal.Identity)
                 }
             }
         }

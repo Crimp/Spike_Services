@@ -1,5 +1,6 @@
 ﻿$(function () {
-    var URL = "http://localhost:63366/ODataDemoService.svc"
+    var URL = "http://minakov-w8.corp.devexpress.com/DXTremeDemoService/ODataDemoService.svc"
+    //var URL = "http://localhost:63366/ODataDemoService.svc"
     DXTremeClient.db = new DevExpress.data.EntityStoreContext({
         service: {
             url: URL,
@@ -7,9 +8,7 @@
                 alert(error.message);
             },
             beforeSend: function (sender) {
-                //alert("before get data");
-                
-                sender.headers.Authorization = "sam";
+                //sender.headers.Authorization = "sam";
             }
         },
         entities: {

@@ -111,7 +111,7 @@
     <Compile Include="FormsAuthentication\AuthenticationService.svc.cs">
       <DependentUpon>AuthenticationService.svc</DependentUpon>
     </Compile>
-    <Compile Include="FormsAuthentication\FormsAuthenticationModule.cs" />
+    <Compile Include="FormsAuthentication\CustomAuthenticationModule.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -146,11 +146,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
           <DevelopmentServerPort>63725</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://minakov-w8.corp.devexpress.com/ODataDemoService</IISUrl>
+          <DevelopmentServerVPath>/ODataDemoService/</DevelopmentServerVPath>
+          <IISUrl>http://minakov-w8.corp.devexpress.com/ODataDemoService</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

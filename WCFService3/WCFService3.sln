@@ -8,6 +8,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFormsAuthenticationClient", "FormsAuthenticationConsoleClient\ConsoleFormsAuthenticationClient.csproj", "{DFCD693E-8233-4A21-9292-EDFAB1C320FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainDemoWebClient", "MainDemoWebClient\MainDemoWebClient.csproj", "{BEA8EF2A-BD23-4C80-A099-D04345012B1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A5FC8315-0959-442C-98F2-363ED93B252E} = {A5FC8315-0959-442C-98F2-363ED93B252E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWindowsAuthenticationClient", "WindowsAuthenticationConsoleClient\ConsoleWindowsAuthenticationClient.csproj", "{42B2162B-47AD-4E20-87A8-2D0267CB4A6D}"
 EndProject

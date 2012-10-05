@@ -8,13 +8,30 @@
             dataType: varDataType, //Expected data format from server
             processdata: varProcessData, //True or False
             success: function (msg) {//On Successfull service call
-                //alert(msg.d);
+                alert(msg.d);
             },
             error: function (msg) {//On Successfull service call
                 alert("error");
+            },
+            beforeSend: function (sender) {
+                //sender.headers.Authorization = "sam";
             }
         });
     };
+    function doCallOtherDomain() {
+        var XHR = window.XDomainRequest || window.XMLHttpRequest
+        var xhr = new XHR();
+        xhr.open('GET', "https://minakov-w8.corp.devexpress.com/DXTremeDemoService/AuthenticationService.svc/ValidateUser", true);
+        // замена onreadystatechange
+        xhr.onload = function () {
+            document.getElementById('response').innerHTML = xhr.responseText
+        }
+        xhr.onerror = function () {
+            alert("Error")
+        }
+        xhr.send()
+    };
+
     var handleLogOnClick = function (e) {
         var user = UserName.all[0].value;
         var pass = Password.all[0].value;
@@ -24,15 +41,18 @@
         //else
         //    alert("Please enter 'User Name'?")
 
-     //   alert("Clicked!");
+        //   alert("Clicked!");
+
+        //doCallOtherDomain();
         varType = "POST";
-        varUrl = "http://localhost:63366/AuthenticationService.svc/ValidateUser";
+        varUrl = "http://minakov-w8.corp.devexpress.com/DXTremeDemoService/AuthenticationService.svc/ValidateUser"
+        //varUrl = "http://localhost:63366/AuthenticationService.svc/ValidateUser";
         varData = '{"userName":' + user + ', "password":"' + pass + '"}';
         varContentType = "application/json; charset=utf-8";
 
 
         varDataType = "json";
-        varProcessData = true;
+        varProcessData = false;
         CallService();
         DXTremeClient.app.navigate("");
     };

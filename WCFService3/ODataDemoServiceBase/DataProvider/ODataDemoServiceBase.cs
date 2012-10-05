@@ -53,13 +53,26 @@ namespace DataProvider {
 
         private static ISelectDataSecurity CreateSelectDataSecurity() {
             UnitOfWork session = CreateSession();
-            //HttpContext.Current.Request.Headers["Authorization"]
+            //string test = HttpContext.Current.Request.Headers["Authorization"];
+            //HttpContext.Current.Request.Headers["Authorization"] = null;
             string userName = HttpContext.Current.User.Identity.Name;
-            if(string.IsNullOrEmpty(userName)) {
-                userName = "Sam";
-            }
+            //if(string.IsNullOrEmpty(userName)) {
+            //    userName = "Sam";
+            //}
             IOperationPermissionProvider user = session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", userName)) as IOperationPermissionProvider;
-            return new SelectDataSecurity(user);
+            IEnumerable<IOperationPermission> userPermissions = null;
+            if(user != null) {
+                userPermissions = OperationPermissionProviderHelper.CollectPermissionsRecursive(user);
+            }
+            else {
+                userPermissions = new List<IOperationPermission>();
+            }
+            IPermissionDictionary permissionsDictionary = new PermissionDictionary(userPermissions);
+
+            IDictionary<Type, IPermissionRequestProcessor> processors = new Dictionary<Type, IPermissionRequestProcessor>();
+            processors.Add(typeof(ModelOperationPermissionRequest), new ModelPermissionRequestProcessor(permissionsDictionary));
+            processors.Add(typeof(ServerPermissionRequest), new ServerPermissionRequestProcessor(permissionsDictionary));
+            return new SelectDataSecurity(processors, permissionsDictionary);
         }
         public static void InitializeService(DataServiceConfiguration config) {
             config.SetEntitySetAccessRule("*", EntitySetRights.All);

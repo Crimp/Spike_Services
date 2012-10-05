@@ -185,12 +185,23 @@
     <Content Include="Views\Contacts\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <None Include="Service References\AuthenticationService\AuthenticationService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Service References\ODataDemoService\service.edmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ServiceReferenceMetadataStorage Include="Service References\ODataDemoService\">
+      <Type>datasvcmap</Type>
+    </ServiceReferenceMetadataStorage>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\AuthenticationService\" />
@@ -200,15 +211,6 @@
     <None Include="Service References\AuthenticationService\AuthenticationService.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\AuthenticationService\AuthenticationService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Service References\ODataDemoService\service.edmx" />
-  </ItemGroup>
-  <ItemGroup>
-    <ServiceReferenceMetadataStorage Include="Service References\ODataDemoService\">
-      <Type>datasvcmap</Type>
-    </ServiceReferenceMetadataStorage>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -230,7 +232,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>64174</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

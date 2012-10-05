@@ -13,6 +13,7 @@ namespace DXTremeDemoService {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
     public class AuthenticationService {
         [OperationContract]
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
         public string ValidateUser(string userName, string password) {
             return userName + password;
         }
