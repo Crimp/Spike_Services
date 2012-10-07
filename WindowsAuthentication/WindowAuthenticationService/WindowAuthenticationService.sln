@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowAuthenticationService", "WindowAuthenticationService\WindowAuthenticationService.csproj", "{C0E1146E-F0A4-4DBB-BFAE-9ED74CD3C8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ODataDemoServiceBase", "..\..\WCFService3\ODataDemoServiceBase\ODataDemoServiceBase.csproj", "{77CB535A-F77A-4F9E-8562-99B976684DB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessObjectsLibrary", "BusinessObjectsLibrary\BusinessObjectsLibrary.csproj", "{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0E1146E-F0A4-4DBB-BFAE-9ED74CD3C8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E1146E-F0A4-4DBB-BFAE-9ED74CD3C8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E1146E-F0A4-4DBB-BFAE-9ED74CD3C8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E1146E-F0A4-4DBB-BFAE-9ED74CD3C8EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CB535A-F77A-4F9E-8562-99B976684DB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AC0D02C-34D4-40B4-BEC1-9E8AD12A8C23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

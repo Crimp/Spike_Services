@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Services;
-using System.Data.Services.Common;
-using System.Linq;
-using System.ServiceModel.Web;
-using System.Web;
-using DevExpress.Xpo;
-using System.ServiceModel;
+﻿using System.Web;
 using System.ServiceModel.Activation;
-using DevExpress.Xpo.DB;
-using MainDemo.Module.BusinessObjects;
-using DevExpress.ExpressApp.Security;
 using DataProvider;
-using ODataDemoService;
+using BusinessObjectsLibrary;
 
 [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
 public class DemoODataDemoService : ODataDemoServiceBase {
@@ -20,7 +9,7 @@ public class DemoODataDemoService : ODataDemoServiceBase {
         :this(new HttpContextWrapper(HttpContext.Current)){
     }
     public DemoODataDemoService(HttpContextBase httpContext)
-        : base(httpContext, new ODataServiceHelper(Global.ConnectionString, typeof(Contact).Assembly, "MainDemo")) {
+        : base(httpContext, new ODataServiceHelper(WindowAuthenticationService.Global.ConnectionString, typeof(Contact).Assembly, "MainDemo")) {
     }
     public DemoODataDemoService(HttpContextBase httpContext, ODataServiceHelper dataServiceHelper)
         : base(httpContext, dataServiceHelper) {

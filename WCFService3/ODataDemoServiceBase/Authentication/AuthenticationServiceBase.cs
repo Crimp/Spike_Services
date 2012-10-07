@@ -9,12 +9,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Security;
 
-namespace TestAuthenticationService {
-    public class AuthenticationServiceBase : IAuthenticationService {
-        public AuthenticationServiceBase() {
+namespace Authentication {
+    public abstract class CustomAuthenticationService : IAuthenticationService {
+        public CustomAuthenticationService() {
         }
         public string ValidateUser(string userName, string password) {
-            UnitOfWork session = ODataDemoServiceBase.CreateSession();
+            UnitOfWork session = null;
             IAuthenticationStandardUser user = session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", userName)) as IAuthenticationStandardUser;
             string result = null;
             if(user != null && user.ComparePassword(password)) {
@@ -25,6 +25,9 @@ namespace TestAuthenticationService {
                 result = FormsAuthentication.Encrypt(ticket);
             }
             return result;
+        }
+        protected abstract UnitOfWork Session {
+            get;
         }
     }
 }

@@ -7,19 +7,14 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A5FC8315-0959-442C-98F2-363ED93B252E}</ProjectGuid>
+    <ProjectGuid>{C0E1146E-F0A4-4DBB-BFAE-9ED74CD3C8EE}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ODataDemoService</RootNamespace>
-    <AssemblyName>ODataDemoService</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
-    <FileUpgradeFlags>
-    </FileUpgradeFlags>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>4.0</OldToolsVersion>
+    <RootNamespace>WindowAuthenticationService</RootNamespace>
+    <AssemblyName>WindowAuthenticationService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -45,49 +40,36 @@
   <ItemGroup>
     <Reference Include="DevExpress.Data.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dll\DevExpress.Data.v12.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.ExpressApp.Security.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dll\DevExpress.ExpressApp.Security.v12.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.ExpressApp.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dll\DevExpress.ExpressApp.v12.1.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Data.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Persistent.Base.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dll\DevExpress.Persistent.Base.v12.1.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Persistent.Base.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Persistent.BaseImpl.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dll\DevExpress.Persistent.BaseImpl.v12.1.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Persistent.BaseImpl.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpo.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dll\DevExpress.Xpo.v12.1.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Xpo.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpo.v12.1.Extensions, Version=12.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Dll\DevExpress.Xpo.v12.1.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="MainDemo.Module">
-      <HintPath>..\..\Dll\MainDemo.Module.dll</HintPath>
+      <HintPath>..\..\..\Dll\DevExpress.Xpo.v12.1.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\..\Dll\nunit.framework.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Data.Entity" />
-    <Reference Include="System.Data.Services" />
-    <Reference Include="System.Data.Services.Client" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -96,21 +78,14 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FormsAuthentication\AuthenticationService.svc" />
     <Content Include="Global.asax" />
     <Content Include="ODataDemoService.svc" />
-    <Content Include="FormsAuthentication\Web.config" />
+    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormsAuthentication\AuthenticationService.svc.cs">
-      <DependentUpon>AuthenticationService.svc</DependentUpon>
-    </Compile>
-    <Compile Include="FormsAuthentication\CustomAuthenticationModule.cs" />
+    <Compile Include="DBUpdater.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -120,18 +95,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ODataDemoServiceBase\ODataDemoServiceBase.csproj">
+    <ProjectReference Include="..\..\..\WCFService3\ODataDemoServiceBase\ODataDemoServiceBase.csproj">
       <Project>{77cb535a-f77a-4f9e-8562-99b976684db7}</Project>
       <Name>ODataDemoServiceBase</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Web.Config">
-      <SubType>Designer</SubType>
-    </Content>
+    <ProjectReference Include="..\BusinessObjectsLibrary\BusinessObjectsLibrary.csproj">
+      <Project>{8ac0d02c-34d4-40b4-bec1-9e8ad12a8c23}</Project>
+      <Name>BusinessObjectsLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -144,11 +123,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
-          <AutoAssignPort>False</AutoAssignPort>
-          <DevelopmentServerPort>63725</DevelopmentServerPort>
-          <DevelopmentServerVPath>/ODataDemoService/</DevelopmentServerVPath>
-          <IISUrl>http://minakov-w8.corp.devexpress.com/ODataDemoService</IISUrl>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50731/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
