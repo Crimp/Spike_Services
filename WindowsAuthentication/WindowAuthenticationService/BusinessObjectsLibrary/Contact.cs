@@ -10,6 +10,7 @@ namespace BusinessObjectsLibrary {
     public class Contact : BaseObject {
         string firstName;
         string lastName;
+        string email;
 
         public Contact(Session session)
             : base(session) {
@@ -28,6 +29,14 @@ namespace BusinessObjectsLibrary {
             }
             set {
                 SetPropertyValue("LastName", ref lastName, value);
+            }
+        }
+        public string Email {
+            get {
+                return email;
+            }
+            set {
+                SetPropertyValue("Email", ref email, value);
             }
         }
     }

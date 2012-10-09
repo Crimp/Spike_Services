@@ -14,9 +14,9 @@ using System.Web;
 namespace DataProvider {
     public class ODataServiceHelper {
         private static XPDictionary _xPDictionary = null;
-        public ODataServiceHelper(string connectionString, Assembly assembly, string namespaceName) {
+        public ODataServiceHelper(string connectionString, Assembly[] assemblies, string namespaceName) {
             this.ConnectionString = connectionString;
-            this.Assembly = assembly;
+            this.Assemblies = assemblies;
             this.NamespaceName = namespaceName;
         }
         public IObjectLayer CreateDataLayer() {
@@ -33,7 +33,7 @@ namespace DataProvider {
             return CreateSession(DevExpress.Xpo.DB.AutoCreateOption.SchemaAlreadyExists);
         }
 
-        public virtual Assembly Assembly {
+        public virtual Assembly[] Assemblies {
             get;
             set;
         }
@@ -46,32 +46,30 @@ namespace DataProvider {
             set;
         }
 
+        public XPDictionary XPDictionary {
+            get {
+                if(_xPDictionary == null) {
+                    _xPDictionary = new ReflectionDictionary();
+                    List<Assembly> _assemblies = new List<Assembly>(Assemblies);
+                    _assemblies.Add(typeof(SecuritySystemUser).Assembly);
+                    _xPDictionary.GetDataStoreSchema(_assemblies.ToArray<Assembly>());
+                }
+                return _xPDictionary;
+            }
+        }
         protected virtual string CurrentUserName {
             get {
                 return HttpContext.Current.User.Identity.Name;
             }
         }
-
-        public XPDictionary XPDictionary {
-            get {
-                if(_xPDictionary == null) {
-                    _xPDictionary = new ReflectionDictionary();
-                    _xPDictionary.GetDataStoreSchema(Assembly);
-                }
-                return _xPDictionary;
-            }
-        }
-        //private static XPDictionary GetXPDictionary(Assembly assembly) {
-        //    if(_xPDictionary == null) {
-        //        _xPDictionary = new ReflectionDictionary();
-        //        _xPDictionary.GetDataStoreSchema(assembly);
-        //    }
-        //    return _xPDictionary;
-        //}
-        private ISelectDataSecurity CreateSelectDataSecurity() {
-            UnitOfWork session = CreateSession();
+        public virtual IOperationPermissionProvider GetPermissionProvider(UnitOfWork session) {
             string userName = CurrentUserName;
-            IOperationPermissionProvider user = session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", userName)) as IOperationPermissionProvider;
+            return session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", userName)) as IOperationPermissionProvider;
+        }
+
+        private ISelectDataSecurity CreateSelectDataSecurity() {
+            IOperationPermissionProvider user = GetPermissionProvider(CreateSession());
+            
             IEnumerable<IOperationPermission> userPermissions = null;
             if(user != null) {
                 userPermissions = OperationPermissionProviderHelper.CollectPermissionsRecursive(user);
