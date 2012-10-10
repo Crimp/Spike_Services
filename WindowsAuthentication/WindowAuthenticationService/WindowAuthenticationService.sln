@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleWindowsAuthenticatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBCreator", "DBCreator\DBCreator.csproj", "{4F16647F-76AD-46B3-90ED-F04AAA70A271}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnSecuredDataService", "UnSecuredDataService\UnSecuredDataService.csproj", "{D7867B2A-F09A-4331-9CC5-3E4B2ECCDED0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F16647F-76AD-46B3-90ED-F04AAA70A271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7867B2A-F09A-4331-9CC5-3E4B2ECCDED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7867B2A-F09A-4331-9CC5-3E4B2ECCDED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7867B2A-F09A-4331-9CC5-3E4B2ECCDED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7867B2A-F09A-4331-9CC5-3E4B2ECCDED0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
