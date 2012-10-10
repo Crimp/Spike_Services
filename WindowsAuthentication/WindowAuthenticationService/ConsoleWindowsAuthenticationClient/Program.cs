@@ -23,21 +23,14 @@ namespace ConsoleWindowsAuthenticationClient {
         }
         private static void ShowData(DataServiceContext dataContext) {
             try {
-                Console.WriteLine("******************************************");
+                
                 var contactQuery = (from p in dataContext.CreateQuery<Contact>("Contact") select p);
-                Console.WriteLine("Begin request");
-                foreach(Contact contact in contactQuery) {
-                    Console.WriteLine("FirstName:" + contact.FirstName);
-                    Console.WriteLine("LastName:" + contact.LastName);
-                    Console.WriteLine("Email:" + contact.Email);
-                }
-                Console.WriteLine("End request");
+                ConsoleWriter consoleWriter = new ConsoleWriter();
+                consoleWriter.PrintData(contactQuery);
             }
             catch {
                 Console.WriteLine("Error");
             }
-            Console.WriteLine("******************************************");
         }
-        
     }
 }
