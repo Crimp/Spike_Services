@@ -11,13 +11,13 @@ namespace ConsoleWindowsAuthenticationClient {
         public static string windowAuthenticationRootDataUrl = "http://localhost:50731/WindowAuthenticationDataService.svc";
         public static string unSecuredRootDataUrl = "http://localhost:62445/UnSecuredDataService.svc";
         static void Main(string[] args) {
-            DataServiceContext unSecuredDataContext = new DataServiceContext(new Uri(unSecuredRootDataUrl));
             Console.WriteLine("UnSecured");
+            DataServiceContext unSecuredDataContext = new DataServiceContext(new Uri(unSecuredRootDataUrl));
             ShowData(unSecuredDataContext);
 
-            DataServiceContext windowAuthenticationDataContext = new DataServiceContext(new Uri(windowAuthenticationRootDataUrl));
-            windowAuthenticationDataContext.Credentials = CredentialCache.DefaultCredentials;
             Console.WriteLine("WindowAuthentication");
+            DataServiceContext windowAuthenticationDataContext = new DataServiceContext(new Uri(windowAuthenticationRootDataUrl));
+            //windowAuthenticationDataContext.Credentials = CredentialCache.DefaultCredentials;
             ShowData(windowAuthenticationDataContext);
 
 

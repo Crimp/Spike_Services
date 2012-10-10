@@ -10,6 +10,7 @@ namespace WindowAuthenticationService {
             base(connectionString, assemblies, namespaceName) {
         }
         protected override ISelectDataSecurity GetSelectDataSecurity() {
+            string userName = System.Web.HttpContext.Current.User.Identity.Name;
             SecurityStrategyComplex securityStrategy = new SecurityStrategyComplex(typeof(SecuritySystemUser), typeof(DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole), new AuthenticationActiveDirectory());
             SecuritySystem.SetInstance(securityStrategy);
             SecuritySystem.Instance.Logon(ObjectSpaceProvider.CreateObjectSpace());
