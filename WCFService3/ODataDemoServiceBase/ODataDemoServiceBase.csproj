@@ -76,11 +76,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Authentication\AuthenticationServiceBase.cs" />
-    <Compile Include="Authentication\IAuthenticationService.cs" />
+    <Compile Include="Authentication\CustomAuthenticationServiceBase.cs" />
+    <Compile Include="Authentication\ICustomAuthenticationService.cs" />
     <Compile Include="DataProvider\MyContext.cs" />
-    <Compile Include="DataProvider\ODataDemoServiceBase.cs" />
-    <Compile Include="DataProvider\ODataServiceHelper.cs" />
+    <Compile Include="DataProvider\DataServiceBase.cs" />
+    <Compile Include="DataProvider\DataServiceHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

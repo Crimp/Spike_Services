@@ -1,4 +1,4 @@
-﻿using ConsoleWindowsAuthenticationClient.ODataDemoService;
+﻿using ConsoleWindowsAuthenticationClient.WindowAuthenticationDataService;
 using System;
 using System.Collections.Generic;
 using System.Data.Services.Client;
@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ConsoleWindowsAuthenticationClient {
     class Program {
-        public static string rootDataUrl = "http://localhost:50731/ODataDemoService.svc";
+        public static string rootDataUrl = "http://localhost:50731/WindowAuthenticationDataService.svc";
         static void Main(string[] args) {
             DataServiceContext dataContext = new DataServiceContext(new Uri(rootDataUrl));
             dataContext.Credentials = CredentialCache.DefaultCredentials;

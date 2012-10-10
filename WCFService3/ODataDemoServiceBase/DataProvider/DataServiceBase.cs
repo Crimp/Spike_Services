@@ -16,9 +16,9 @@ using DevExpress.ExpressApp.Security.Strategy;
 
 namespace DataProvider {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
-    public class ODataDemoServiceBase : XpoDataService, System.Data.Services.IRequestHandler {
-        public ODataDemoServiceBase(HttpContextBase httpContext, ODataServiceHelper dataServiceHelper) :
-            base(new XpoContext("XpoContext", dataServiceHelper.NamespaceName, dataServiceHelper.CreateDataLayer())) {
+    public class DataServiceBase : XpoDataService, System.Data.Services.IRequestHandler {
+        public DataServiceBase(HttpContextBase httpContext, DataServiceHelper dataServiceHelper, string containerName) :
+            base(new XpoContext(containerName, dataServiceHelper.NamespaceName, dataServiceHelper.CreateDataLayer())) {
             if((httpContext == null) && (HttpContext.Current == null)) {
                 throw new ArgumentNullException("context", "The context cannot be null if not running on a Web context.");
             }

@@ -61,7 +61,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\ODataDemoService\Reference.cs">
+    <Compile Include="Service References\WindowAuthenticationDataService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.datasvcmap</DependentUpon>
@@ -71,16 +71,16 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ServiceReferenceMetadataStorage Include="Service References\ODataDemoService\">
+    <None Include="packages.config" />
+    <None Include="Service References\WindowAuthenticationDataService\service.edmx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ServiceReferenceMetadataStorage Include="Service References\WindowAuthenticationDataService\">
       <Type>datasvcmap</Type>
     </ServiceReferenceMetadataStorage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-    <None Include="Service References\ODataDemoService\service.edmx" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\ODataDemoService\Reference.datasvcmap">
+    <None Include="Service References\WindowAuthenticationDataService\Reference.datasvcmap">
       <Generator>DataServicesCoreClientGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

@@ -9,20 +9,20 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 10/10/2012 7:14:43 AM
-namespace ConsoleWindowsAuthenticationClient.ODataDemoService
+// Generation date: 10/10/2012 7:23:43 AM
+namespace ConsoleWindowsAuthenticationClient.WindowAuthenticationDataService
 {
     
     /// <summary>
-    /// There are no comments for XpoContext in the schema.
+    /// There are no comments for WindowAuthenticationDataService in the schema.
     /// </summary>
-    public partial class XpoContext : global::System.Data.Services.Client.DataServiceContext
+    public partial class WindowAuthenticationDataService : global::System.Data.Services.Client.DataServiceContext
     {
         /// <summary>
-        /// Initialize a new XpoContext object.
+        /// Initialize a new WindowAuthenticationDataService object.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public XpoContext(global::System.Uri serviceRoot) : 
+        public WindowAuthenticationDataService(global::System.Uri serviceRoot) : 
                 base(serviceRoot)
         {
             this.ResolveName = new global::System.Func<global::System.Type, string>(this.ResolveNameFromType);
@@ -40,7 +40,7 @@ namespace ConsoleWindowsAuthenticationClient.ODataDemoService
         {
             if (typeName.StartsWith("BusinessObjectsLibrary", global::System.StringComparison.Ordinal))
             {
-                return this.GetType().Assembly.GetType(string.Concat("ConsoleWindowsAuthenticationClient.ODataDemoService", typeName.Substring(22)), false);
+                return this.GetType().Assembly.GetType(string.Concat("ConsoleWindowsAuthenticationClient.WindowAuthenticationDataService", typeName.Substring(22)), false);
             }
             return null;
         }
@@ -52,7 +52,7 @@ namespace ConsoleWindowsAuthenticationClient.ODataDemoService
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
         protected string ResolveNameFromType(global::System.Type clientType)
         {
-            if (clientType.Namespace.Equals("ConsoleWindowsAuthenticationClient.ODataDemoService", global::System.StringComparison.Ordinal))
+            if (clientType.Namespace.Equals("ConsoleWindowsAuthenticationClient.WindowAuthenticationDataService", global::System.StringComparison.Ordinal))
             {
                 return string.Concat("BusinessObjectsLibrary.", clientType.Name);
             }

@@ -205,7 +205,7 @@
         <End Role="DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" Type="BusinessObjectsLibrary.DevExpress_ExpressApp_Security_Strategy_SecuritySystemUser" Multiplicity="*" />
         <End Role="Roles" Type="BusinessObjectsLibrary.DevExpress_ExpressApp_Security_Strategy_SecuritySystemRole" Multiplicity="*" />
       </Association>
-      <EntityContainer Name="XpoContext" m:IsDefaultEntityContainer="true">
+      <EntityContainer Name="WindowAuthenticationDataService" m:IsDefaultEntityContainer="true">
         <EntitySet Name="DevExpress_ExpressApp_Security_PermissionData" EntityType="BusinessObjectsLibrary.DevExpress_ExpressApp_Security_PermissionData" />
         <EntitySet Name="DevExpress_ExpressApp_Security_TypePermissionData" EntityType="BusinessObjectsLibrary.DevExpress_ExpressApp_Security_TypePermissionData" />
         <EntitySet Name="DevExpress_ExpressApp_Security_PermissionsContainer" EntityType="BusinessObjectsLibrary.DevExpress_ExpressApp_Security_PermissionsContainer" />

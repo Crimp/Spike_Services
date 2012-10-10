@@ -7,7 +7,7 @@ using System.Text;
 using System.Web.Security;
 
 [ServiceContract]
-public interface IAuthenticationService {
+public interface ICustomAuthenticationService {
     [OperationContract]
     string ValidateUser(string userName, string password);
 }

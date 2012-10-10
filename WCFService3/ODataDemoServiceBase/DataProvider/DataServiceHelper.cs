@@ -17,12 +17,12 @@ using System.Text;
 using System.Web;
 
 namespace DataProvider {
-    public class ODataServiceHelper {
+    public class DataServiceHelper {
         private object lockObject = new object();
         private static XPDictionary _xPDictionary = null;
         private static IObjectSpaceProvider objectSpaceProvider;
         static bool isInitialized = false;
-        public ODataServiceHelper(string connectionString, Assembly[] assemblies, string namespaceName) {
+        public DataServiceHelper(string connectionString, Assembly[] assemblies, string namespaceName) {
             this.ConnectionString = connectionString;
             this.Assemblies = assemblies;
             this.NamespaceName = namespaceName;

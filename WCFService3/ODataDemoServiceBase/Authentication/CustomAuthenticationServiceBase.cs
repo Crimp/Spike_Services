@@ -10,7 +10,7 @@ using System.Web;
 using System.Web.Security;
 
 namespace Authentication {
-    public abstract class CustomAuthenticationService : IAuthenticationService {
+    public abstract class CustomAuthenticationService : ICustomAuthenticationService {
         public CustomAuthenticationService() {
         }
         public string ValidateUser(string userName, string password) {
