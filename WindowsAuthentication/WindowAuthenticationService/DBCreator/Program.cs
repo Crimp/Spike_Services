@@ -18,11 +18,11 @@ namespace DBCreator {
             catch(Exception e) {
                 Console.WriteLine("Exception:");
                 Console.WriteLine(e.Message);
-                Console.WriteLine("Press any key to continue");
+                Console.WriteLine("Press any key to exit");
                 Console.ReadKey();
             }
             Console.WriteLine("Done");
-            Console.WriteLine("Press any key to continue");
+            Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
     }

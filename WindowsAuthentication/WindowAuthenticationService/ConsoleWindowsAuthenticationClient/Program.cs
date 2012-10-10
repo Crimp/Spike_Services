@@ -19,6 +19,9 @@ namespace ConsoleWindowsAuthenticationClient {
             windowAuthenticationDataContext.Credentials = CredentialCache.DefaultCredentials;
             Console.WriteLine("WindowAuthentication");
             ShowData(windowAuthenticationDataContext);
+
+
+            Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
         private static void ShowData(DataServiceContext dataContext) {
