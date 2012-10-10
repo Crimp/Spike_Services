@@ -11,6 +11,7 @@ namespace BusinessObjectsLibrary {
         string firstName;
         string lastName;
         string email;
+        Guid ownerId;
 
         public Contact(Session session)
             : base(session) {
@@ -37,6 +38,14 @@ namespace BusinessObjectsLibrary {
             }
             set {
                 SetPropertyValue("Email", ref email, value);
+            }
+        }
+        public Guid OwnerId {
+            get {
+                return ownerId;
+            }
+            set {
+                SetPropertyValue("OwnerId", ref ownerId, value);
             }
         }
     }

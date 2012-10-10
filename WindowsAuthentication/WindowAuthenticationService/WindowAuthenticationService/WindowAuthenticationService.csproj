@@ -49,6 +49,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Dll\DevExpress.ExpressApp.v12.1.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Dll\DevExpress.ExpressApp.Xpo.v12.1.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Persistent.Base.v12.1, Version=12.1.0.0, Culture=neutral, PublicKeyToken=79868b8147b5eae4, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Dll\DevExpress.Persistent.Base.v12.1.dll</HintPath>
@@ -89,10 +93,11 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="ODataDemoService.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBUpdater.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -131,9 +136,9 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>50731</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:50731/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>

@@ -1,6 +1,11 @@
 ﻿using DevExpress.Data.Filtering;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.DC;
+using DevExpress.ExpressApp.DC.Xpo;
 using DevExpress.ExpressApp.Security;
 using DevExpress.ExpressApp.Security.Strategy;
+using DevExpress.ExpressApp.SystemModule;
+using DevExpress.ExpressApp.Xpo;
 using DevExpress.Xpo;
 using DevExpress.Xpo.DB;
 using DevExpress.Xpo.Metadata;
@@ -13,24 +18,58 @@ using System.Web;
 
 namespace DataProvider {
     public class ODataServiceHelper {
+        private object lockObject = new object();
         private static XPDictionary _xPDictionary = null;
+        private static IObjectSpaceProvider objectSpaceProvider;
+        static bool isInitialized = false;
         public ODataServiceHelper(string connectionString, Assembly[] assemblies, string namespaceName) {
             this.ConnectionString = connectionString;
             this.Assemblies = assemblies;
             this.NamespaceName = namespaceName;
+
+            Initialize(assemblies);
         }
-        public IObjectLayer CreateDataLayer() {
-            SessionObjectLayer sessionObjectLayer = new SessionObjectLayer(CreateSession(), true, null, new SecurityRuleProvider(XPDictionary, CreateSelectDataSecurity()), null);
+        private void Initialize(Assembly[] assemblies) {
+            lock(lockObject) {
+                if(!isInitialized) {
+                    isInitialized = true;
+
+                    TypesInfo info = new TypesInfo();
+                    //typesInfo.AddEntityStore(new NonPersistentEntityStore(typesInfo));
+                    XpoTypeInfoSource source = new XpoTypeInfoSource(info);
+                    info.AddEntityStore(source);
+
+                    List<Assembly> _assemblies = new List<Assembly>(Assemblies);
+                    _assemblies.Add(typeof(SecuritySystemUser).Assembly);
+
+                    _xPDictionary = new ReflectionDictionary();
+                    _xPDictionary.GetDataStoreSchema(_assemblies.ToArray<Assembly>());
+
+                    foreach(Assembly ass in _assemblies) {
+                        foreach(Type type in ModuleHelper.CollectExportedTypesFromAssembly(ass, IsExportedType)) {
+                            info.RegisterEntity(type);
+                        }
+                    }
+
+                    SystemModule systemModule = new SystemModule();
+                    systemModule.CustomizeTypesInfo(info);
+                    ConnectionStringDataStoreProvider connectionDataStoreProvider = new ConnectionStringDataStoreProvider(ConnectionString);
+                    objectSpaceProvider = new XPObjectSpaceProvider(connectionDataStoreProvider, info, source);
+                }
+            }
+        }
+        public virtual Boolean IsExportedType(Type type) {
+            return NonPersistentEntityStore.IsExportedType(type) || XpoTypeInfoSource.IsExportedType(type);
+        }
+        public virtual IObjectLayer CreateDataLayer() {
+            SessionObjectLayer sessionObjectLayer = new SessionObjectLayer(CreateSession(AutoCreateOption.SchemaAlreadyExists), true, null, CreateSecurityRuleProvider(), null);
             return sessionObjectLayer;
         }
         public UnitOfWork CreateSession(DevExpress.Xpo.DB.AutoCreateOption autoCreateOption) {
             IDataStore store = XpoDefault.GetConnectionProvider(ConnectionString, autoCreateOption);
-            IDataLayer directDataLayer = new ThreadSafeDataLayer(XPDictionary, store);
+            IDataLayer directDataLayer = new ThreadSafeDataLayer(_xPDictionary, store);
             UnitOfWork directSession = new UnitOfWork(directDataLayer);
             return directSession;
-        }
-        public UnitOfWork CreateSession() {
-            return CreateSession(DevExpress.Xpo.DB.AutoCreateOption.SchemaAlreadyExists);
         }
 
         public virtual Assembly[] Assemblies {
@@ -45,43 +84,14 @@ namespace DataProvider {
             get;
             set;
         }
-
-        public XPDictionary XPDictionary {
-            get {
-                if(_xPDictionary == null) {
-                    _xPDictionary = new ReflectionDictionary();
-                    List<Assembly> _assemblies = new List<Assembly>(Assemblies);
-                    _assemblies.Add(typeof(SecuritySystemUser).Assembly);
-                    _xPDictionary.GetDataStoreSchema(_assemblies.ToArray<Assembly>());
-                }
-                return _xPDictionary;
-            }
+        public virtual SecurityRuleProvider CreateSecurityRuleProvider() {
+            return new SecurityRuleProvider(_xPDictionary, CreateSelectDataSecurity());
         }
-        protected virtual string CurrentUserName {
-            get {
-                return HttpContext.Current.User.Identity.Name;
-            }
-        }
-        public virtual IOperationPermissionProvider GetPermissionProvider(UnitOfWork session) {
-            string userName = CurrentUserName;
-            return session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", userName)) as IOperationPermissionProvider;
-        }
-
-        private ISelectDataSecurity CreateSelectDataSecurity() {
-            IOperationPermissionProvider user = GetPermissionProvider(CreateSession());
-            
-            IEnumerable<IOperationPermission> userPermissions = null;
-            if(user != null) {
-                userPermissions = OperationPermissionProviderHelper.CollectPermissionsRecursive(user);
-            } else {
-                userPermissions = new List<IOperationPermission>();
-            }
-            IPermissionDictionary permissionsDictionary = new PermissionDictionary(userPermissions);
-
-            IDictionary<Type, IPermissionRequestProcessor> processors = new Dictionary<Type, IPermissionRequestProcessor>();
-            processors.Add(typeof(ModelOperationPermissionRequest), new ModelPermissionRequestProcessor(permissionsDictionary));
-            processors.Add(typeof(ServerPermissionRequest), new ServerPermissionRequestProcessor(permissionsDictionary));
-            return new SelectDataSecurity(processors, permissionsDictionary);
+        protected virtual ISelectDataSecurity CreateSelectDataSecurity() {
+            SecurityStrategyComplex securityStrategy = new SecurityStrategyComplex(typeof(SecuritySystemUser), typeof(DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole), new AuthenticationActiveDirectory());
+            SecuritySystem.SetInstance(securityStrategy);
+            SecuritySystem.Instance.Logon(objectSpaceProvider.CreateObjectSpace());
+            return securityStrategy.CreateSelectDataSecurity();
         }
     }
 }

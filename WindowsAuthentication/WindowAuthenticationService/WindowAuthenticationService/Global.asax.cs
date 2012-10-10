@@ -1,4 +1,8 @@
 ﻿using BusinessObjectsLibrary;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.Security;
+using DevExpress.ExpressApp.Security.Strategy;
+using DevExpress.ExpressApp.SystemModule;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -13,9 +17,8 @@ namespace WindowAuthenticationService {
         public static string ConnectionString;
 
         protected void Application_Start(object sender, EventArgs e) {
+            //CurrentUserIdOperator.Register();
             ConnectionString = ConfigurationManager.ConnectionStrings["ApplicationServices"].ConnectionString;
-            DBUpdater updater = new DBUpdater();
-            updater.Update(ConnectionString, new Assembly[] { typeof(Contact).Assembly });
         }
 
         protected void Session_Start(object sender, EventArgs e) {

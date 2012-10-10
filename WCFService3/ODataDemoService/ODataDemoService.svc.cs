@@ -13,6 +13,7 @@ using MainDemo.Module.BusinessObjects;
 using DevExpress.ExpressApp.Security;
 using DataProvider;
 using ODataDemoService;
+using System.Reflection;
 
 [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Required)]
 public class DemoODataDemoService : ODataDemoServiceBase {
@@ -20,7 +21,7 @@ public class DemoODataDemoService : ODataDemoServiceBase {
         :this(new HttpContextWrapper(HttpContext.Current)){
     }
     public DemoODataDemoService(HttpContextBase httpContext)
-        : base(httpContext, new ODataServiceHelper(Global.ConnectionString, typeof(Contact).Assembly, "MainDemo")) {
+        : base(httpContext, new ODataServiceHelper(Global.ConnectionString, new Assembly[] { typeof(Contact).Assembly }, "MainDemo")) {
     }
     public DemoODataDemoService(HttpContextBase httpContext, ODataServiceHelper dataServiceHelper)
         : base(httpContext, dataServiceHelper) {

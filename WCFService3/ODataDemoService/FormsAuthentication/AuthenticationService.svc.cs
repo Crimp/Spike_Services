@@ -11,13 +11,14 @@ using ODataDemoService;
 using DataProvider;
 using DevExpress.Xpo;
 using MainDemo.Module.BusinessObjects;
+using System.Reflection;
 
 public class AuthenticationService : Authentication.CustomAuthenticationService {
     public AuthenticationService() {
     }
     protected override UnitOfWork Session {
         get {
-            return new ODataServiceHelper(Global.ConnectionString, typeof(Contact).Assembly, "MainDemo").CreateSession();
+            return new ODataServiceHelper(Global.ConnectionString, new Assembly[] { typeof(Contact).Assembly }, "MainDemo").CreateSession();
         }
     }
 }
