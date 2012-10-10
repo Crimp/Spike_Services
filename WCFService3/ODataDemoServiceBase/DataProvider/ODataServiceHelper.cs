@@ -58,6 +58,13 @@ namespace DataProvider {
                 }
             }
         }
+
+        protected static IObjectSpaceProvider ObjectSpaceProvider {
+            get {
+                return objectSpaceProvider;
+            }
+        }
+
         public virtual Boolean IsExportedType(Type type) {
             return NonPersistentEntityStore.IsExportedType(type) || XpoTypeInfoSource.IsExportedType(type);
         }
@@ -85,13 +92,14 @@ namespace DataProvider {
             set;
         }
         public virtual SecurityRuleProvider CreateSecurityRuleProvider() {
-            return new SecurityRuleProvider(_xPDictionary, CreateSelectDataSecurity());
+            ISelectDataSecurity selectDataSecurity = GetSelectDataSecurity();
+            if(selectDataSecurity != null) {
+                return new SecurityRuleProvider(_xPDictionary, selectDataSecurity);
+            }
+            return null;
         }
-        protected virtual ISelectDataSecurity CreateSelectDataSecurity() {
-            SecurityStrategyComplex securityStrategy = new SecurityStrategyComplex(typeof(SecuritySystemUser), typeof(DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole), new AuthenticationActiveDirectory());
-            SecuritySystem.SetInstance(securityStrategy);
-            SecuritySystem.Instance.Logon(objectSpaceProvider.CreateObjectSpace());
-            return securityStrategy.CreateSelectDataSecurity();
+        protected virtual ISelectDataSecurity GetSelectDataSecurity() {
+            return null;
         }
     }
 }

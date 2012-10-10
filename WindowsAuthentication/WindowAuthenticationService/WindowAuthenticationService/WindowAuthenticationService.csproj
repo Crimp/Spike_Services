@@ -98,6 +98,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ASPRequestValueManager.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

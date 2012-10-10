@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 // Original file name:
-// Generation date: 10/10/2012 5:28:56 AM
+// Generation date: 10/10/2012 7:14:43 AM
 namespace ConsoleWindowsAuthenticationClient.ODataDemoService
 {
     
