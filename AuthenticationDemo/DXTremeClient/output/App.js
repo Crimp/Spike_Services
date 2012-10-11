@@ -15,8 +15,9 @@ $(function () {
             })
         ]
     });
-    app.router.register("ContactEditView/:FirstName", { view: "ContactEditView" });
-    app.router.register("DetailView/:FirstName", { view: "DetailView" });
-    app.router.register("LogOn/:id", { view: "LogOn", id: undefined });
-    app.router.register(":view/:id", { view: "index", id: undefined });
+
+    app.router.register("ContactEditView/:oid", { view: "ContactEditView" });
+    //app.router.register("DetailView/:oid", { view: "DetailView" });
+    app.router.register("LogOn/:oid", { view: "LogOn", oid: undefined });
+    app.router.register(":view", { view: "index" });
 });

@@ -2,8 +2,7 @@
     var handleTripListItemClick = function (e) {
         var uri = DXTremeClient.app.router.format({
             action: "DetailView",
-            //oid: e.itemData.oid
-            FirstName: e.itemData.FirstName
+            oid: e.itemData.oid
         });
         DXTremeClient.app.navigate(uri);
     };

@@ -2,6 +2,9 @@
     <div data-target-placeholder="header">
         <div data-bind="dxToolbar: {}">
             <div data-bind="dxToolbarItem: { align: 'center', text: 'Contacts' }"></div>
+            <div data-bind="dxToolbarItem: { align: 'right', type: 'button' }">
+                <div data-bind="dxButton: { text: 'Log Off', click: handleLogOffClick }"></div>
+            </div>
         </div>
     </div>
     <div data-target-placeholder="content">

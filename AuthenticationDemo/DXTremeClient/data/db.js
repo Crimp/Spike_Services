@@ -1,6 +1,6 @@
 ﻿$(function () {
-    var URL = "http://localhost:62445/UnSecuredDataService.svc"
-    //var URL = "http://localhost:54002/CustomAuthenticationDataService.svc"
+    //var URL = "http://localhost:62445/UnSecuredDataService.svc"
+    var URL = "http://localhost:54002/CustomAuthenticationDataService.svc"
     DXTremeClient.currentUser = {
         Password: ko.observable(""),
         UserName: ko.observable("")
