@@ -18,13 +18,13 @@ $(function () {
                 uri: "about",
                 icon: "about",
                 location: "navigation"
-            }),
-                        new DevExpress.framework.Command({
-                            title: "LogOn",
-                            uri: "LogOn",
-                            icon: "about",
-                            location: "navigation"
-                        })
+            })//,
+                        //new DevExpress.framework.Command({
+                        //    title: "LogOn",
+                        //    uri: "LogOn",
+                        //    icon: "about",
+                        //    location: "navigation"
+                        //})
         ]
     });
     app.router.register("DetailView/:FirstName", { view: "DetailView" });

@@ -9,7 +9,7 @@
     };
     return {
         todoLists: {
-            store: DXTremeClient.db.Module_BusinessObjects_Contact
+            store: DXTremeClient.db.Contact
         },
         handleTripListItemClick: handleTripListItemClick,
     };

@@ -9,7 +9,7 @@
         service: {
             url: URL,
             errorHandler: function (error) {
-                if (error.httpStatus == 400) {
+                if (error.httpStatus == 401) {
                     DXTremeClient.app.navigate("LogOn/null");
                 } else {
                     alert(error.message);

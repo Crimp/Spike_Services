@@ -15,7 +15,7 @@ namespace CustomAuthenticationService {
             : this(new HttpContextWrapper(HttpContext.Current)) {
         }
         public CustomAuthenticationDataService(HttpContextBase httpContext)
-            : this(httpContext, new CustomAuthenticationServiceHelper(Global.ConnectionString, new Assembly[] { typeof(Contact).Assembly }, "BusinessObjectsLibrary"), "CustomAuthenticationService") {
+            : this(httpContext, new CustomAuthenticationServiceHelper(), "CustomAuthenticationService") {
         }
         public CustomAuthenticationDataService(HttpContextBase httpContext, DataServiceHelper dataServiceHelper, string containerName)
             : base(httpContext, dataServiceHelper, containerName) {

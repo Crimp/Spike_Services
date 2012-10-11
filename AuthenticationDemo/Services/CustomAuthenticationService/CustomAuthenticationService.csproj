@@ -135,13 +135,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\WCFService3\ODataDemoServiceBase\ODataDemoServiceBase.csproj">
-      <Project>{77cb535a-f77a-4f9e-8562-99b976684db7}</Project>
-      <Name>ODataDemoServiceBase</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\BusinessObjectsLibrary\BusinessObjectsLibrary.csproj">
       <Project>{8ac0d02c-34d4-40b4-bec1-9e8ad12a8c23}</Project>
       <Name>BusinessObjectsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ODataDemoServiceBase\ODataDemoServiceBase.csproj">
+      <Project>{77cb535a-f77a-4f9e-8562-99b976684db7}</Project>
+      <Name>ODataDemoServiceBase</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

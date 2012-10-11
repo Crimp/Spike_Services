@@ -59,7 +59,7 @@ namespace DataProvider {
             }
         }
 
-        protected static IObjectSpaceProvider ObjectSpaceProvider {
+        public IObjectSpaceProvider ObjectSpaceProvider {
             get {
                 return objectSpaceProvider;
             }
