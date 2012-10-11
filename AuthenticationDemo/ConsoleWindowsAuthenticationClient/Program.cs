@@ -16,6 +16,7 @@ namespace ConsoleWindowsAuthenticationClient {
             DataServiceContext unSecuredDataContext = new DataServiceContext(new Uri(unSecuredRootDataUrl));
             ShowData(unSecuredDataContext);
 
+
             Console.WriteLine("WindowAuthentication");
             DataServiceContext windowAuthenticationDataContext = new DataServiceContext(new Uri(windowAuthenticationRootDataUrl));
             ShowData(windowAuthenticationDataContext);
@@ -45,10 +46,19 @@ namespace ConsoleWindowsAuthenticationClient {
                 var contactQuery = (from p in dataContext.CreateQuery<Contact>("Contact") select p);
                 ConsoleWriter consoleWriter = new ConsoleWriter();
                 consoleWriter.PrintData(contactQuery);
+
+                //Contact test = contactQuery.First<Contact>();
+                //test.FirstName = test.FirstName + "deddsdsdsd";
+
+                //dataContext.UpdateObject(test);
+
+                //dataContext.SaveChanges();
+
+                //var contactQuery2 = (from p in dataContext.CreateQuery<Contact>("Contact") select p);
+                //consoleWriter.PrintData(contactQuery2);
             }
             catch(Exception e) {
-                Console.WriteLine("Error");
-                Console.WriteLine(e.Message);
+                Console.WriteLine("Error: " + e.InnerException.Message);
                 Console.WriteLine();
                 Console.WriteLine();
                 Console.WriteLine("-------------------------------------------");

@@ -1,5 +1,10 @@
-﻿<div data-role="view" data-name="index" data-title="Contacts">
-    <div data-target-placeholder="content" >
+﻿<div data-role="view" data-name="index">
+    <div data-target-placeholder="header">
+        <div data-bind="dxToolbar: {}">
+            <div data-bind="dxToolbarItem: { align: 'center', text: 'Contacts' }"></div>
+        </div>
+    </div>
+    <div data-target-placeholder="content">
         <div data-bind="dxList: { dataSource: todoLists, itemClick: handleTripListItemClick }">
             <div data-dx-role="template" data-dx-name="item">
                 <div>

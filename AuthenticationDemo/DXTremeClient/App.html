@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>MyApp</title>
-        
+    <title>DXTremeClient</title>
+
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -23,27 +23,30 @@
     <script type="text/javascript" src="data\Db.js"></script>
     <!-- Layouts -->
     <link rel="stylesheet" type="text/css" href="layouts/Navbar/NavbarLayout.css" />
-    <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html"/>
+    <link rel="dx-template" type="text/html" href="layouts/Navbar/NavbarLayout.html" />
     <script type="text/javascript" src="layouts/Navbar/NavbarLayout.js"></script>
 
     <!-- Views -->
     <script type="text/javascript" src="views/Index.js"></script>
-    <link rel="dx-template" type="text/html" href="views/Index.html"/>
-    <link rel="stylesheet" type="text/css" href="views/Index.css"/>
+    <link rel="dx-template" type="text/html" href="views/Index.html" />
+    <link rel="stylesheet" type="text/css" href="views/Index.css" />
 
     <script type="text/javascript" src="views/DetailView.js"></script>
-    <link rel="dx-template" type="text/html" href="views/DetailView.html"/>
+    <link rel="dx-template" type="text/html" href="views/DetailView.html" />
+
+    <script type="text/javascript" src="views/ContactEditView.js"></script>
+    <link rel="dx-template" type="text/html" href="views/ContactEditView.html" />
 
     <script type="text/javascript" src="views/LogOn.js"></script>
-    <link rel="dx-template" type="text/html" href="views/LogOn.html"/>
+    <link rel="dx-template" type="text/html" href="views/LogOn.html" />
 
 
-    <link rel="dx-template" type="text/html" href="views/About.html"/>
+    <link rel="dx-template" type="text/html" href="views/About.html" />
 
     <script>
-        $(function() {
-            app.navigate("LogOn/null");
-            //app.navigate();
+        $(function () {
+            //app.navigate("LogOn/null");
+            app.navigate();
         });
     </script>
 </head>

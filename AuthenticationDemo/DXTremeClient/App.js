@@ -8,26 +8,16 @@ $(function () {
         defaultLayout: "navbar",
         navigation: [
             new DevExpress.framework.Command({
-                title: "Home",
-                uri: "index",
-                icon: "home",
-                location: "navigation"
-            }),
-            new DevExpress.framework.Command({
                 title: "About",
                 uri: "about",
                 icon: "about",
                 location: "navigation"
-            })//,
-                        //new DevExpress.framework.Command({
-                        //    title: "LogOn",
-                        //    uri: "LogOn",
-                        //    icon: "about",
-                        //    location: "navigation"
-                        //})
+            })
         ]
     });
-    app.router.register("DetailView/:FirstName", { view: "DetailView" });
-    app.router.register("LogOn/:id", { view: "LogOn", id: undefined });
-    app.router.register(":view/:id", { view: "index", id: undefined });
+
+    app.router.register("ContactEditView/:oid", { view: "ContactEditView" });
+    //app.router.register("DetailView/:oid", { view: "DetailView" });
+    app.router.register("LogOn/:oid", { view: "LogOn", oid: undefined });
+    app.router.register(":view", { view: "index" });
 });

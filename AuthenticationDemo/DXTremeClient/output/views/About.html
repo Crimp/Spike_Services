@@ -1,6 +1,11 @@
-﻿<div data-role="view" data-name="about" data-title="About">
-    <div data-target-placeholder="content" >
+﻿<div data-role="view" data-name="about" >
+    <div data-target-placeholder="header">
+        <div data-bind="dxToolbar: {}" data-command-container="back" data-left-locations="back">
+        </div>
+    </div>
+    <div data-target-placeholder="content">
         <p>DXTremeClient</p>
         Test
     </div>
+    <div data-role="command" data-location="back" data-bind="uri: '_back'" data-title="Back"></div>
 </div>

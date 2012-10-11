@@ -1,16 +1,13 @@
-﻿DXTremeClient.DetailView = function (params) {
+﻿DXTremeClient.ContactEditView = function (params) {
     var model = {
         FirstName: ko.observable(),
         LastName: ko.observable(),
         Email: ko.observable(),
         handleBackClick: function (e) {
-            DXTremeClient.app.navigate("");
-        },
-        handleEditClick: function (e) {
             var uri = DXTremeClient.app.router.format({
-                action: "ContactEditView",
+                action: "DetailView",
                 //oid: e.itemData.oid
-                FirstName: model.FirstName
+                FirstName: e.itemData.FirstName
             });
             DXTremeClient.app.navigate(uri);
         }
