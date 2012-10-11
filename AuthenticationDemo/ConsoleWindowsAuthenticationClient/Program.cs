@@ -5,6 +5,7 @@ using System.Data.Services.Client;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Threading;
 
 namespace ConsoleWindowsAuthenticationClient {
     class Program {
@@ -12,6 +13,7 @@ namespace ConsoleWindowsAuthenticationClient {
         public static string unSecuredRootDataUrl = "http://localhost:62445/UnSecuredDataService.svc";
         public static string customAuthenticationRootDataUrl = "http://localhost:54002/CustomAuthenticationDataService.svc";
         static void Main(string[] args) {
+            Thread.Sleep(1000); //Wait created DB and start services.
             Console.WriteLine("UnSecured");
             DataServiceContext unSecuredDataContext = new DataServiceContext(new Uri(unSecuredRootDataUrl));
             ShowData(unSecuredDataContext);
