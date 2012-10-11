@@ -34,10 +34,10 @@
       <HintPath>..\..\Dll\DevExpress.Data.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Persistent.Base.v12.1">
-      <HintPath>..\..\..\Dll\DevExpress.Persistent.Base.v12.1.dll</HintPath>
+      <HintPath>..\..\Dll\DevExpress.Persistent.Base.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Persistent.BaseImpl.v12.1">
-      <HintPath>..\..\..\Dll\DevExpress.Persistent.BaseImpl.v12.1.dll</HintPath>
+      <HintPath>..\..\Dll\DevExpress.Persistent.BaseImpl.v12.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpo.v12.1">
       <HintPath>..\..\Dll\DevExpress.Xpo.v12.1.dll</HintPath>

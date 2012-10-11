@@ -42,7 +42,7 @@ namespace CustomAuthenticationService {
             try {
                 SecuritySystem.Instance.Logon(hellper.ObjectSpaceProvider.CreateObjectSpace());
             }
-            catch(AuthenticationException er) {
+            catch(AuthenticationException) {
                 HttpContext.Current.Response.Status = "401 Unauthorized";
                 HttpContext.Current.Response.StatusCode = 401;
                 HttpContext.Current.Response.End();

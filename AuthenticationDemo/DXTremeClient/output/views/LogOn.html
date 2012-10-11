@@ -3,7 +3,7 @@
         <div class="dx-fieldset">
             <div class="dx-field">
                 <div class="dx-field-key">UserName</div>
-                <div class="dx-field-value" data-bind="dxTextbox: { value: UserName }"></div>
+                <div class="dx-field-value" data-bind="dxTextbox: { value: UserName, valueUpdateEvent: 'keyup' }"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-key">Password</div>
@@ -11,7 +11,7 @@
             </div>
             <div class="dx-field">
                 <div class="dx-field-key"></div>
-                <div class="dx-field-value" data-bind="dxButton: { text: 'Log On', click: handleLogOnClick }"></div>
+                <div class="dx-field-value" data-bind="dxButton: { text: 'Log On', disabled: !UserName(), click: handleLogOnClick }"></div>
             </div>
         </div>
     </div>
