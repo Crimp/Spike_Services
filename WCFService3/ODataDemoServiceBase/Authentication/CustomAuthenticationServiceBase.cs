@@ -6,21 +6,24 @@ using DevExpress.Xpo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Web;
 using System.Web.Security;
 
 namespace Authentication {
-    public abstract class CustomAuthenticationService : ICustomAuthenticationService {
-        public CustomAuthenticationService() {
+    //[JavascriptCallbackBehavior(UrlParameterName = "$callback")]
+    public abstract class CustomAuthenticationServiceBase : ICustomAuthenticationService {
+        public CustomAuthenticationServiceBase() {
         }
         public string ValidateUser(string userName, string password) {
-            UnitOfWork session = null;
+            UnitOfWork session = Session;
             IAuthenticationStandardUser user = session.FindObject(typeof(SecuritySystemUser), new BinaryOperator("UserName", userName)) as IAuthenticationStandardUser;
             string result = null;
             if(user != null && user.ComparePassword(password)) {
                 FormsAuthenticationTicket ticket =
                     new FormsAuthenticationTicket(1, userName, DateTime.Now, DateTime.Now.AddMinutes(30)
-                        , false, userName, FormsAuthentication.FormsCookiePath);
+                        , false, password, FormsAuthentication.FormsCookiePath);
 
                 result = FormsAuthentication.Encrypt(ticket);
             }

@@ -80,8 +80,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ASPRequestValueManager.cs" />
-    <Compile Include="Authentication\CustomAuthenticationServiceBase.cs" />
-    <Compile Include="Authentication\ICustomAuthenticationService.cs" />
     <Compile Include="DataProvider\MyContext.cs" />
     <Compile Include="DataProvider\DataServiceBase.cs" />
     <Compile Include="DataProvider\DataServiceHelper.cs" />
