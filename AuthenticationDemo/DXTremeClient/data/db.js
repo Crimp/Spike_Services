@@ -9,7 +9,11 @@
         service: {
             url: URL,
             errorHandler: function (error) {
-                alert(error.message);
+                if (error.httpStatus == 400) {
+                    DXTremeClient.app.navigate("LogOn/null");
+                } else {
+                    alert(error.message);
+                }
             },
             beforeSend: function (sender) {
                 sender.headers.UserName = DXTremeClient.currentUser.UserName();
