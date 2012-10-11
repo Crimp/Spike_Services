@@ -1,6 +1,10 @@
 ﻿$(function () {
     //var URL = "http://localhost:62445/UnSecuredDataService.svc"
-    var URL= "http://localhost:54002/CustomAuthenticationDataService.svc"
+    var URL = "http://localhost:54002/CustomAuthenticationDataService.svc"
+    DXTremeClient.currentUser = {
+        Password: ko.observable(""),
+        UserName: ko.observable("")
+    };
     DXTremeClient.db = new DevExpress.data.EntityStoreContext({
         service: {
             url: URL,
@@ -8,8 +12,8 @@
                 alert(error.message);
             },
             beforeSend: function (sender) {
-                sender.headers.UserName = "Sam";
-                sender.headers.Password = "sam";
+                sender.headers.UserName = DXTremeClient.currentUser.UserName();
+                sender.headers.Password = DXTremeClient.currentUser.Password();
             }
         },
         entities: {

@@ -16,5 +16,7 @@
         filter: ["FirstName", params.FirstName]
     }).done(createDetailContent);
 
+    //DXTremeClient.db.Contact.update(id, model);
+
     return model;
 }

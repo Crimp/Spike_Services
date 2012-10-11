@@ -3,12 +3,12 @@
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>61f3ec2c-3f18-4827-9fcf-eb6d64822eae</ProjectGuid>
-    <AutoAssignPort>True</AutoAssignPort>
+    <AutoAssignPort>False</AutoAssignPort>
     <RunInSimulator>False</RunInSimulator>
     <ApplicationPage>App.html</ApplicationPage>
     <Name>DXTremeClient</Name>
     <RootNamespace>DXTremeClient</RootNamespace>
-    <DebugSitePortNumber>50000</DebugSitePortNumber>
+    <DebugSitePortNumber>50786</DebugSitePortNumber>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

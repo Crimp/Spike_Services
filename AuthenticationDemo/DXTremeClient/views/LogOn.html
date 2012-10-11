@@ -3,15 +3,15 @@
         <div class="dx-fieldset">
             <div class="dx-field">
                 <div class="dx-field-key">UserName</div>
-                <div class="dx-field-value" id="UserName" data-bind="dxTextbox: { }"></div>
+                <div class="dx-field-value" data-bind="dxTextbox: { value: UserName }"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-key">Password</div>
-                <div class="dx-field-value" id="Password" data-bind="dxTextbox: { mode: 'password' }"></div>
+                <div class="dx-field-value" data-bind="dxTextbox: { mode: 'password', value: Password }"></div>
             </div>
             <div class="dx-field">
                 <div class="dx-field-key"></div>
-                <div class="dx-field-value" id="logOnButton" data-bind="dxButton: { text: 'Log On', click: handleLogOnClick }"></div>
+                <div class="dx-field-value" data-bind="dxButton: { text: 'Log On', click: handleLogOnClick }"></div>
             </div>
         </div>
     </div>
