@@ -10,9 +10,15 @@
         handleEditClick: function (e) {
             var uri = DXTremeClient.app.router.format({
                 action: "ContactEditView",
-                oid: _oid
+                oid: _oid,
+                index: _oid
             });
             DXTremeClient.app.navigate(uri);
+        },
+        viewShown: function () {
+            DXTremeClient.db.Contact.load({
+                filter: ["oid", new DevExpress.data.Guid(params.oid)]
+            }).done(createDetailContent);
         }
     };
 
@@ -22,10 +28,6 @@
         model.Email(list[0].Email);
         _oid = list[0].oid;
     };
-
-    DXTremeClient.db.Contact.load({
-        filter: ["oid", new DevExpress.data.Guid(params.oid)]
-    }).done(createDetailContent);
 
     return model;
 }

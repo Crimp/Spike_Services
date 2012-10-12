@@ -12,13 +12,6 @@
                 );
         },
         handleBackClick: function (e) {
-            //var uri2 = DXTremeClient.app.router.format({
-            //    action: "DetailView",
-            //    //oid: e.itemData.oid
-            //    FirstName: model.FirstName()
-            //});
-            //var uri = "DetailView/" + model.FirstName();
-            //DXTremeClient.app.navigate(uri2);
             DXTremeClient.app.navigate("_back");
         }
     };
